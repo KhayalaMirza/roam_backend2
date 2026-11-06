@@ -1,0 +1,2689 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/health": {
+      "get": {
+        "operationId": "HealthController_health",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Health"
+        ]
+      }
+    },
+    "/v1/rates": {
+      "get": {
+        "operationId": "RatesController_get",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "example": {
+                    "base": "AZN",
+                    "rates": {
+                      "AZN": 1,
+                      "USD": 0.5882,
+                      "EUR": 0.5051
+                    },
+                    "aznPer": {
+                      "AZN": 1,
+                      "USD": 1.7,
+                      "EUR": 1.98
+                    },
+                    "rateDate": "2026-11-05",
+                    "source": "CBAR",
+                    "updatedAt": "2026-11-05T06:05:00.000Z"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "summary": "Current AZN exchange rates (cache on device; use last value offline)",
+        "tags": [
+          "Rates"
+        ]
+      }
+    },
+    "/v1/auth/register": {
+      "post": {
+        "operationId": "AuthController_register",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthResponseDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Create account (Full name, Email, Password, accept Terms)",
+        "tags": [
+          "Auth"
+        ]
+      }
+    },
+    "/v1/auth/login": {
+      "post": {
+        "operationId": "AuthController_login",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthResponseDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Log in with email + password",
+        "tags": [
+          "Auth"
+        ]
+      }
+    },
+    "/v1/auth/google": {
+      "post": {
+        "operationId": "AuthController_google",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GoogleAuthDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthResponseDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Continue with Google",
+        "tags": [
+          "Auth"
+        ]
+      }
+    },
+    "/v1/auth/apple": {
+      "post": {
+        "operationId": "AuthController_apple",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AppleAuthDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthResponseDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Continue with Apple",
+        "tags": [
+          "Auth"
+        ]
+      }
+    },
+    "/v1/auth/refresh": {
+      "post": {
+        "operationId": "AuthController_refresh",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthResponseDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Exchange a refresh token for a new token pair (rotating)",
+        "tags": [
+          "Auth"
+        ]
+      }
+    },
+    "/v1/auth/logout": {
+      "post": {
+        "operationId": "AuthController_logout",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": ""
+          }
+        },
+        "summary": "Revoke a refresh token",
+        "tags": [
+          "Auth"
+        ]
+      }
+    },
+    "/v1/auth/forgot-password": {
+      "post": {
+        "operationId": "AuthController_forgot",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ForgotPasswordDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": ""
+          }
+        },
+        "summary": "“Forgot password?” — emails a reset link (always 204)",
+        "tags": [
+          "Auth"
+        ]
+      }
+    },
+    "/v1/auth/reset-password": {
+      "post": {
+        "operationId": "AuthController_reset",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResetPasswordDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": ""
+          }
+        },
+        "summary": "Set a new password using the emailed token",
+        "tags": [
+          "Auth"
+        ]
+      }
+    },
+    "/v1/regions": {
+      "get": {
+        "operationId": "CatalogController_regions",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Region chips: All, Europe, Asia, Middle East, Africa",
+        "tags": [
+          "Catalog"
+        ]
+      }
+    },
+    "/v1/countries": {
+      "get": {
+        "operationId": "CatalogController_countries",
+        "parameters": [
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          },
+          {
+            "name": "regionId",
+            "required": false,
+            "in": "query",
+            "description": "Region id; \"all\" or empty for all",
+            "schema": {
+              "example": "africa",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Countries list (optionally by region)",
+        "tags": [
+          "Catalog"
+        ]
+      }
+    },
+    "/v1/countries/{id}": {
+      "get": {
+        "operationId": "CatalogController_country",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Country detail with info cards and cities",
+        "tags": [
+          "Catalog"
+        ]
+      }
+    },
+    "/v1/cities/{id}": {
+      "get": {
+        "operationId": "CatalogController_city",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "City detail: recommended stay, daily budget, transport, places & activities, stays",
+        "tags": [
+          "Catalog"
+        ]
+      }
+    },
+    "/v1/places/{id}": {
+      "get": {
+        "operationId": "CatalogController_place",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Single place",
+        "tags": [
+          "Catalog"
+        ]
+      }
+    },
+    "/v1/tours": {
+      "get": {
+        "operationId": "CatalogController_tours",
+        "parameters": [
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          },
+          {
+            "name": "region",
+            "required": false,
+            "in": "query",
+            "description": "Single region id (“all” = no filter)",
+            "schema": {
+              "example": "africa",
+              "type": "string"
+            }
+          },
+          {
+            "name": "country",
+            "required": false,
+            "in": "query",
+            "description": "Comma-separated country ids (multi-select)",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "city",
+            "required": false,
+            "in": "query",
+            "description": "City id — used by City detail → “View tours”",
+            "schema": {
+              "example": "cairo",
+              "type": "string"
+            }
+          },
+          {
+            "name": "budgetMin",
+            "required": false,
+            "in": "query",
+            "description": "Per person, in `currency`",
+            "schema": {
+              "example": 500,
+              "type": "number"
+            }
+          },
+          {
+            "name": "budgetMax",
+            "required": false,
+            "in": "query",
+            "description": "Per person, in `currency`",
+            "schema": {
+              "example": 2500,
+              "type": "number"
+            }
+          },
+          {
+            "name": "duration",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "any",
+                "1-3",
+                "4-7",
+                "8+"
+              ]
+            }
+          },
+          {
+            "name": "type",
+            "required": false,
+            "in": "query",
+            "description": "Comma-separated: sea, nature, city_walks, adventure",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "sort",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "recommended",
+                "price_asc",
+                "duration"
+              ]
+            }
+          },
+          {
+            "name": "q",
+            "required": false,
+            "in": "query",
+            "description": "Free-text search on title / country / city",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "default": 1,
+              "type": "number"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "maximum": 100,
+              "default": 20,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Home list + Filter results (region, countries, budget, duration, travel type, sort)",
+        "tags": [
+          "Catalog"
+        ]
+      }
+    },
+    "/v1/tours/filters": {
+      "get": {
+        "operationId": "CatalogController_filters",
+        "parameters": [
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          },
+          {
+            "name": "regionId",
+            "required": false,
+            "in": "query",
+            "description": "Region id; \"all\" or empty for all",
+            "schema": {
+              "example": "africa",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Options for the Filter bottom sheet (countries depend on region)",
+        "tags": [
+          "Catalog"
+        ]
+      }
+    },
+    "/v1/tours/{id}": {
+      "get": {
+        "operationId": "CatalogController_tour",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Tour detail + Full plan (overview, itinerary, stays, budget, map)",
+        "tags": [
+          "Catalog"
+        ]
+      }
+    },
+    "/v1/favorites": {
+      "get": {
+        "operationId": "FavoritesController_list",
+        "parameters": [
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          },
+          {
+            "name": "type",
+            "required": false,
+            "in": "query",
+            "description": "Tab: Tours / Places. Omit for both.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "tour",
+                "place"
+              ]
+            }
+          },
+          {
+            "name": "q",
+            "required": false,
+            "in": "query",
+            "description": "“Search saved tours / places”",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "region",
+            "required": false,
+            "in": "query",
+            "description": "Tours chip: All, Africa, Europe, Asia",
+            "schema": {
+              "example": "africa",
+              "type": "string"
+            }
+          },
+          {
+            "name": "maxPrice",
+            "required": false,
+            "in": "query",
+            "description": "Tours chip “Under 1,000 AZN” — value in `currency`",
+            "schema": {
+              "example": 1000,
+              "type": "number"
+            }
+          },
+          {
+            "name": "category",
+            "required": false,
+            "in": "query",
+            "description": "Places chip: Sightseeing, Culture, Nature, Market",
+            "schema": {
+              "example": "Sightseeing",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Favorites: Tours (recently added) and Places (by country), with search + chips",
+        "tags": [
+          "Favorites"
+        ]
+      },
+      "post": {
+        "operationId": "FavoritesController_add",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddFavoriteDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Heart a tour or place (idempotent; also used for “Undo”)",
+        "tags": [
+          "Favorites"
+        ]
+      },
+      "delete": {
+        "operationId": "FavoritesController_removeByItem",
+        "parameters": [
+          {
+            "name": "type",
+            "required": true,
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "tour",
+                "place"
+              ]
+            }
+          },
+          {
+            "name": "itemId",
+            "required": true,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Un-heart by item (type + itemId) — convenient from any card",
+        "tags": [
+          "Favorites"
+        ]
+      }
+    },
+    "/v1/favorites/{id}": {
+      "delete": {
+        "operationId": "FavoritesController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Remove a favorite by its id",
+        "tags": [
+          "Favorites"
+        ]
+      }
+    },
+    "/v1/requests/quote": {
+      "get": {
+        "operationId": "RequestsController_quote",
+        "parameters": [
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          },
+          {
+            "name": "tourId",
+            "required": true,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "adults",
+            "required": true,
+            "in": "query",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "children",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Price breakdown for the request form (no side effects)",
+        "tags": [
+          "Requests"
+        ]
+      }
+    },
+    "/v1/requests": {
+      "post": {
+        "operationId": "RequestsController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "“Send request” → returns the Request sent payload (#TR-xxxx + next steps)",
+        "tags": [
+          "Requests"
+        ]
+      },
+      "get": {
+        "operationId": "RequestsController_list",
+        "parameters": [
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          },
+          {
+            "name": "status",
+            "required": false,
+            "in": "query",
+            "description": "My requests tabs",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "all",
+                "pending",
+                "confirmed",
+                "past"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "My requests (tabs: all, pending, confirmed, past)",
+        "tags": [
+          "Requests"
+        ]
+      }
+    },
+    "/v1/requests/{id}": {
+      "get": {
+        "operationId": "RequestsController_get",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": [
+          "Requests"
+        ]
+      }
+    },
+    "/v1/requests/{id}/cancel": {
+      "post": {
+        "operationId": "RequestsController_cancel",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Withdraw a request",
+        "tags": [
+          "Requests"
+        ]
+      }
+    },
+    "/v1/me": {
+      "get": {
+        "operationId": "MeController_me",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Profile: name, email, initials, phone, currency, travel preferences, request/favorite stats",
+        "tags": [
+          "Profile"
+        ]
+      },
+      "patch": {
+        "operationId": "MeController_update",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateMeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Edit profile / change currency / notifications / preferences",
+        "tags": [
+          "Profile"
+        ]
+      },
+      "delete": {
+        "operationId": "MeController_remove",
+        "parameters": [],
+        "responses": {
+          "204": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Delete account and all personal data",
+        "tags": [
+          "Profile"
+        ]
+      }
+    },
+    "/v1/me/preferences": {
+      "put": {
+        "operationId": "MeController_preferences",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PreferencesDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Save last-used Home filter as Travel preferences",
+        "tags": [
+          "Profile"
+        ]
+      }
+    },
+    "/v1/me/password": {
+      "post": {
+        "operationId": "MeController_password",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Change password (returns a fresh token pair; other sessions are signed out)",
+        "tags": [
+          "Profile"
+        ]
+      }
+    },
+    "/v1/me/devices": {
+      "post": {
+        "operationId": "MeController_addDevice",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeviceDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Register APNs device token for request-status push notifications",
+        "tags": [
+          "Profile"
+        ]
+      }
+    },
+    "/v1/me/devices/{token}": {
+      "delete": {
+        "operationId": "MeController_removeDevice",
+        "parameters": [
+          {
+            "name": "token",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": [
+          "Profile"
+        ]
+      }
+    },
+    "/v1/ai/discover": {
+      "get": {
+        "operationId": "AiController_discover",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Discover screen: example prompts + “Your plans”",
+        "tags": [
+          "AI planner"
+        ]
+      }
+    },
+    "/v1/ai/chat": {
+      "post": {
+        "operationId": "AiController_chat",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChatDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "One planner turn: slots → chips, next question(s), or a priced day-by-day plan",
+        "tags": [
+          "AI planner"
+        ]
+      }
+    },
+    "/v1/ai/plans": {
+      "post": {
+        "operationId": "AiController_save",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SavePlanDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "“Save plan” (login required). Server re-prices the draft from catalog data.",
+        "tags": [
+          "AI planner"
+        ]
+      },
+      "get": {
+        "operationId": "AiController_list",
+        "parameters": [
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Your plans",
+        "tags": [
+          "AI planner"
+        ]
+      }
+    },
+    "/v1/ai/plans/{id}": {
+      "get": {
+        "operationId": "AiController_get",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "currency",
+            "required": false,
+            "in": "query",
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "AZN",
+                "EUR",
+                "USD"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": [
+          "AI planner"
+        ]
+      },
+      "delete": {
+        "operationId": "AiController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": [
+          "AI planner"
+        ]
+      }
+    },
+    "/v1/admin/catalog/regions/{id}": {
+      "put": {
+        "operationId": "AdminCatalogController_region",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegionUpsertDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": [
+          "Admin"
+        ]
+      }
+    },
+    "/v1/admin/catalog/countries/{id}": {
+      "put": {
+        "operationId": "AdminCatalogController_country",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CountryUpsertDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": [
+          "Admin"
+        ]
+      }
+    },
+    "/v1/admin/catalog/cities/{id}": {
+      "put": {
+        "operationId": "AdminCatalogController_city",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CityUpsertDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": [
+          "Admin"
+        ]
+      }
+    },
+    "/v1/admin/catalog/places/{id}": {
+      "put": {
+        "operationId": "AdminCatalogController_place",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlaceUpsertDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": [
+          "Admin"
+        ]
+      }
+    },
+    "/v1/admin/catalog/stays/{id}": {
+      "put": {
+        "operationId": "AdminCatalogController_stay",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StayUpsertDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": [
+          "Admin"
+        ]
+      }
+    },
+    "/v1/admin/catalog/tours/{id}": {
+      "put": {
+        "operationId": "AdminCatalogController_tour",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TourUpsertDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": [
+          "Admin"
+        ]
+      },
+      "delete": {
+        "operationId": "AdminCatalogController_deleteTour",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": [
+          "Admin"
+        ]
+      }
+    },
+    "/v1/admin/catalog/{kind}/{id}": {
+      "delete": {
+        "operationId": "AdminCatalogController_delete",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Delete region/country/city/place/stay (fails with 400 while referenced)",
+        "tags": [
+          "Admin"
+        ]
+      }
+    },
+    "/v1/admin/requests": {
+      "get": {
+        "operationId": "AdminOpsController_list",
+        "parameters": [
+          {
+            "name": "status",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "pending",
+                "confirmed",
+                "completed",
+                "cancelled"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Operator inbox: all tour requests (AZN amounts)",
+        "tags": [
+          "Admin"
+        ]
+      }
+    },
+    "/v1/admin/requests/{id}": {
+      "patch": {
+        "operationId": "AdminOpsController_setStatus",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestStatusDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Confirm / complete / cancel a request — sends a push notification to the traveler",
+        "tags": [
+          "Admin"
+        ]
+      }
+    },
+    "/v1/admin/rates/refresh": {
+      "post": {
+        "operationId": "AdminOpsController_refreshRates",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Fetch today’s CBAR rates now",
+        "tags": [
+          "Admin"
+        ]
+      }
+    },
+    "/v1/admin/rates": {
+      "put": {
+        "operationId": "AdminOpsController_setRates",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ManualRatesDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "summary": "Set rates manually (e.g. when CBAR is unreachable)",
+        "tags": [
+          "Admin"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "Roam API",
+    "description": "Backend for the Roam iOS tour app. All money is stored in AZN; pass `?currency=EUR|USD` (or set it in the profile) to get display prices. Guests can browse the catalog and use the AI planner (daily limit); favorites, saved plans and tour requests need a Bearer token.",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "tags": [],
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearer": {
+        "scheme": "bearer",
+        "bearerFormat": "JWT",
+        "type": "http"
+      }
+    },
+    "schemas": {
+      "RegisterDto": {
+        "type": "object",
+        "properties": {
+          "fullName": {
+            "type": "string",
+            "example": "Yusif Nasibli"
+          },
+          "email": {
+            "type": "string",
+            "example": "yusif@example.com"
+          },
+          "password": {
+            "type": "string",
+            "minLength": 8
+          },
+          "acceptTerms": {
+            "type": "boolean",
+            "description": "“I agree to the Terms and Privacy Policy” — must be true"
+          }
+        },
+        "required": [
+          "fullName",
+          "email",
+          "password",
+          "acceptTerms"
+        ]
+      },
+      "AuthUserDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "fullName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "initials": {
+            "type": "string",
+            "example": "YN"
+          }
+        },
+        "required": [
+          "id",
+          "fullName",
+          "email",
+          "initials"
+        ]
+      },
+      "AuthResponseDto": {
+        "type": "object",
+        "properties": {
+          "accessToken": {
+            "type": "string"
+          },
+          "refreshToken": {
+            "type": "string"
+          },
+          "expiresIn": {
+            "type": "number",
+            "description": "Access token lifetime in seconds"
+          },
+          "isNewUser": {
+            "type": "boolean"
+          },
+          "user": {
+            "$ref": "#/components/schemas/AuthUserDto"
+          }
+        },
+        "required": [
+          "accessToken",
+          "refreshToken",
+          "expiresIn",
+          "isNewUser",
+          "user"
+        ]
+      },
+      "LoginDto": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "email",
+          "password"
+        ]
+      },
+      "GoogleAuthDto": {
+        "type": "object",
+        "properties": {
+          "idToken": {
+            "type": "string",
+            "description": "ID token from GoogleSignIn-iOS (GIDGoogleUser.idToken.tokenString)"
+          }
+        },
+        "required": [
+          "idToken"
+        ]
+      },
+      "AppleAuthDto": {
+        "type": "object",
+        "properties": {
+          "identityToken": {
+            "type": "string",
+            "description": "ASAuthorizationAppleIDCredential.identityToken as UTF-8 string"
+          },
+          "nonce": {
+            "type": "string",
+            "description": "Raw nonce used for the request (server checks sha256(nonce) against the token)."
+          },
+          "fullName": {
+            "type": "string",
+            "description": "Apple only returns the name on the very first sign-in — forward it."
+          }
+        },
+        "required": [
+          "identityToken"
+        ]
+      },
+      "RefreshDto": {
+        "type": "object",
+        "properties": {
+          "refreshToken": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "refreshToken"
+        ]
+      },
+      "ForgotPasswordDto": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "email"
+        ]
+      },
+      "ResetPasswordDto": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string"
+          },
+          "newPassword": {
+            "type": "string",
+            "minLength": 8
+          }
+        },
+        "required": [
+          "token",
+          "newPassword"
+        ]
+      },
+      "AddFavoriteDto": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "tour",
+              "place"
+            ]
+          },
+          "itemId": {
+            "type": "string",
+            "example": "pyramids-nile-cruise"
+          }
+        },
+        "required": [
+          "type",
+          "itemId"
+        ]
+      },
+      "CreateRequestDto": {
+        "type": "object",
+        "properties": {
+          "currency": {
+            "type": "string",
+            "enum": [
+              "AZN",
+              "EUR",
+              "USD"
+            ],
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN."
+          },
+          "tourId": {
+            "type": "string",
+            "example": "pyramids-nile-cruise"
+          },
+          "flexible": {
+            "type": "boolean",
+            "description": "“I’m flexible” toggle. When false, startDate is required."
+          },
+          "startDate": {
+            "type": "string",
+            "example": "2027-03-12",
+            "description": "YYYY-MM-DD"
+          },
+          "endDate": {
+            "type": "string",
+            "example": "2027-03-16",
+            "description": "YYYY-MM-DD. Defaults to startDate + tour nights."
+          },
+          "adults": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 20,
+            "description": "Adults (12+)"
+          },
+          "children": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 20,
+            "description": "Children (2–11)"
+          },
+          "phone": {
+            "type": "string",
+            "example": "+994 50 123 45 67",
+            "description": "Defaults to profile phone"
+          },
+          "email": {
+            "type": "string",
+            "description": "Defaults to account email"
+          },
+          "note": {
+            "type": "string",
+            "maxLength": 500
+          }
+        },
+        "required": [
+          "tourId",
+          "flexible",
+          "adults",
+          "children"
+        ]
+      },
+      "PreferencesDto": {
+        "type": "object",
+        "properties": {
+          "regions": {
+            "example": [
+              "africa",
+              "europe"
+            ],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "budgetMin": {
+            "type": "object",
+            "example": 500,
+            "description": "Per person, in `currency` (defaults to the profile currency)"
+          },
+          "budgetMax": {
+            "type": "object",
+            "example": 2500
+          },
+          "travelTypes": {
+            "example": [
+              "sea",
+              "nature"
+            ],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "currency": {
+            "type": "string",
+            "enum": [
+              "AZN",
+              "EUR",
+              "USD"
+            ],
+            "description": "Currency of budgetMin/budgetMax"
+          }
+        }
+      },
+      "UpdateMeDto": {
+        "type": "object",
+        "properties": {
+          "fullName": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "object",
+            "example": "+994 50 123 45 67",
+            "nullable": true
+          },
+          "currency": {
+            "type": "string",
+            "enum": [
+              "AZN",
+              "EUR",
+              "USD"
+            ]
+          },
+          "notificationsEnabled": {
+            "type": "boolean"
+          },
+          "preferences": {
+            "$ref": "#/components/schemas/PreferencesDto"
+          }
+        }
+      },
+      "ChangePasswordDto": {
+        "type": "object",
+        "properties": {
+          "currentPassword": {
+            "type": "string",
+            "description": "Required when the account already has a password"
+          },
+          "newPassword": {
+            "type": "string",
+            "minLength": 8
+          }
+        },
+        "required": [
+          "newPassword"
+        ]
+      },
+      "DeviceDto": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "description": "APNs device token (hex)"
+          },
+          "environment": {
+            "type": "string",
+            "enum": [
+              "sandbox",
+              "production"
+            ],
+            "default": "production"
+          }
+        },
+        "required": [
+          "token"
+        ]
+      },
+      "ChatMessageDto": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "user",
+              "assistant"
+            ]
+          },
+          "content": {
+            "type": "string",
+            "example": "2 people, 5 days, around 1,500 AZN. Nature and city walks"
+          }
+        },
+        "required": [
+          "role",
+          "content"
+        ]
+      },
+      "ChatDto": {
+        "type": "object",
+        "properties": {
+          "currency": {
+            "type": "string",
+            "enum": [
+              "AZN",
+              "EUR",
+              "USD"
+            ],
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN."
+          },
+          "messages": {
+            "description": "Full conversation so far (the server is stateless)",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChatMessageDto"
+            }
+          },
+          "slots": {
+            "type": "object",
+            "description": "Echo `slots` from the previous response"
+          },
+          "draft": {
+            "type": "object",
+            "description": "Echo `plan.draft` from the previous response to refine the plan (“Make it cheaper”)"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "message",
+              "create_plan"
+            ],
+            "description": "“Create my plan” button → create_plan"
+          }
+        },
+        "required": [
+          "messages"
+        ]
+      },
+      "SavePlanDto": {
+        "type": "object",
+        "properties": {
+          "currency": {
+            "type": "string",
+            "enum": [
+              "AZN",
+              "EUR",
+              "USD"
+            ],
+            "description": "Display currency. Defaults to the user’s Profile currency, then AZN."
+          },
+          "draft": {
+            "type": "object",
+            "description": "`plan.draft` from the chat response"
+          },
+          "slots": {
+            "type": "object",
+            "description": "`plan.slots` from the chat response"
+          }
+        },
+        "required": [
+          "draft",
+          "slots"
+        ]
+      },
+      "RegionUpsertDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "sortOrder": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "CountryUpsertDto": {
+        "type": "object",
+        "properties": {
+          "regionId": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "currency": {
+            "type": "string",
+            "example": "Egyptian pound"
+          },
+          "language": {
+            "type": "string",
+            "example": "Arabic"
+          },
+          "bestSeason": {
+            "type": "string",
+            "example": "Oct – Apr"
+          },
+          "imageUrl": {
+            "type": "object"
+          },
+          "flightFromBakuAZN": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "regionId",
+          "name",
+          "currency",
+          "language",
+          "bestSeason"
+        ]
+      },
+      "DailyBudgetDto": {
+        "type": "object",
+        "properties": {
+          "stay": {
+            "type": "number"
+          },
+          "food": {
+            "type": "number"
+          },
+          "transport": {
+            "type": "number"
+          },
+          "activities": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "stay",
+          "food",
+          "transport",
+          "activities"
+        ]
+      },
+      "CityUpsertDto": {
+        "type": "object",
+        "properties": {
+          "countryId": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "shortDescription": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "imageUrl": {
+            "type": "object"
+          },
+          "recommendedDays": {
+            "type": "number"
+          },
+          "dailyBudgetBreakdown": {
+            "$ref": "#/components/schemas/DailyBudgetDto"
+          },
+          "transport": {
+            "example": [
+              "Metro",
+              "Ride-hailing",
+              "Taxi"
+            ],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "lat": {
+            "type": "object"
+          },
+          "lng": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "countryId",
+          "name",
+          "recommendedDays",
+          "dailyBudgetBreakdown"
+        ]
+      },
+      "PlaceUpsertDto": {
+        "type": "object",
+        "properties": {
+          "cityId": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "Sightseeing",
+              "Culture",
+              "Nature",
+              "Market",
+              "Food",
+              "Adventure",
+              "Beach"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "durationHours": {
+            "type": "number"
+          },
+          "priceAZN": {
+            "type": "number"
+          },
+          "imageUrl": {
+            "type": "object"
+          },
+          "lat": {
+            "type": "object"
+          },
+          "lng": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "cityId",
+          "name",
+          "category",
+          "durationHours",
+          "priceAZN"
+        ]
+      },
+      "StayUpsertDto": {
+        "type": "object",
+        "properties": {
+          "cityId": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "stars": {
+            "type": "object"
+          },
+          "description": {
+            "type": "string"
+          },
+          "pricePerNightAZN": {
+            "type": "object"
+          },
+          "websiteUrl": {
+            "type": "object"
+          },
+          "imageUrl": {
+            "type": "object"
+          },
+          "lat": {
+            "type": "object"
+          },
+          "lng": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "cityId",
+          "name"
+        ]
+      },
+      "ItineraryItemDto": {
+        "type": "object",
+        "properties": {
+          "placeId": {
+            "type": "object"
+          },
+          "name": {
+            "type": "string"
+          },
+          "durationHours": {
+            "type": "object"
+          },
+          "included": {
+            "type": "boolean"
+          },
+          "optional": {
+            "type": "boolean"
+          },
+          "extraPriceAZN": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "included"
+        ]
+      },
+      "ItineraryDayDto": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "cityId": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItineraryItemDto"
+            }
+          }
+        },
+        "required": [
+          "day",
+          "title",
+          "cityId",
+          "items"
+        ]
+      },
+      "TourStayDto": {
+        "type": "object",
+        "properties": {
+          "stayId": {
+            "type": "string"
+          },
+          "nights": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "stayId",
+          "nights"
+        ]
+      },
+      "TourUpsertDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "cityIds": {
+            "description": "Ordered city ids; the first is the tour’s home city",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "days": {
+            "type": "number"
+          },
+          "nights": {
+            "type": "number"
+          },
+          "priceAZN": {
+            "type": "number"
+          },
+          "childPriceAZN": {
+            "type": "object"
+          },
+          "travelTypes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "itinerary": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItineraryDayDto"
+            }
+          },
+          "stays": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TourStayDto"
+            }
+          },
+          "included": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "excluded": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "operatorName": {
+            "type": "object"
+          },
+          "isPublished": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "title",
+          "cityIds",
+          "days",
+          "nights",
+          "priceAZN"
+        ]
+      },
+      "RequestStatusDto": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "confirmed",
+              "completed",
+              "cancelled"
+            ]
+          },
+          "operatorNote": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "ManualRatesDto": {
+        "type": "object",
+        "properties": {
+          "aznPerUsd": {
+            "type": "number",
+            "example": 1.7
+          },
+          "aznPerEur": {
+            "type": "number",
+            "example": 1.98
+          }
+        },
+        "required": [
+          "aznPerUsd",
+          "aznPerEur"
+        ]
+      }
+    }
+  }
+}

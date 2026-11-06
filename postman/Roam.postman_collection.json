@@ -1,0 +1,1418 @@
+{
+  "info": {
+    "_postman_id": "a34c9bfd-7fae-4620-b472-494aba63992b",
+    "name": "Roam API",
+    "description": "Roam backend. Run the folders top to bottom (or use Collection Runner): Register saves the token, later requests reuse it.\nSet baseUrl to your server (default http://localhost:3000). Admin credentials = ADMIN_EMAIL / ADMIN_PASSWORD from .env.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{accessToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    },
+    {
+      "key": "email",
+      "value": ""
+    },
+    {
+      "key": "password",
+      "value": "password123"
+    },
+    {
+      "key": "adminEmail",
+      "value": "admin@roam.app"
+    },
+    {
+      "key": "adminPassword",
+      "value": "admin12345"
+    },
+    {
+      "key": "accessToken",
+      "value": ""
+    },
+    {
+      "key": "refreshToken",
+      "value": ""
+    },
+    {
+      "key": "adminToken",
+      "value": ""
+    },
+    {
+      "key": "requestId",
+      "value": ""
+    },
+    {
+      "key": "slots",
+      "value": "{}"
+    },
+    {
+      "key": "planSlots",
+      "value": "{}"
+    },
+    {
+      "key": "draft",
+      "value": "{}"
+    },
+    {
+      "key": "planId",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "0. Health & Rates",
+      "item": [
+        {
+          "name": "Health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/health",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Exchange rates",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/rates",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "1. Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/auth/register",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fullName\": \"Yusif Nasibli\",\n  \"email\": \"{{email}}\",\n  \"password\": \"{{password}}\",\n  \"acceptTerms\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.collectionVariables.set('email', `user${Date.now()}@example.com`);"
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 201', () => pm.response.to.have.status(201));",
+                  "",
+                  "const j = pm.response.json();",
+                  "pm.collectionVariables.set('accessToken', j.accessToken);",
+                  "pm.collectionVariables.set('refreshToken', j.refreshToken);",
+                  "pm.test('Initials', () => pm.expect(j.user.initials).to.eql('YN'));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/auth/login",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{email}}\",\n  \"password\": \"{{password}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "const j = pm.response.json();",
+                  "pm.collectionVariables.set('accessToken', j.accessToken);",
+                  "pm.collectionVariables.set('refreshToken', j.refreshToken);"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Login (admin)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/auth/login",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{adminEmail}}\",\n  \"password\": \"{{adminPassword}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "pm.collectionVariables.set('adminToken', pm.response.json().accessToken);"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Register — validation errors (expected 400)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/auth/register",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fullName\": \"\",\n  \"email\": \"bad\",\n  \"password\": \"short\",\n  \"acceptTerms\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 400', () => pm.response.to.have.status(400));",
+                  "pm.test('Field errors', () => pm.expect(pm.response.json().fields).to.have.property('email'));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Refresh token",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/auth/refresh",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refreshToken\": \"{{refreshToken}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "const j = pm.response.json();",
+                  "pm.collectionVariables.set('accessToken', j.accessToken);",
+                  "pm.collectionVariables.set('refreshToken', j.refreshToken);"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Forgot password",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/auth/forgot-password",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{email}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 204', () => pm.response.to.have.status(204));"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2. Catalog (guest)",
+      "item": [
+        {
+          "name": "📋 ALL tours (visual)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/tours?limit=100"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>Tours <span class=\\\"s\\\">({{d.total}} found \\u00b7 {{d.activeFilterCount}} active filters \\u00b7 {{d.currency}})</span></h2>\\n{{#if d.emptyState}}<div class=\\\"bubble\\\">{{d.emptyState.title}} \\u2014 {{d.emptyState.action}}</div>{{/if}}\\n<div class=\\\"grid\\\">{{#each d.items}}<div class=\\\"card\\\"><div class=\\\"art\\\"></div><div class=\\\"t\\\">{{#if isFavorite}}<span class=\\\"fav\\\">\\u2665 </span>{{/if}}{{title}}</div>\\n<div class=\\\"s\\\">{{locationLabel}} \\u00b7 {{durationLabel}}</div><div class=\\\"price\\\">{{priceLabel}}</div>\\n<div>{{#each travelTypes}}<span class=\\\"chip\\\">{{label}}</span>{{/each}}{{#each tags}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}</div>\\n<div class=\\\"id\\\">id: {{id}}</div></div>{{/each}}</div>\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "📋 ALL countries (visual)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/countries"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>All countries</h2><div class=\\\"grid\\\">{{#each d}}<div class=\\\"card\\\"><div class=\\\"art\\\"></div><div class=\\\"t\\\">{{name}}</div>\\n<div class=\\\"s\\\">{{region.name}} \\u00b7 {{subtitle}} \\u00b7 {{tourCount}} tours</div><div class=\\\"id\\\">id: {{id}}</div></div>{{/each}}</div>\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Regions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/regions",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>Regions</h2>{{#each d}}<span class=\\\"chip {{#if @first}}on{{/if}}\\\">{{name}} <span class=\\\"id\\\">{{id}}</span></span>{{/each}}\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Countries — Africa",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/countries?regionId=africa",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>Countries</h2><div class=\\\"grid\\\">{{#each d}}<div class=\\\"card\\\"><div class=\\\"art\\\"></div><div class=\\\"t\\\">{{name}}</div>\\n<div class=\\\"s\\\">{{region.name}} \\u00b7 {{subtitle}} \\u00b7 {{tourCount}} tours</div><div class=\\\"id\\\">id: {{id}}</div></div>{{/each}}</div>\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Country — Egypt",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/countries/egypt",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>{{d.name}}</h2><div class=\\\"s\\\">{{d.region.name}} \\u2014 {{d.description}}</div>\\n<h3>Info</h3><div class=\\\"row\\\">{{#each d.info}}<div class=\\\"info\\\"><div class=\\\"s\\\">{{title}}</div><div class=\\\"t\\\">{{value}}</div></div>{{/each}}</div>\\n<h3>Cities</h3><table><tr><th>City</th><th>id</th><th>Stay</th><th>Daily budget</th><th>Tours</th></tr>\\n{{#each d.cities}}<tr><td><b>{{name}}</b><div class=\\\"s\\\">{{shortDescription}}</div></td><td class=\\\"id\\\">{{id}}</td><td>{{recommendedDays}} days</td><td>{{dailyBudget.formatted}}</td><td>{{tourCount}}</td></tr>{{/each}}</table>\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "City — Cairo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/cities/cairo"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>{{d.name}}</h2><div class=\\\"s\\\">{{d.country.name}} \\u00b7 {{d.region.name}} \\u2014 {{d.shortDescription}}</div>\\n<h3>Overview</h3><div class=\\\"row\\\"><div class=\\\"info\\\"><div class=\\\"s\\\">Recommended stay</div><div class=\\\"t\\\">{{d.recommendedStayLabel}}</div></div>\\n<div class=\\\"info\\\"><div class=\\\"s\\\">Daily budget</div><div class=\\\"t\\\">{{d.dailyBudgetLabel}}</div></div>\\n<div class=\\\"info\\\"><div class=\\\"s\\\">Stay / Food / Transport / Activities</div><div class=\\\"t\\\">{{d.dailyBudgetBreakdown.stay.formatted}} \\u00b7 {{d.dailyBudgetBreakdown.food.formatted}} \\u00b7 {{d.dailyBudgetBreakdown.transport.formatted}} \\u00b7 {{d.dailyBudgetBreakdown.activities.formatted}}</div></div></div>\\n<div class=\\\"s\\\" style=\\\"margin-top:6px\\\">{{d.dailyBudgetNote}}</div>\\n<h3>Transport</h3>{{#each d.transport}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}\\n<h3>Places & activities</h3><table><tr><th>Place</th><th>Category</th><th>Duration</th><th>Price</th><th>id</th></tr>\\n{{#each d.places}}<tr><td>{{#if isFavorite}}<span class=\\\"fav\\\">\\u2665 </span>{{/if}}<b>{{name}}</b></td><td>{{category}}</td><td>{{durationHours}} h</td><td>{{priceLabel}}</td><td class=\\\"id\\\">{{id}}</td></tr>{{/each}}</table>\\n<h3>Stay options</h3><table><tr><th>Hotel</th><th>Stars</th><th>Per night</th></tr>{{#each d.stays}}<tr><td>{{name}}</td><td>{{stars}}\\u2605</td><td>{{pricePerNight.formatted}}</td></tr>{{/each}}</table>\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Tours — Home (all)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/tours"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>Tours <span class=\\\"s\\\">({{d.total}} found \\u00b7 {{d.activeFilterCount}} active filters \\u00b7 {{d.currency}})</span></h2>\\n{{#if d.emptyState}}<div class=\\\"bubble\\\">{{d.emptyState.title}} \\u2014 {{d.emptyState.action}}</div>{{/if}}\\n<div class=\\\"grid\\\">{{#each d.items}}<div class=\\\"card\\\"><div class=\\\"art\\\"></div><div class=\\\"t\\\">{{#if isFavorite}}<span class=\\\"fav\\\">\\u2665 </span>{{/if}}{{title}}</div>\\n<div class=\\\"s\\\">{{locationLabel}} \\u00b7 {{durationLabel}}</div><div class=\\\"price\\\">{{priceLabel}}</div>\\n<div>{{#each travelTypes}}<span class=\\\"chip\\\">{{label}}</span>{{/each}}{{#each tags}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}</div>\\n<div class=\\\"id\\\">id: {{id}}</div></div>{{/each}}</div>\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Tours — filtered",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/tours?region=africa&budgetMax=1500&duration=4-7&type=city_walks&sort=price_asc"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "pm.test('Only Africa', () => pm.response.json().items.forEach(t => pm.expect(t.region.id).to.eql('africa')));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>Tours <span class=\\\"s\\\">({{d.total}} found \\u00b7 {{d.activeFilterCount}} active filters \\u00b7 {{d.currency}})</span></h2>\\n{{#if d.emptyState}}<div class=\\\"bubble\\\">{{d.emptyState.title}} \\u2014 {{d.emptyState.action}}</div>{{/if}}\\n<div class=\\\"grid\\\">{{#each d.items}}<div class=\\\"card\\\"><div class=\\\"art\\\"></div><div class=\\\"t\\\">{{#if isFavorite}}<span class=\\\"fav\\\">\\u2665 </span>{{/if}}{{title}}</div>\\n<div class=\\\"s\\\">{{locationLabel}} \\u00b7 {{durationLabel}}</div><div class=\\\"price\\\">{{priceLabel}}</div>\\n<div>{{#each travelTypes}}<span class=\\\"chip\\\">{{label}}</span>{{/each}}{{#each tags}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}</div>\\n<div class=\\\"id\\\">id: {{id}}</div></div>{{/each}}</div>\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Tours — in EUR",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/tours?currency=EUR",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>Tours <span class=\\\"s\\\">({{d.total}} found \\u00b7 {{d.activeFilterCount}} active filters \\u00b7 {{d.currency}})</span></h2>\\n{{#if d.emptyState}}<div class=\\\"bubble\\\">{{d.emptyState.title}} \\u2014 {{d.emptyState.action}}</div>{{/if}}\\n<div class=\\\"grid\\\">{{#each d.items}}<div class=\\\"card\\\"><div class=\\\"art\\\"></div><div class=\\\"t\\\">{{#if isFavorite}}<span class=\\\"fav\\\">\\u2665 </span>{{/if}}{{title}}</div>\\n<div class=\\\"s\\\">{{locationLabel}} \\u00b7 {{durationLabel}}</div><div class=\\\"price\\\">{{priceLabel}}</div>\\n<div>{{#each travelTypes}}<span class=\\\"chip\\\">{{label}}</span>{{/each}}{{#each tags}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}</div>\\n<div class=\\\"id\\\">id: {{id}}</div></div>{{/each}}</div>\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Filter sheet options",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/tours/filters?regionId=africa",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>Filters</h2><h3>Region</h3>{{#each d.regions}}<span class=\\\"chip\\\">{{name}}</span>{{/each}}\\n<h3>Country</h3>{{#each d.countries}}<span class=\\\"chip\\\">{{name}}</span>{{/each}}\\n<h3>Budget per person</h3><span class=\\\"chip on\\\">{{d.budget.min}} \\u2013 {{d.budget.max}} {{d.budget.currency}}</span>\\n<h3>Duration</h3>{{#each d.durations}}<span class=\\\"chip\\\">{{label}}</span>{{/each}}\\n<h3>Travel type</h3>{{#each d.travelTypes}}<span class=\\\"chip\\\">{{label}}</span>{{/each}}\\n<h3>Sort by</h3>{{#each d.sortOptions}}<span class=\\\"chip\\\">{{label}}</span>{{/each}}\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Tour detail — Pyramids & Nile Cruise",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/tours/pyramids-nile-cruise"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>{{d.title}}</h2><div class=\\\"s\\\">{{#each d.breadcrumb}}{{name}}{{#unless @last}} \\u00b7 {{/unless}}{{/each}} \\u2014 {{d.durationLabel}}</div>\\n<div>{{#each d.tags}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}</div><p>{{d.summary}}</p>\\n<div class=\\\"row\\\"><div class=\\\"info\\\"><div class=\\\"s\\\">Package price</div><div class=\\\"t price\\\">{{d.budget.packagePrice.formatted}} / person</div></div>\\n<div class=\\\"info\\\"><div class=\\\"s\\\">Child (2\\u201311)</div><div class=\\\"t\\\">{{d.budget.childPrice.formatted}}</div></div>{{#if d.operatorName}}<div class=\\\"info\\\"><div class=\\\"s\\\">Operator</div><div class=\\\"t\\\">{{d.operatorName}}</div></div>{{/if}}</div>\\n<h3>Itinerary</h3>{{#each d.itinerary}}<div class=\\\"card\\\" style=\\\"margin-bottom:8px\\\"><div class=\\\"t\\\">Day {{day}} \\u00b7 {{title}}</div><div class=\\\"s\\\">{{city.name}}</div>\\n{{#each items}}<div style=\\\"margin-top:6px\\\">\\u2022 {{name}} {{#if durationHours}}<span class=\\\"s\\\">{{durationHours}} h</span>{{/if}} <span class=\\\"chip {{#if included}}on{{/if}}\\\">{{priceLabel}}{{#if optional}}, optional{{/if}}</span></div>{{/each}}</div>{{/each}}\\n<h3>Stays</h3>{{#each d.stays}}<span class=\\\"chip\\\">{{name}} \\u00b7 {{nights}} nights \\u00b7 {{city.name}}</span>{{/each}}\\n<h3>What the price covers</h3>{{#each d.included}}<span class=\\\"chip on\\\">\\u2713 {{this}}</span>{{/each}}\\n<h3>Not included</h3>{{#each d.excluded}}<span class=\\\"chip\\\">\\u2715 {{this}}</span>{{/each}}\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3. Profile",
+      "item": [
+        {
+          "name": "Get profile",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/me"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2><span class=\\\"chip on\\\" style=\\\"font-size:16px\\\">{{d.initials}}</span> {{d.fullName}}</h2><div class=\\\"s\\\">{{d.email}} \\u00b7 {{d.phone}} \\u00b7 {{d.currency}}</div>\\n<h3>My requests</h3><div class=\\\"bubble\\\">{{d.stats.requests.label}}</div>\\n<h3>Travel preferences</h3>{{#each d.preferences.regions}}<span class=\\\"chip\\\">{{name}}</span>{{/each}}{{#each d.preferences.travelTypes}}<span class=\\\"chip\\\">{{label}}</span>{{/each}}\\n{{#if d.preferences.budgetMax}}<span class=\\\"chip\\\">{{d.preferences.budgetMin.formatted}} \\u2013 {{d.preferences.budgetMax.formatted}}</span>{{/if}}\\n<h3>Favorites</h3><span class=\\\"chip\\\">{{d.stats.favorites.tours}} tours</span><span class=\\\"chip\\\">{{d.stats.favorites.places}} places</span>\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Update phone & currency",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/me",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"phone\": \"+994 50 123 45 67\",\n  \"currency\": \"AZN\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Save travel preferences",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/me/preferences",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"regions\": [\n    \"africa\"\n  ],\n  \"budgetMin\": 500,\n  \"budgetMax\": 2500,\n  \"travelTypes\": [\n    \"nature\",\n    \"city_walks\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "4. Favorites",
+      "item": [
+        {
+          "name": "Add tour",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/favorites",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"tour\",\n  \"itemId\": \"pyramids-nile-cruise\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 201', () => pm.response.to.have.status(201));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Add place",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/favorites",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"place\",\n  \"itemId\": \"giza\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 201', () => pm.response.to.have.status(201));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "List favorites",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/favorites"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>Favorites</h2><span class=\\\"chip on\\\">Tours ({{d.counts.tours}})</span><span class=\\\"chip\\\">Places ({{d.counts.places}})</span>\\n{{#if d.emptyState}}<div class=\\\"bubble\\\">{{d.emptyState.title}}</div>{{/if}}\\n<h3>Tours</h3><div class=\\\"grid\\\">{{#each d.tours}}{{#with tour}}<div class=\\\"card\\\"><div class=\\\"art\\\"></div><div class=\\\"t\\\">{{#if isFavorite}}<span class=\\\"fav\\\">\\u2665 </span>{{/if}}{{title}}</div>\\n<div class=\\\"s\\\">{{locationLabel}} \\u00b7 {{durationLabel}}</div><div class=\\\"price\\\">{{priceLabel}}</div>\\n<div>{{#each travelTypes}}<span class=\\\"chip\\\">{{label}}</span>{{/each}}{{#each tags}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}</div>\\n<div class=\\\"id\\\">id: {{id}}</div></div>{{/with}}{{/each}}</div>\\n<h3>Places</h3><table><tr><th>Category</th><th>Place</th><th>City \\u00b7 Country</th></tr>{{#each d.places}}<tr><td>{{place.category}}</td><td><b>{{place.name}}</b></td><td>{{place.city.name}} \\u00b7 {{place.country.name}}</td></tr>{{/each}}</table>\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Remove tour",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/v1/favorites?type=tour&itemId=pyramids-nile-cruise"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Guest cannot favorite (expected 401)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/favorites",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"tour\",\n  \"itemId\": \"pyramids-nile-cruise\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 401', () => pm.response.to.have.status(401));",
+                  "pm.test('LoginRequired', () => pm.expect(pm.response.json().error).to.eql('LoginRequired'));"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "5. Tour requests",
+      "item": [
+        {
+          "name": "Quote (980 × 2)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/requests/quote?tourId=pyramids-nile-cruise&adults=2&children=0"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Send request",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/requests",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tourId\": \"pyramids-nile-cruise\",\n  \"flexible\": true,\n  \"adults\": 2,\n  \"children\": 0,\n  \"note\": \"Prefer a Nile-view room\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 201', () => pm.response.to.have.status(201));",
+                  "const j = pm.response.json();",
+                  "pm.collectionVariables.set('requestId', j.id);",
+                  "pm.test('Code TR-xxxx', () => pm.expect(j.code).to.match(/^TR-\\d+$/));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>Request sent</h2><div class=\\\"bubble\\\"><div class=\\\"t\\\">#{{d.code}} \\u2014 {{d.tour.title}}</div><div class=\\\"s\\\">{{d.datesLabel}} \\u00b7 {{d.travelersLabel}} \\u00b7 {{d.total.formatted}}</div><span class=\\\"chip on\\\">{{d.statusLabel}}</span></div>\\n<h3>What happens next</h3>{{#each d.nextSteps}}<div class=\\\"card\\\" style=\\\"margin-bottom:6px\\\"><b>{{step}}. {{title}}</b><div class=\\\"s\\\">{{body}}</div></div>{{/each}}<p class=\\\"s\\\">{{d.noPaymentNote}}</p>\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "My requests",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/requests?status=all"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><h2>My requests</h2><span class=\\\"chip on\\\">All {{d.counts.all}}</span><span class=\\\"chip\\\">Pending {{d.counts.pending}}</span><span class=\\\"chip\\\">Confirmed {{d.counts.confirmed}}</span><span class=\\\"chip\\\">Past {{d.counts.past}}</span>\\n<div class=\\\"grid\\\" style=\\\"margin-top:12px\\\">{{#each d.items}}<div class=\\\"card\\\"><div class=\\\"t\\\">{{tour.title}}</div><div class=\\\"s\\\">#{{code}} \\u00b7 {{datesLabel}} \\u00b7 {{travelersLabel}}</div>\\n<div class=\\\"price\\\">{{total.formatted}}</div><span class=\\\"chip on\\\">{{statusLabel}}</span></div>{{/each}}</div><p class=\\\"s\\\">{{d.disclaimer}}</p>\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Request detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/requests/{{requestId}}"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "6. AI trip planner",
+      "item": [
+        {
+          "name": "Discover screen",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/ai/discover"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Chat — free text",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/ai/chat",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"2 people, 5 days, around 1,500 AZN. Nature and city walks\"\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "const j = pm.response.json();",
+                  "pm.collectionVariables.set('slots', JSON.stringify(j.slots));",
+                  "console.log(j.reply, j.slotChips.map(c => c.label));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><div class=\\\"bubble\\\"><b>AI:</b> {{d.reply}}</div>\\n<h3>Understood so far</h3>{{#each d.slotChips}}<span class=\\\"chip on\\\">{{label}}</span>{{/each}}\\n{{#if d.missingSlots.length}}<h3>Still missing</h3>{{#each d.missingSlots}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}{{/if}}\\n<h3>Quick replies</h3>{{#each d.quickReplies}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}\\n{{#if d.plan}}{{#with d.plan}}<h2 style=\\\"margin-top:20px\\\">{{title}} <span class=\\\"chip on\\\">{{label}}</span></h2><div class=\\\"s\\\">{{subtitle}}</div>\\n<div class=\\\"row\\\" style=\\\"margin-top:10px\\\"><div class=\\\"info\\\"><div class=\\\"s\\\">Estimated total</div><div class=\\\"t price\\\">{{estimatedTotalLabel}}</div></div>\\n{{#each breakdown}}<div class=\\\"info\\\"><div class=\\\"s\\\">{{label}}</div><div class=\\\"t\\\">{{amount.formatted}}</div></div>{{/each}}</div>\\n<h3>Day by day</h3>{{#each dayPlans}}<div class=\\\"card\\\" style=\\\"margin-bottom:8px\\\"><div class=\\\"t\\\">Day {{day}} \\u00b7 {{title}}</div><div class=\\\"s\\\">{{city.name}}</div>\\n{{#each items}}<div style=\\\"margin-top:4px\\\">\\u2022 {{name}} <span class=\\\"s\\\">{{category}}</span> <span class=\\\"chip\\\">{{priceLabel}}</span></div>{{/each}}</div>{{/each}}\\n<h3>Related tours</h3>{{#each relatedTours}}<span class=\\\"chip on\\\">{{title}} \\u00b7 {{priceLabel}}</span>{{/each}}<p class=\\\"s\\\">{{note}}</p>{{/with}}{{/if}}\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Chat — answer questions",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/ai/chat",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"messages\": [\n    {\"role\": \"user\", \"content\": \"2 people, 5 days, around 1,500 AZN. Nature and city walks\"},\n    {\"role\": \"user\", \"content\": \"From Baku, flexible dates, flights not included\"}\n  ],\n  \"slots\": {{slots}}\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "const j = pm.response.json();",
+                  "pm.collectionVariables.set('slots', JSON.stringify(j.slots));",
+                  "pm.test('Ready to plan', () => pm.expect(j.readyToPlan).to.be.true);",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><div class=\\\"bubble\\\"><b>AI:</b> {{d.reply}}</div>\\n<h3>Understood so far</h3>{{#each d.slotChips}}<span class=\\\"chip on\\\">{{label}}</span>{{/each}}\\n{{#if d.missingSlots.length}}<h3>Still missing</h3>{{#each d.missingSlots}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}{{/if}}\\n<h3>Quick replies</h3>{{#each d.quickReplies}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}\\n{{#if d.plan}}{{#with d.plan}}<h2 style=\\\"margin-top:20px\\\">{{title}} <span class=\\\"chip on\\\">{{label}}</span></h2><div class=\\\"s\\\">{{subtitle}}</div>\\n<div class=\\\"row\\\" style=\\\"margin-top:10px\\\"><div class=\\\"info\\\"><div class=\\\"s\\\">Estimated total</div><div class=\\\"t price\\\">{{estimatedTotalLabel}}</div></div>\\n{{#each breakdown}}<div class=\\\"info\\\"><div class=\\\"s\\\">{{label}}</div><div class=\\\"t\\\">{{amount.formatted}}</div></div>{{/each}}</div>\\n<h3>Day by day</h3>{{#each dayPlans}}<div class=\\\"card\\\" style=\\\"margin-bottom:8px\\\"><div class=\\\"t\\\">Day {{day}} \\u00b7 {{title}}</div><div class=\\\"s\\\">{{city.name}}</div>\\n{{#each items}}<div style=\\\"margin-top:4px\\\">\\u2022 {{name}} <span class=\\\"s\\\">{{category}}</span> <span class=\\\"chip\\\">{{priceLabel}}</span></div>{{/each}}</div>{{/each}}\\n<h3>Related tours</h3>{{#each relatedTours}}<span class=\\\"chip on\\\">{{title}} \\u00b7 {{priceLabel}}</span>{{/each}}<p class=\\\"s\\\">{{note}}</p>{{/with}}{{/if}}\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Chat — Create my plan",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/ai/chat",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"messages\": [{\"role\": \"user\", \"content\": \"Create my plan\"}],\n  \"slots\": {{slots}},\n  \"action\": \"create_plan\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "const j = pm.response.json();",
+                  "pm.test('Has plan', () => pm.expect(j.plan).to.not.be.null);",
+                  "pm.collectionVariables.set('draft', JSON.stringify(j.plan.draft));",
+                  "pm.collectionVariables.set('planSlots', JSON.stringify(j.plan.slots));",
+                  "console.log(j.plan.title, j.plan.estimatedTotalLabel);",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><div class=\\\"bubble\\\"><b>AI:</b> {{d.reply}}</div>\\n<h3>Understood so far</h3>{{#each d.slotChips}}<span class=\\\"chip on\\\">{{label}}</span>{{/each}}\\n{{#if d.missingSlots.length}}<h3>Still missing</h3>{{#each d.missingSlots}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}{{/if}}\\n<h3>Quick replies</h3>{{#each d.quickReplies}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}\\n{{#if d.plan}}{{#with d.plan}}<h2 style=\\\"margin-top:20px\\\">{{title}} <span class=\\\"chip on\\\">{{label}}</span></h2><div class=\\\"s\\\">{{subtitle}}</div>\\n<div class=\\\"row\\\" style=\\\"margin-top:10px\\\"><div class=\\\"info\\\"><div class=\\\"s\\\">Estimated total</div><div class=\\\"t price\\\">{{estimatedTotalLabel}}</div></div>\\n{{#each breakdown}}<div class=\\\"info\\\"><div class=\\\"s\\\">{{label}}</div><div class=\\\"t\\\">{{amount.formatted}}</div></div>{{/each}}</div>\\n<h3>Day by day</h3>{{#each dayPlans}}<div class=\\\"card\\\" style=\\\"margin-bottom:8px\\\"><div class=\\\"t\\\">Day {{day}} \\u00b7 {{title}}</div><div class=\\\"s\\\">{{city.name}}</div>\\n{{#each items}}<div style=\\\"margin-top:4px\\\">\\u2022 {{name}} <span class=\\\"s\\\">{{category}}</span> <span class=\\\"chip\\\">{{priceLabel}}</span></div>{{/each}}</div>{{/each}}\\n<h3>Related tours</h3>{{#each relatedTours}}<span class=\\\"chip on\\\">{{title}} \\u00b7 {{priceLabel}}</span>{{/each}}<p class=\\\"s\\\">{{note}}</p>{{/with}}{{/if}}\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Chat — Make it cheaper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/ai/chat",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"messages\": [{\"role\": \"user\", \"content\": \"Make it cheaper\"}],\n  \"slots\": {{planSlots}},\n  \"draft\": {{draft}}\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "",
+                  "// Visualize tab",
+                  "pm.visualizer.set(\"<style>\\nbody{font-family:-apple-system,Inter,sans-serif;background:#0A292B;color:#fff;margin:0;padding:16px}\\nh2{margin:4px 0 12px;font-size:22px} h3{margin:18px 0 8px;color:#E4D2A2;font-size:16px}\\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}\\n.card{background:#0F3A3C;border-radius:16px;padding:14px}\\n.art{height:70px;border-radius:12px;background:linear-gradient(160deg,#245D59 0%,#245D59 55%,#CBB384 56%,#E4D2A2 100%);position:relative;margin-bottom:10px}\\n.art:after{content:'';position:absolute;right:18px;top:12px;width:22px;height:22px;border-radius:50%;background:#F6ECCE}\\n.t{font-weight:700;font-size:15px} .s{color:#A9BDB8;font-size:12px;margin-top:3px}\\n.price{color:#E4D2A2;font-weight:700;margin-top:8px}\\n.chip{display:inline-block;background:#1F4B4C;border-radius:999px;padding:3px 10px;font-size:11px;margin:4px 4px 0 0}\\n.chip.on{background:#E4D2A2;color:#0A292B;font-weight:600}\\n.id{font-family:monospace;font-size:11px;color:#7fa39c;margin-top:6px}\\ntable{width:100%;border-collapse:collapse;background:#0F3A3C;border-radius:12px;overflow:hidden;font-size:13px}\\ntd,th{padding:8px 10px;border-bottom:1px solid #1F4B4C;text-align:left} th{color:#E4D2A2;font-weight:600}\\n.row{display:flex;gap:10px;flex-wrap:wrap}.info{background:#0F3A3C;border-radius:12px;padding:10px 14px}\\n.bubble{background:#0F3A3C;border-radius:16px;padding:12px 14px;max-width:560px}\\n.fav{color:#E4D2A2}\\n</style><div class=\\\"bubble\\\"><b>AI:</b> {{d.reply}}</div>\\n<h3>Understood so far</h3>{{#each d.slotChips}}<span class=\\\"chip on\\\">{{label}}</span>{{/each}}\\n{{#if d.missingSlots.length}}<h3>Still missing</h3>{{#each d.missingSlots}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}{{/if}}\\n<h3>Quick replies</h3>{{#each d.quickReplies}}<span class=\\\"chip\\\">{{this}}</span>{{/each}}\\n{{#if d.plan}}{{#with d.plan}}<h2 style=\\\"margin-top:20px\\\">{{title}} <span class=\\\"chip on\\\">{{label}}</span></h2><div class=\\\"s\\\">{{subtitle}}</div>\\n<div class=\\\"row\\\" style=\\\"margin-top:10px\\\"><div class=\\\"info\\\"><div class=\\\"s\\\">Estimated total</div><div class=\\\"t price\\\">{{estimatedTotalLabel}}</div></div>\\n{{#each breakdown}}<div class=\\\"info\\\"><div class=\\\"s\\\">{{label}}</div><div class=\\\"t\\\">{{amount.formatted}}</div></div>{{/each}}</div>\\n<h3>Day by day</h3>{{#each dayPlans}}<div class=\\\"card\\\" style=\\\"margin-bottom:8px\\\"><div class=\\\"t\\\">Day {{day}} \\u00b7 {{title}}</div><div class=\\\"s\\\">{{city.name}}</div>\\n{{#each items}}<div style=\\\"margin-top:4px\\\">\\u2022 {{name}} <span class=\\\"s\\\">{{category}}</span> <span class=\\\"chip\\\">{{priceLabel}}</span></div>{{/each}}</div>{{/each}}\\n<h3>Related tours</h3>{{#each relatedTours}}<span class=\\\"chip on\\\">{{title}} \\u00b7 {{priceLabel}}</span>{{/each}}<p class=\\\"s\\\">{{note}}</p>{{/with}}{{/if}}\", { d: pm.response.json() });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Save plan",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/ai/plans",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"draft\": {{draft}},\n  \"slots\": {{planSlots}}\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 201', () => pm.response.to.have.status(201));",
+                  "pm.collectionVariables.set('planId', pm.response.json().id);"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Your plans",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/ai/plans"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "7. Admin / operator",
+      "item": [
+        {
+          "name": "Requests inbox",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/v1/admin/requests?status=pending",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Confirm request (sends push)",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/admin/requests/{{requestId}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"confirmed\",\n  \"operatorNote\": \"We will call you today.\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Create / update a tour",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/admin/catalog/tours/cairo-weekend",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Cairo Weekend\",\n  \"summary\": \"Pyramids and the old city in three days.\",\n  \"cityIds\": [\n    \"cairo\"\n  ],\n  \"days\": 3,\n  \"nights\": 2,\n  \"priceAZN\": 450,\n  \"travelTypes\": [\n    \"city_walks\"\n  ],\n  \"tags\": [\n    \"History\"\n  ],\n  \"included\": [\n    \"2 nights hotel\",\n    \"Breakfast\"\n  ],\n  \"excluded\": [\n    \"Flights\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Delete that tour",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/v1/admin/catalog/tours/cairo-weekend",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "8. Cleanup",
+      "item": [
+        {
+          "name": "Cancel request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/v1/requests/{{requestId}}/cancel"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/v1/auth/logout",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refreshToken\": \"{{refreshToken}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status 204', () => pm.response.to.have.status(204));"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
