@@ -1,0 +1,16 @@
+{
+  "base": "AZN",
+  "rates": {
+    "AZN": 1,
+    "USD": 0.5882,
+    "EUR": 0.5051
+  },
+  "aznPer": {
+    "AZN": 1,
+    "USD": 1.7,
+    "EUR": 1.98
+  },
+  "rateDate": "2026-11-05",
+  "source": "seed",
+  "updatedAt": "2026-11-05T14:04:52.794Z"
+}

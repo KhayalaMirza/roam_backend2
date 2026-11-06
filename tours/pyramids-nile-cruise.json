@@ -1,0 +1,422 @@
+{
+  "id": "pyramids-nile-cruise",
+  "title": "Pyramids & Nile Cruise",
+  "summary": "Giza, the Egyptian Museum and a train south to Luxor’s temples.",
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "country": {
+    "id": "egypt",
+    "name": "Egypt"
+  },
+  "city": {
+    "id": "cairo",
+    "name": "Cairo"
+  },
+  "locationLabel": "Egypt · Cairo",
+  "days": 5,
+  "nights": 4,
+  "durationLabel": "5 days / 4 nights",
+  "priceAZN": 980,
+  "price": {
+    "amount": 980,
+    "currency": "AZN",
+    "formatted": "980 AZN"
+  },
+  "priceLabel": "From 980 AZN / person",
+  "travelTypes": [
+    {
+      "id": "city_walks",
+      "label": "City walks"
+    },
+    {
+      "id": "nature",
+      "label": "Nature"
+    }
+  ],
+  "tags": [
+    "History",
+    "City walks"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "africa",
+      "name": "Africa"
+    },
+    {
+      "id": "egypt",
+      "name": "Egypt"
+    },
+    {
+      "id": "cairo",
+      "name": "Cairo"
+    }
+  ],
+  "cities": [
+    {
+      "id": "cairo",
+      "name": "Cairo"
+    },
+    {
+      "id": "luxor",
+      "name": "Luxor"
+    }
+  ],
+  "images": [],
+  "operatorName": "Nile Horizons",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Giza Pyramids & Sphinx",
+      "description": "",
+      "city": {
+        "id": "cairo",
+        "name": "Cairo"
+      },
+      "items": [
+        {
+          "placeId": "giza",
+          "name": "Giza Pyramids & Sphinx",
+          "category": "Sightseeing",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 29.9792,
+            "lng": 31.1342
+          }
+        },
+        {
+          "placeId": "camel-ride",
+          "name": "Camel ride",
+          "category": "Adventure",
+          "durationHours": 1,
+          "included": false,
+          "optional": true,
+          "extraPriceAZN": 35,
+          "priceLabel": "+35 AZN",
+          "coordinate": {
+            "lat": 29.9765,
+            "lng": 31.1313
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Egyptian Museum & Old Cairo",
+      "description": "",
+      "city": {
+        "id": "cairo",
+        "name": "Cairo"
+      },
+      "items": [
+        {
+          "placeId": "egyptian-museum",
+          "name": "Egyptian Museum",
+          "category": "Culture",
+          "durationHours": 2.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 30.0478,
+            "lng": 31.2336
+          }
+        },
+        {
+          "placeId": "old-cairo",
+          "name": "Coptic & Old Cairo",
+          "category": "Culture",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 30.0059,
+            "lng": 31.2302
+          }
+        },
+        {
+          "placeId": "khan-el-khalili",
+          "name": "Khan el-Khalili",
+          "category": "Market",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 30.0477,
+            "lng": 31.2623
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Train to Luxor & Karnak",
+      "description": "",
+      "city": {
+        "id": "luxor",
+        "name": "Luxor"
+      },
+      "items": [
+        {
+          "placeId": "karnak",
+          "name": "Karnak Temple",
+          "category": "Sightseeing",
+          "durationHours": 2.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 25.7188,
+            "lng": 32.6573
+          }
+        },
+        {
+          "placeId": "felucca",
+          "name": "Felucca sunset on the Nile",
+          "category": "Nature",
+          "durationHours": 1.5,
+          "included": false,
+          "optional": true,
+          "extraPriceAZN": 15,
+          "priceLabel": "+15 AZN",
+          "coordinate": {
+            "lat": 25.6989,
+            "lng": 32.6386
+          }
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Valley of the Kings",
+      "description": "",
+      "city": {
+        "id": "luxor",
+        "name": "Luxor"
+      },
+      "items": [
+        {
+          "placeId": "valley-of-kings",
+          "name": "Valley of the Kings",
+          "category": "Sightseeing",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 25.7402,
+            "lng": 32.6014
+          }
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Departure",
+      "description": "",
+      "city": {
+        "id": "luxor",
+        "name": "Luxor"
+      },
+      "items": []
+    }
+  ],
+  "stays": [
+    {
+      "id": "nile-view",
+      "name": "Nile View Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 120,
+        "currency": "AZN",
+        "formatted": "120 AZN"
+      },
+      "pricePerNightAZN": 120,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 30.045,
+        "lng": 31.229
+      },
+      "nights": 2,
+      "city": {
+        "id": "cairo",
+        "name": "Cairo"
+      }
+    },
+    {
+      "id": "luxor-winter",
+      "name": "Luxor Riverside Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 130,
+        "currency": "AZN",
+        "formatted": "130 AZN"
+      },
+      "pricePerNightAZN": 130,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 25.696,
+        "lng": 32.638
+      },
+      "nights": 2,
+      "city": {
+        "id": "luxor",
+        "name": "Luxor"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 980,
+      "currency": "AZN",
+      "formatted": "980 AZN"
+    },
+    "packagePriceAZN": 980,
+    "childPrice": {
+      "amount": 690,
+      "currency": "AZN",
+      "formatted": "690 AZN"
+    },
+    "childPriceAZN": 690,
+    "perLabel": "per person",
+    "optionalExtras": [
+      {
+        "name": "Camel ride",
+        "day": 1,
+        "price": {
+          "amount": 35,
+          "currency": "AZN",
+          "formatted": "35 AZN"
+        },
+        "priceAZN": 35
+      },
+      {
+        "name": "Felucca sunset on the Nile",
+        "day": 3,
+        "price": {
+          "amount": 15,
+          "currency": "AZN",
+          "formatted": "15 AZN"
+        },
+        "priceAZN": 15
+      }
+    ]
+  },
+  "included": [
+    "4 nights hotel",
+    "Breakfast",
+    "Guide",
+    "Train Cairo–Luxor",
+    "Transfers"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "giza",
+        "name": "Giza Pyramids & Sphinx",
+        "day": 1,
+        "lat": 29.9792,
+        "lng": 31.1342
+      },
+      {
+        "kind": "place",
+        "id": "camel-ride",
+        "name": "Camel ride",
+        "day": 1,
+        "lat": 29.9765,
+        "lng": 31.1313
+      },
+      {
+        "kind": "place",
+        "id": "egyptian-museum",
+        "name": "Egyptian Museum",
+        "day": 2,
+        "lat": 30.0478,
+        "lng": 31.2336
+      },
+      {
+        "kind": "place",
+        "id": "old-cairo",
+        "name": "Coptic & Old Cairo",
+        "day": 2,
+        "lat": 30.0059,
+        "lng": 31.2302
+      },
+      {
+        "kind": "place",
+        "id": "khan-el-khalili",
+        "name": "Khan el-Khalili",
+        "day": 2,
+        "lat": 30.0477,
+        "lng": 31.2623
+      },
+      {
+        "kind": "place",
+        "id": "karnak",
+        "name": "Karnak Temple",
+        "day": 3,
+        "lat": 25.7188,
+        "lng": 32.6573
+      },
+      {
+        "kind": "place",
+        "id": "felucca",
+        "name": "Felucca sunset on the Nile",
+        "day": 3,
+        "lat": 25.6989,
+        "lng": 32.6386
+      },
+      {
+        "kind": "place",
+        "id": "valley-of-kings",
+        "name": "Valley of the Kings",
+        "day": 4,
+        "lat": 25.7402,
+        "lng": 32.6014
+      },
+      {
+        "kind": "stay",
+        "id": "nile-view",
+        "name": "Nile View Hotel",
+        "day": null,
+        "lat": 30.045,
+        "lng": 31.229
+      },
+      {
+        "kind": "stay",
+        "id": "luxor-winter",
+        "name": "Luxor Riverside Hotel",
+        "day": null,
+        "lat": 25.696,
+        "lng": 32.638
+      }
+    ]
+  }
+}

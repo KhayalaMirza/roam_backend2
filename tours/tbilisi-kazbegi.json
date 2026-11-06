@@ -1,0 +1,421 @@
+{
+  "id": "tbilisi-kazbegi",
+  "title": "Tbilisi & Kazbegi",
+  "summary": "Old Tbilisi, sulphur baths and the road to Mount Kazbek.",
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "country": {
+    "id": "georgia",
+    "name": "Georgia"
+  },
+  "city": {
+    "id": "tbilisi",
+    "name": "Tbilisi"
+  },
+  "locationLabel": "Georgia · Tbilisi",
+  "days": 5,
+  "nights": 4,
+  "durationLabel": "5 days / 4 nights",
+  "priceAZN": 690,
+  "price": {
+    "amount": 690,
+    "currency": "AZN",
+    "formatted": "690 AZN"
+  },
+  "priceLabel": "From 690 AZN / person",
+  "travelTypes": [
+    {
+      "id": "nature",
+      "label": "Nature"
+    },
+    {
+      "id": "city_walks",
+      "label": "City walks"
+    }
+  ],
+  "tags": [
+    "Mountains",
+    "Food"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "europe",
+      "name": "Europe"
+    },
+    {
+      "id": "georgia",
+      "name": "Georgia"
+    },
+    {
+      "id": "tbilisi",
+      "name": "Tbilisi"
+    }
+  ],
+  "cities": [
+    {
+      "id": "tbilisi",
+      "name": "Tbilisi"
+    },
+    {
+      "id": "kazbegi",
+      "name": "Kazbegi"
+    }
+  ],
+  "images": [],
+  "operatorName": "Caucasus Trails",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Old Town & Narikala",
+      "description": "",
+      "city": {
+        "id": "tbilisi",
+        "name": "Tbilisi"
+      },
+      "items": [
+        {
+          "placeId": "narikala",
+          "name": "Narikala Fortress",
+          "category": "Sightseeing",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.6879,
+            "lng": 44.8086
+          }
+        },
+        {
+          "placeId": "abanotubani",
+          "name": "Sulphur baths",
+          "category": "Culture",
+          "durationHours": 2,
+          "included": false,
+          "optional": true,
+          "extraPriceAZN": 45,
+          "priceLabel": "+45 AZN",
+          "coordinate": {
+            "lat": 41.6882,
+            "lng": 44.8113
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Museums & Dry Bridge",
+      "description": "",
+      "city": {
+        "id": "tbilisi",
+        "name": "Tbilisi"
+      },
+      "items": [
+        {
+          "placeId": "georgian-national-museum",
+          "name": "Georgian National Museum",
+          "category": "Culture",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.6963,
+            "lng": 44.8001
+          }
+        },
+        {
+          "placeId": "dry-bridge-market",
+          "name": "Dry Bridge Market",
+          "category": "Market",
+          "durationHours": 1.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.7005,
+            "lng": 44.8059
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Military Road to Kazbegi",
+      "description": "",
+      "city": {
+        "id": "kazbegi",
+        "name": "Kazbegi"
+      },
+      "items": [
+        {
+          "placeId": "jvari-pass",
+          "name": "Jvari Pass",
+          "category": "Sightseeing",
+          "durationHours": 1.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 42.4994,
+            "lng": 44.4687
+          }
+        },
+        {
+          "placeId": "gergeti-trinity",
+          "name": "Gergeti Trinity Church",
+          "category": "Nature",
+          "durationHours": 4,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 42.6623,
+            "lng": 44.6206
+          }
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Gveleti Waterfall",
+      "description": "",
+      "city": {
+        "id": "kazbegi",
+        "name": "Kazbegi"
+      },
+      "items": [
+        {
+          "placeId": "gveleti-waterfall",
+          "name": "Gveleti Waterfall",
+          "category": "Nature",
+          "durationHours": 2.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 42.7034,
+            "lng": 44.6177
+          }
+        },
+        {
+          "placeId": "kazbegi-horse",
+          "name": "Horse ride to Juta",
+          "category": "Adventure",
+          "durationHours": 3,
+          "included": false,
+          "optional": true,
+          "extraPriceAZN": 60,
+          "priceLabel": "+60 AZN",
+          "coordinate": {
+            "lat": 42.5787,
+            "lng": 44.7432
+          }
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Return & departure",
+      "description": "",
+      "city": {
+        "id": "tbilisi",
+        "name": "Tbilisi"
+      },
+      "items": []
+    }
+  ],
+  "stays": [
+    {
+      "id": "rooms-tbilisi",
+      "name": "Old Town Boutique Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 150,
+        "currency": "AZN",
+        "formatted": "150 AZN"
+      },
+      "pricePerNightAZN": 150,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.6935,
+        "lng": 44.8045
+      },
+      "nights": 2,
+      "city": {
+        "id": "tbilisi",
+        "name": "Tbilisi"
+      }
+    },
+    {
+      "id": "kazbegi-lodge",
+      "name": "Mountain View Lodge",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 170,
+        "currency": "AZN",
+        "formatted": "170 AZN"
+      },
+      "pricePerNightAZN": 170,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 42.6598,
+        "lng": 44.6417
+      },
+      "nights": 2,
+      "city": {
+        "id": "kazbegi",
+        "name": "Kazbegi"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 690,
+      "currency": "AZN",
+      "formatted": "690 AZN"
+    },
+    "packagePriceAZN": 690,
+    "childPrice": {
+      "amount": 450,
+      "currency": "AZN",
+      "formatted": "450 AZN"
+    },
+    "childPriceAZN": 450,
+    "perLabel": "per person",
+    "optionalExtras": [
+      {
+        "name": "Sulphur baths",
+        "day": 1,
+        "price": {
+          "amount": 45,
+          "currency": "AZN",
+          "formatted": "45 AZN"
+        },
+        "priceAZN": 45
+      },
+      {
+        "name": "Horse ride to Juta",
+        "day": 4,
+        "price": {
+          "amount": 60,
+          "currency": "AZN",
+          "formatted": "60 AZN"
+        },
+        "priceAZN": 60
+      }
+    ]
+  },
+  "included": [
+    "4 nights hotel",
+    "Breakfast",
+    "Guide",
+    "Transfers"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "narikala",
+        "name": "Narikala Fortress",
+        "day": 1,
+        "lat": 41.6879,
+        "lng": 44.8086
+      },
+      {
+        "kind": "place",
+        "id": "abanotubani",
+        "name": "Sulphur baths",
+        "day": 1,
+        "lat": 41.6882,
+        "lng": 44.8113
+      },
+      {
+        "kind": "place",
+        "id": "georgian-national-museum",
+        "name": "Georgian National Museum",
+        "day": 2,
+        "lat": 41.6963,
+        "lng": 44.8001
+      },
+      {
+        "kind": "place",
+        "id": "dry-bridge-market",
+        "name": "Dry Bridge Market",
+        "day": 2,
+        "lat": 41.7005,
+        "lng": 44.8059
+      },
+      {
+        "kind": "place",
+        "id": "jvari-pass",
+        "name": "Jvari Pass",
+        "day": 3,
+        "lat": 42.4994,
+        "lng": 44.4687
+      },
+      {
+        "kind": "place",
+        "id": "gergeti-trinity",
+        "name": "Gergeti Trinity Church",
+        "day": 3,
+        "lat": 42.6623,
+        "lng": 44.6206
+      },
+      {
+        "kind": "place",
+        "id": "gveleti-waterfall",
+        "name": "Gveleti Waterfall",
+        "day": 4,
+        "lat": 42.7034,
+        "lng": 44.6177
+      },
+      {
+        "kind": "place",
+        "id": "kazbegi-horse",
+        "name": "Horse ride to Juta",
+        "day": 4,
+        "lat": 42.5787,
+        "lng": 44.7432
+      },
+      {
+        "kind": "stay",
+        "id": "rooms-tbilisi",
+        "name": "Old Town Boutique Hotel",
+        "day": null,
+        "lat": 41.6935,
+        "lng": 44.8045
+      },
+      {
+        "kind": "stay",
+        "id": "kazbegi-lodge",
+        "name": "Mountain View Lodge",
+        "day": null,
+        "lat": 42.6598,
+        "lng": 44.6417
+      }
+    ]
+  }
+}

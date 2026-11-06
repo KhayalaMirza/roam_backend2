@@ -1,0 +1,134 @@
+{
+  "counts": {
+    "all": 3,
+    "pending": 1,
+    "confirmed": 1,
+    "past": 1
+  },
+  "items": [
+    {
+      "id": "9a33864c-0b88-4c47-831a-0509aaefb88d",
+      "code": "TR-2550",
+      "status": "completed",
+      "statusLabel": "Completed",
+      "isPast": true,
+      "tour": {
+        "id": "bali-island-hopping",
+        "title": "Bali Island Hopping",
+        "country": {
+          "id": "indonesia",
+          "name": "Indonesia"
+        },
+        "city": {
+          "id": "bali",
+          "name": "Bali"
+        },
+        "durationLabel": "8 days / 7 nights",
+        "coverImageUrl": null
+      },
+      "startDate": null,
+      "endDate": null,
+      "flexible": true,
+      "datesLabel": "Flexible dates",
+      "adults": 2,
+      "children": 0,
+      "travelersLabel": "2 travelers",
+      "contactPhone": "+994 50 123 45 67",
+      "contactEmail": "yusif1793897967750@example.com",
+      "note": null,
+      "total": {
+        "amount": 5800,
+        "currency": "AZN",
+        "formatted": "5,800 AZN"
+      },
+      "totalAZN": 5800,
+      "operatorNote": null,
+      "createdAt": "2026-11-05T16:59:28.793Z",
+      "updatedAt": "2026-11-05T16:59:28.942Z",
+      "disclaimer": "Requests are not bookings. A request is confirmed only when the tour operator contacts you."
+    },
+    {
+      "id": "c46e2ac2-4112-4246-ba15-034173e8ade9",
+      "code": "TR-2549",
+      "status": "confirmed",
+      "statusLabel": "Confirmed by operator",
+      "isPast": false,
+      "tour": {
+        "id": "tbilisi-kazbegi",
+        "title": "Tbilisi & Kazbegi",
+        "country": {
+          "id": "georgia",
+          "name": "Georgia"
+        },
+        "city": {
+          "id": "tbilisi",
+          "name": "Tbilisi"
+        },
+        "durationLabel": "5 days / 4 nights",
+        "coverImageUrl": null
+      },
+      "startDate": null,
+      "endDate": null,
+      "flexible": true,
+      "datesLabel": "Flexible dates",
+      "adults": 2,
+      "children": 1,
+      "travelersLabel": "3 travelers",
+      "contactPhone": "+994 50 123 45 67",
+      "contactEmail": "yusif1793897967750@example.com",
+      "note": null,
+      "total": {
+        "amount": 1830,
+        "currency": "AZN",
+        "formatted": "1,830 AZN"
+      },
+      "totalAZN": 1830,
+      "operatorNote": "We will call you today.",
+      "createdAt": "2026-11-05T16:59:28.788Z",
+      "updatedAt": "2026-11-05T16:59:28.934Z",
+      "disclaimer": "Requests are not bookings. A request is confirmed only when the tour operator contacts you."
+    },
+    {
+      "id": "a6ca88ef-06fa-4014-a893-dae671e11964",
+      "code": "TR-2548",
+      "status": "pending",
+      "statusLabel": "Waiting for operator",
+      "isPast": false,
+      "tour": {
+        "id": "pyramids-nile-cruise",
+        "title": "Pyramids & Nile Cruise",
+        "country": {
+          "id": "egypt",
+          "name": "Egypt"
+        },
+        "city": {
+          "id": "cairo",
+          "name": "Cairo"
+        },
+        "durationLabel": "5 days / 4 nights",
+        "coverImageUrl": null
+      },
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-19",
+      "flexible": false,
+      "datesLabel": "2026-12-15 – 2026-12-19",
+      "adults": 2,
+      "children": 0,
+      "travelersLabel": "2 travelers",
+      "contactPhone": "+994 50 123 45 67",
+      "contactEmail": "yusif1793897967750@example.com",
+      "note": null,
+      "total": {
+        "amount": 1960,
+        "currency": "AZN",
+        "formatted": "1,960 AZN"
+      },
+      "totalAZN": 1960,
+      "operatorNote": null,
+      "createdAt": "2026-11-05T16:59:28.779Z",
+      "updatedAt": "2026-11-05T16:59:28.779Z",
+      "disclaimer": "Requests are not bookings. A request is confirmed only when the tour operator contacts you."
+    }
+  ],
+  "disclaimer": "Requests are not bookings. A request is confirmed only when the tour operator contacts you."
+}

@@ -1,0 +1,52 @@
+{
+  "counts": {
+    "all": 3,
+    "pending": 1,
+    "confirmed": 1,
+    "past": 1
+  },
+  "items": [
+    {
+      "id": "9a33864c-0b88-4c47-831a-0509aaefb88d",
+      "code": "TR-2550",
+      "status": "completed",
+      "statusLabel": "Completed",
+      "isPast": true,
+      "tour": {
+        "id": "bali-island-hopping",
+        "title": "Bali Island Hopping",
+        "country": {
+          "id": "indonesia",
+          "name": "Indonesia"
+        },
+        "city": {
+          "id": "bali",
+          "name": "Bali"
+        },
+        "durationLabel": "8 days / 7 nights",
+        "coverImageUrl": null
+      },
+      "startDate": null,
+      "endDate": null,
+      "flexible": true,
+      "datesLabel": "Flexible dates",
+      "adults": 2,
+      "children": 0,
+      "travelersLabel": "2 travelers",
+      "contactPhone": "+994 50 123 45 67",
+      "contactEmail": "yusif1793897967750@example.com",
+      "note": null,
+      "total": {
+        "amount": 5800,
+        "currency": "AZN",
+        "formatted": "5,800 AZN"
+      },
+      "totalAZN": 5800,
+      "operatorNote": null,
+      "createdAt": "2026-11-05T16:59:28.793Z",
+      "updatedAt": "2026-11-05T16:59:28.942Z",
+      "disclaimer": "Requests are not bookings. A request is confirmed only when the tour operator contacts you."
+    }
+  ],
+  "disclaimer": "Requests are not bookings. A request is confirmed only when the tour operator contacts you."
+}

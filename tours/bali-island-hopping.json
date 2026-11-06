@@ -1,0 +1,378 @@
+{
+  "id": "bali-island-hopping",
+  "title": "Bali Island Hopping",
+  "summary": "Ubud rice terraces, Uluwatu cliffs and Nusa Penida by fast boat.",
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "country": {
+    "id": "indonesia",
+    "name": "Indonesia"
+  },
+  "city": {
+    "id": "bali",
+    "name": "Bali"
+  },
+  "locationLabel": "Indonesia · Bali",
+  "days": 8,
+  "nights": 7,
+  "durationLabel": "8 days / 7 nights",
+  "priceAZN": 2900,
+  "price": {
+    "amount": 2900,
+    "currency": "AZN",
+    "formatted": "2,900 AZN"
+  },
+  "priceLabel": "From 2,900 AZN / person",
+  "travelTypes": [
+    {
+      "id": "sea",
+      "label": "Sea"
+    },
+    {
+      "id": "nature",
+      "label": "Nature"
+    }
+  ],
+  "tags": [
+    "Islands",
+    "Beach"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "asia",
+      "name": "Asia"
+    },
+    {
+      "id": "indonesia",
+      "name": "Indonesia"
+    },
+    {
+      "id": "bali",
+      "name": "Bali"
+    }
+  ],
+  "cities": [
+    {
+      "id": "bali",
+      "name": "Bali"
+    },
+    {
+      "id": "nusa-penida",
+      "name": "Nusa Penida"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Ubud",
+      "description": "",
+      "city": {
+        "id": "bali",
+        "name": "Bali"
+      },
+      "items": [
+        {
+          "placeId": "tegallalang",
+          "name": "Tegallalang Rice Terraces",
+          "category": "Nature",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": -8.4312,
+            "lng": 115.2793
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Mount Batur sunrise",
+      "description": "",
+      "city": {
+        "id": "bali",
+        "name": "Bali"
+      },
+      "items": [
+        {
+          "placeId": "mount-batur",
+          "name": "Mount Batur sunrise trek",
+          "category": "Adventure",
+          "durationHours": 6,
+          "included": false,
+          "optional": true,
+          "extraPriceAZN": 90,
+          "priceLabel": "+90 AZN",
+          "coordinate": {
+            "lat": -8.242,
+            "lng": 115.375
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Uluwatu & Kecak",
+      "description": "",
+      "city": {
+        "id": "bali",
+        "name": "Bali"
+      },
+      "items": [
+        {
+          "placeId": "uluwatu",
+          "name": "Uluwatu Temple & Kecak dance",
+          "category": "Culture",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": -8.8291,
+            "lng": 115.0849
+          }
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Fast boat to Nusa Penida",
+      "description": "",
+      "city": {
+        "id": "nusa-penida",
+        "name": "Nusa Penida"
+      },
+      "items": [
+        {
+          "placeId": "kelingking",
+          "name": "Kelingking Beach",
+          "category": "Nature",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": -8.7505,
+            "lng": 115.4746
+          }
+        },
+        {
+          "placeId": "manta-snorkel",
+          "name": "Manta Point snorkelling",
+          "category": "Adventure",
+          "durationHours": 3,
+          "included": false,
+          "optional": true,
+          "extraPriceAZN": 70,
+          "priceLabel": "+70 AZN",
+          "coordinate": {
+            "lat": -8.795,
+            "lng": 115.528
+          }
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "title": "Seminyak beach",
+      "description": "",
+      "city": {
+        "id": "bali",
+        "name": "Bali"
+      },
+      "items": [
+        {
+          "placeId": "seminyak-beach",
+          "name": "Seminyak beach",
+          "category": "Beach",
+          "durationHours": 4,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": -8.6913,
+            "lng": 115.1571
+          }
+        }
+      ]
+    }
+  ],
+  "stays": [
+    {
+      "id": "ubud-villa",
+      "name": "Ubud Jungle Villa",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 180,
+        "currency": "AZN",
+        "formatted": "180 AZN"
+      },
+      "pricePerNightAZN": 180,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -8.5069,
+        "lng": 115.2625
+      },
+      "nights": 5,
+      "city": {
+        "id": "bali",
+        "name": "Bali"
+      }
+    },
+    {
+      "id": "penida-bungalow",
+      "name": "Penida Cliff Bungalows",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 110,
+        "currency": "AZN",
+        "formatted": "110 AZN"
+      },
+      "pricePerNightAZN": 110,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -8.73,
+        "lng": 115.54
+      },
+      "nights": 2,
+      "city": {
+        "id": "nusa-penida",
+        "name": "Nusa Penida"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 2900,
+      "currency": "AZN",
+      "formatted": "2,900 AZN"
+    },
+    "packagePriceAZN": 2900,
+    "childPrice": {
+      "amount": 2900,
+      "currency": "AZN",
+      "formatted": "2,900 AZN"
+    },
+    "childPriceAZN": 2900,
+    "perLabel": "per person",
+    "optionalExtras": [
+      {
+        "name": "Mount Batur sunrise trek",
+        "day": 2,
+        "price": {
+          "amount": 90,
+          "currency": "AZN",
+          "formatted": "90 AZN"
+        },
+        "priceAZN": 90
+      },
+      {
+        "name": "Manta Point snorkelling",
+        "day": 5,
+        "price": {
+          "amount": 70,
+          "currency": "AZN",
+          "formatted": "70 AZN"
+        },
+        "priceAZN": 70
+      }
+    ]
+  },
+  "included": [
+    "7 nights",
+    "Breakfast",
+    "Fast boat",
+    "Private driver (4 days)"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "tegallalang",
+        "name": "Tegallalang Rice Terraces",
+        "day": 1,
+        "lat": -8.4312,
+        "lng": 115.2793
+      },
+      {
+        "kind": "place",
+        "id": "mount-batur",
+        "name": "Mount Batur sunrise trek",
+        "day": 2,
+        "lat": -8.242,
+        "lng": 115.375
+      },
+      {
+        "kind": "place",
+        "id": "uluwatu",
+        "name": "Uluwatu Temple & Kecak dance",
+        "day": 3,
+        "lat": -8.8291,
+        "lng": 115.0849
+      },
+      {
+        "kind": "place",
+        "id": "kelingking",
+        "name": "Kelingking Beach",
+        "day": 5,
+        "lat": -8.7505,
+        "lng": 115.4746
+      },
+      {
+        "kind": "place",
+        "id": "manta-snorkel",
+        "name": "Manta Point snorkelling",
+        "day": 5,
+        "lat": -8.795,
+        "lng": 115.528
+      },
+      {
+        "kind": "place",
+        "id": "seminyak-beach",
+        "name": "Seminyak beach",
+        "day": 7,
+        "lat": -8.6913,
+        "lng": 115.1571
+      },
+      {
+        "kind": "stay",
+        "id": "ubud-villa",
+        "name": "Ubud Jungle Villa",
+        "day": null,
+        "lat": -8.5069,
+        "lng": 115.2625
+      },
+      {
+        "kind": "stay",
+        "id": "penida-bungalow",
+        "name": "Penida Cliff Bungalows",
+        "day": null,
+        "lat": -8.73,
+        "lng": 115.54
+      }
+    ]
+  }
+}

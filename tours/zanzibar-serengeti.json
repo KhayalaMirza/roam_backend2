@@ -1,0 +1,316 @@
+{
+  "id": "zanzibar-serengeti",
+  "title": "Ngorongoro & Zanzibar",
+  "summary": "A crater safari followed by beach time on the spice island.",
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "country": {
+    "id": "tanzania",
+    "name": "Tanzania"
+  },
+  "city": {
+    "id": "arusha",
+    "name": "Arusha"
+  },
+  "locationLabel": "Tanzania · Arusha",
+  "days": 7,
+  "nights": 6,
+  "durationLabel": "7 days / 6 nights",
+  "priceAZN": 3900,
+  "price": {
+    "amount": 3900,
+    "currency": "AZN",
+    "formatted": "3,900 AZN"
+  },
+  "priceLabel": "From 3,900 AZN / person",
+  "travelTypes": [
+    {
+      "id": "sea",
+      "label": "Sea"
+    },
+    {
+      "id": "adventure",
+      "label": "Adventure"
+    },
+    {
+      "id": "nature",
+      "label": "Nature"
+    }
+  ],
+  "tags": [
+    "Safari",
+    "Beach"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "africa",
+      "name": "Africa"
+    },
+    {
+      "id": "tanzania",
+      "name": "Tanzania"
+    },
+    {
+      "id": "arusha",
+      "name": "Arusha"
+    }
+  ],
+  "cities": [
+    {
+      "id": "arusha",
+      "name": "Arusha"
+    },
+    {
+      "id": "zanzibar",
+      "name": "Zanzibar"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Arusha",
+      "description": "",
+      "city": {
+        "id": "arusha",
+        "name": "Arusha"
+      },
+      "items": []
+    },
+    {
+      "day": 2,
+      "title": "Ngorongoro Crater",
+      "description": "",
+      "city": {
+        "id": "arusha",
+        "name": "Arusha"
+      },
+      "items": [
+        {
+          "placeId": "ngorongoro",
+          "name": "Ngorongoro Crater safari",
+          "category": "Adventure",
+          "durationHours": 9,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": -3.161,
+            "lng": 35.5877
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Fly to Zanzibar & Stone Town",
+      "description": "",
+      "city": {
+        "id": "zanzibar",
+        "name": "Zanzibar"
+      },
+      "items": [
+        {
+          "placeId": "stone-town",
+          "name": "Stone Town walk",
+          "category": "Culture",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": -6.163,
+            "lng": 39.188
+          }
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Spice farm",
+      "description": "",
+      "city": {
+        "id": "zanzibar",
+        "name": "Zanzibar"
+      },
+      "items": [
+        {
+          "placeId": "spice-farm",
+          "name": "Spice farm tour",
+          "category": "Nature",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": -6.1,
+            "lng": 39.25
+          }
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Nungwi beach",
+      "description": "",
+      "city": {
+        "id": "zanzibar",
+        "name": "Zanzibar"
+      },
+      "items": [
+        {
+          "placeId": "nungwi",
+          "name": "Nungwi beach",
+          "category": "Beach",
+          "durationHours": 4,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": -5.7266,
+            "lng": 39.2966
+          }
+        }
+      ]
+    }
+  ],
+  "stays": [
+    {
+      "id": "arusha-lodge",
+      "name": "Arusha Coffee Lodge",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 260,
+        "currency": "AZN",
+        "formatted": "260 AZN"
+      },
+      "pricePerNightAZN": 260,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -3.38,
+        "lng": 36.62
+      },
+      "nights": 2,
+      "city": {
+        "id": "arusha",
+        "name": "Arusha"
+      }
+    },
+    {
+      "id": "zanzibar-beach",
+      "name": "Nungwi Beach Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 210,
+        "currency": "AZN",
+        "formatted": "210 AZN"
+      },
+      "pricePerNightAZN": 210,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -5.73,
+        "lng": 39.295
+      },
+      "nights": 4,
+      "city": {
+        "id": "zanzibar",
+        "name": "Zanzibar"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 3900,
+      "currency": "AZN",
+      "formatted": "3,900 AZN"
+    },
+    "packagePriceAZN": 3900,
+    "childPrice": {
+      "amount": 3900,
+      "currency": "AZN",
+      "formatted": "3,900 AZN"
+    },
+    "childPriceAZN": 3900,
+    "perLabel": "per person",
+    "optionalExtras": []
+  },
+  "included": [
+    "6 nights",
+    "Breakfast",
+    "Crater safari",
+    "Domestic flight Arusha–Zanzibar"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "ngorongoro",
+        "name": "Ngorongoro Crater safari",
+        "day": 2,
+        "lat": -3.161,
+        "lng": 35.5877
+      },
+      {
+        "kind": "place",
+        "id": "stone-town",
+        "name": "Stone Town walk",
+        "day": 3,
+        "lat": -6.163,
+        "lng": 39.188
+      },
+      {
+        "kind": "place",
+        "id": "spice-farm",
+        "name": "Spice farm tour",
+        "day": 4,
+        "lat": -6.1,
+        "lng": 39.25
+      },
+      {
+        "kind": "place",
+        "id": "nungwi",
+        "name": "Nungwi beach",
+        "day": 5,
+        "lat": -5.7266,
+        "lng": 39.2966
+      },
+      {
+        "kind": "stay",
+        "id": "arusha-lodge",
+        "name": "Arusha Coffee Lodge",
+        "day": null,
+        "lat": -3.38,
+        "lng": 36.62
+      },
+      {
+        "kind": "stay",
+        "id": "zanzibar-beach",
+        "name": "Nungwi Beach Hotel",
+        "day": null,
+        "lat": -5.73,
+        "lng": 39.295
+      }
+    ]
+  }
+}

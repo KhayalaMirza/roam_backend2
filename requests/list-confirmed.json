@@ -1,0 +1,52 @@
+{
+  "counts": {
+    "all": 3,
+    "pending": 1,
+    "confirmed": 1,
+    "past": 1
+  },
+  "items": [
+    {
+      "id": "c46e2ac2-4112-4246-ba15-034173e8ade9",
+      "code": "TR-2549",
+      "status": "confirmed",
+      "statusLabel": "Confirmed by operator",
+      "isPast": false,
+      "tour": {
+        "id": "tbilisi-kazbegi",
+        "title": "Tbilisi & Kazbegi",
+        "country": {
+          "id": "georgia",
+          "name": "Georgia"
+        },
+        "city": {
+          "id": "tbilisi",
+          "name": "Tbilisi"
+        },
+        "durationLabel": "5 days / 4 nights",
+        "coverImageUrl": null
+      },
+      "startDate": null,
+      "endDate": null,
+      "flexible": true,
+      "datesLabel": "Flexible dates",
+      "adults": 2,
+      "children": 1,
+      "travelersLabel": "3 travelers",
+      "contactPhone": "+994 50 123 45 67",
+      "contactEmail": "yusif1793897967750@example.com",
+      "note": null,
+      "total": {
+        "amount": 1830,
+        "currency": "AZN",
+        "formatted": "1,830 AZN"
+      },
+      "totalAZN": 1830,
+      "operatorNote": "We will call you today.",
+      "createdAt": "2026-11-05T16:59:28.788Z",
+      "updatedAt": "2026-11-05T16:59:28.934Z",
+      "disclaimer": "Requests are not bookings. A request is confirmed only when the tour operator contacts you."
+    }
+  ],
+  "disclaimer": "Requests are not bookings. A request is confirmed only when the tour operator contacts you."
+}

@@ -1,0 +1,143 @@
+{
+  "items": [
+    {
+      "id": "japan-golden-route",
+      "title": "Japan Golden Route",
+      "summary": "Tokyo, Kyoto and Osaka by bullet train.",
+      "region": {
+        "id": "asia",
+        "name": "Asia"
+      },
+      "country": {
+        "id": "japan",
+        "name": "Japan"
+      },
+      "city": {
+        "id": "tokyo",
+        "name": "Tokyo"
+      },
+      "locationLabel": "Japan · Tokyo",
+      "days": 9,
+      "nights": 8,
+      "durationLabel": "9 days / 8 nights",
+      "priceAZN": 4800,
+      "price": {
+        "amount": 4800,
+        "currency": "AZN",
+        "formatted": "4,800 AZN"
+      },
+      "priceLabel": "From 4,800 AZN / person",
+      "travelTypes": [
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        },
+        {
+          "id": "nature",
+          "label": "Nature"
+        }
+      ],
+      "tags": [
+        "Culture",
+        "Food"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "bali-island-hopping",
+      "title": "Bali Island Hopping",
+      "summary": "Ubud rice terraces, Uluwatu cliffs and Nusa Penida by fast boat.",
+      "region": {
+        "id": "asia",
+        "name": "Asia"
+      },
+      "country": {
+        "id": "indonesia",
+        "name": "Indonesia"
+      },
+      "city": {
+        "id": "bali",
+        "name": "Bali"
+      },
+      "locationLabel": "Indonesia · Bali",
+      "days": 8,
+      "nights": 7,
+      "durationLabel": "8 days / 7 nights",
+      "priceAZN": 2900,
+      "price": {
+        "amount": 2900,
+        "currency": "AZN",
+        "formatted": "2,900 AZN"
+      },
+      "priceLabel": "From 2,900 AZN / person",
+      "travelTypes": [
+        {
+          "id": "sea",
+          "label": "Sea"
+        },
+        {
+          "id": "nature",
+          "label": "Nature"
+        }
+      ],
+      "tags": [
+        "Islands",
+        "Beach"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "thailand-temples-beaches",
+      "title": "Bangkok & Phuket",
+      "summary": "Temples and night markets, then Andaman island days.",
+      "region": {
+        "id": "asia",
+        "name": "Asia"
+      },
+      "country": {
+        "id": "thailand",
+        "name": "Thailand"
+      },
+      "city": {
+        "id": "bangkok",
+        "name": "Bangkok"
+      },
+      "locationLabel": "Thailand · Bangkok",
+      "days": 8,
+      "nights": 7,
+      "durationLabel": "8 days / 7 nights",
+      "priceAZN": 2200,
+      "price": {
+        "amount": 2200,
+        "currency": "AZN",
+        "formatted": "2,200 AZN"
+      },
+      "priceLabel": "From 2,200 AZN / person",
+      "travelTypes": [
+        {
+          "id": "sea",
+          "label": "Sea"
+        },
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        }
+      ],
+      "tags": [
+        "Beach",
+        "Street food"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    }
+  ],
+  "page": 1,
+  "limit": 20,
+  "total": 3,
+  "hasMore": false,
+  "currency": "AZN",
+  "activeFilterCount": 1,
+  "emptyState": null
+}

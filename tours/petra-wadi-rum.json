@@ -1,0 +1,305 @@
+{
+  "id": "petra-wadi-rum",
+  "title": "Amman & Petra",
+  "summary": "Roman Amman and two days in the rose-red city.",
+  "region": {
+    "id": "middle-east",
+    "name": "Middle East"
+  },
+  "country": {
+    "id": "jordan",
+    "name": "Jordan"
+  },
+  "city": {
+    "id": "amman",
+    "name": "Amman"
+  },
+  "locationLabel": "Jordan · Amman",
+  "days": 4,
+  "nights": 3,
+  "durationLabel": "4 days / 3 nights",
+  "priceAZN": 1180,
+  "price": {
+    "amount": 1180,
+    "currency": "AZN",
+    "formatted": "1,180 AZN"
+  },
+  "priceLabel": "From 1,180 AZN / person",
+  "travelTypes": [
+    {
+      "id": "adventure",
+      "label": "Adventure"
+    },
+    {
+      "id": "city_walks",
+      "label": "City walks"
+    },
+    {
+      "id": "nature",
+      "label": "Nature"
+    }
+  ],
+  "tags": [
+    "History",
+    "Desert"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "middle-east",
+      "name": "Middle East"
+    },
+    {
+      "id": "jordan",
+      "name": "Jordan"
+    },
+    {
+      "id": "amman",
+      "name": "Amman"
+    }
+  ],
+  "cities": [
+    {
+      "id": "amman",
+      "name": "Amman"
+    },
+    {
+      "id": "petra",
+      "name": "Petra"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Amman Citadel & Rainbow Street",
+      "description": "",
+      "city": {
+        "id": "amman",
+        "name": "Amman"
+      },
+      "items": [
+        {
+          "placeId": "amman-citadel",
+          "name": "Amman Citadel",
+          "category": "Sightseeing",
+          "durationHours": 1.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 31.9545,
+            "lng": 35.9349
+          }
+        },
+        {
+          "placeId": "rainbow-street",
+          "name": "Rainbow Street food walk",
+          "category": "Food",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 31.9513,
+            "lng": 35.9213
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Siq & Treasury",
+      "description": "",
+      "city": {
+        "id": "petra",
+        "name": "Petra"
+      },
+      "items": [
+        {
+          "placeId": "petra-treasury",
+          "name": "Siq & Treasury",
+          "category": "Sightseeing",
+          "durationHours": 4,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 30.3222,
+            "lng": 35.4513
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Monastery hike",
+      "description": "",
+      "city": {
+        "id": "petra",
+        "name": "Petra"
+      },
+      "items": [
+        {
+          "placeId": "monastery",
+          "name": "Ad Deir (Monastery) hike",
+          "category": "Nature",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 30.3367,
+            "lng": 35.4383
+          }
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Departure",
+      "description": "",
+      "city": {
+        "id": "amman",
+        "name": "Amman"
+      },
+      "items": []
+    }
+  ],
+  "stays": [
+    {
+      "id": "amman-downtown",
+      "name": "Downtown Amman Hotel",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 140,
+        "currency": "AZN",
+        "formatted": "140 AZN"
+      },
+      "pricePerNightAZN": 140,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 31.951,
+        "lng": 35.93
+      },
+      "nights": 1,
+      "city": {
+        "id": "amman",
+        "name": "Amman"
+      }
+    },
+    {
+      "id": "petra-guesthouse",
+      "name": "Petra Gate Hotel",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 160,
+        "currency": "AZN",
+        "formatted": "160 AZN"
+      },
+      "pricePerNightAZN": 160,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 30.324,
+        "lng": 35.479
+      },
+      "nights": 2,
+      "city": {
+        "id": "petra",
+        "name": "Petra"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 1180,
+      "currency": "AZN",
+      "formatted": "1,180 AZN"
+    },
+    "packagePriceAZN": 1180,
+    "childPrice": {
+      "amount": 1180,
+      "currency": "AZN",
+      "formatted": "1,180 AZN"
+    },
+    "childPriceAZN": 1180,
+    "perLabel": "per person",
+    "optionalExtras": []
+  },
+  "included": [
+    "3 nights hotel",
+    "Breakfast",
+    "Petra 2-day pass",
+    "Private driver"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "amman-citadel",
+        "name": "Amman Citadel",
+        "day": 1,
+        "lat": 31.9545,
+        "lng": 35.9349
+      },
+      {
+        "kind": "place",
+        "id": "rainbow-street",
+        "name": "Rainbow Street food walk",
+        "day": 1,
+        "lat": 31.9513,
+        "lng": 35.9213
+      },
+      {
+        "kind": "place",
+        "id": "petra-treasury",
+        "name": "Siq & Treasury",
+        "day": 2,
+        "lat": 30.3222,
+        "lng": 35.4513
+      },
+      {
+        "kind": "place",
+        "id": "monastery",
+        "name": "Ad Deir (Monastery) hike",
+        "day": 3,
+        "lat": 30.3367,
+        "lng": 35.4383
+      },
+      {
+        "kind": "stay",
+        "id": "amman-downtown",
+        "name": "Downtown Amman Hotel",
+        "day": null,
+        "lat": 31.951,
+        "lng": 35.93
+      },
+      {
+        "kind": "stay",
+        "id": "petra-guesthouse",
+        "name": "Petra Gate Hotel",
+        "day": null,
+        "lat": 30.324,
+        "lng": 35.479
+      }
+    ]
+  }
+}

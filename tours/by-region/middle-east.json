@@ -1,0 +1,103 @@
+{
+  "items": [
+    {
+      "id": "dubai-desert",
+      "title": "Dubai City & Desert",
+      "summary": "Burj Khalifa views, souks and an evening in the dunes.",
+      "region": {
+        "id": "middle-east",
+        "name": "Middle East"
+      },
+      "country": {
+        "id": "uae",
+        "name": "United Arab Emirates"
+      },
+      "city": {
+        "id": "dubai",
+        "name": "Dubai"
+      },
+      "locationLabel": "United Arab Emirates · Dubai",
+      "days": 5,
+      "nights": 4,
+      "durationLabel": "5 days / 4 nights",
+      "priceAZN": 1690,
+      "price": {
+        "amount": 1690,
+        "currency": "AZN",
+        "formatted": "1,690 AZN"
+      },
+      "priceLabel": "From 1,690 AZN / person",
+      "travelTypes": [
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        },
+        {
+          "id": "adventure",
+          "label": "Adventure"
+        }
+      ],
+      "tags": [
+        "Skyline",
+        "Desert"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "petra-wadi-rum",
+      "title": "Amman & Petra",
+      "summary": "Roman Amman and two days in the rose-red city.",
+      "region": {
+        "id": "middle-east",
+        "name": "Middle East"
+      },
+      "country": {
+        "id": "jordan",
+        "name": "Jordan"
+      },
+      "city": {
+        "id": "amman",
+        "name": "Amman"
+      },
+      "locationLabel": "Jordan · Amman",
+      "days": 4,
+      "nights": 3,
+      "durationLabel": "4 days / 3 nights",
+      "priceAZN": 1180,
+      "price": {
+        "amount": 1180,
+        "currency": "AZN",
+        "formatted": "1,180 AZN"
+      },
+      "priceLabel": "From 1,180 AZN / person",
+      "travelTypes": [
+        {
+          "id": "adventure",
+          "label": "Adventure"
+        },
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        },
+        {
+          "id": "nature",
+          "label": "Nature"
+        }
+      ],
+      "tags": [
+        "History",
+        "Desert"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    }
+  ],
+  "page": 1,
+  "limit": 20,
+  "total": 2,
+  "hasMore": false,
+  "currency": "AZN",
+  "activeFilterCount": 1,
+  "emptyState": null
+}

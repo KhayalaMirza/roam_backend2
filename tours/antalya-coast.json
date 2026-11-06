@@ -1,0 +1,227 @@
+{
+  "id": "antalya-coast",
+  "title": "Antalya Turquoise Coast",
+  "summary": "Old harbour, waterfalls and long beach days.",
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "country": {
+    "id": "turkey",
+    "name": "Turkey"
+  },
+  "city": {
+    "id": "antalya",
+    "name": "Antalya"
+  },
+  "locationLabel": "Turkey · Antalya",
+  "days": 5,
+  "nights": 4,
+  "durationLabel": "5 days / 4 nights",
+  "priceAZN": 980,
+  "price": {
+    "amount": 980,
+    "currency": "AZN",
+    "formatted": "980 AZN"
+  },
+  "priceLabel": "From 980 AZN / person",
+  "travelTypes": [
+    {
+      "id": "sea",
+      "label": "Sea"
+    }
+  ],
+  "tags": [
+    "Beach",
+    "Family"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "europe",
+      "name": "Europe"
+    },
+    {
+      "id": "turkey",
+      "name": "Turkey"
+    },
+    {
+      "id": "antalya",
+      "name": "Antalya"
+    }
+  ],
+  "cities": [
+    {
+      "id": "antalya",
+      "name": "Antalya"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Kaleiçi old town",
+      "description": "",
+      "city": {
+        "id": "antalya",
+        "name": "Antalya"
+      },
+      "items": [
+        {
+          "placeId": "kaleici",
+          "name": "Kaleiçi old town",
+          "category": "Sightseeing",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 36.8841,
+            "lng": 30.7056
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Waterfalls",
+      "description": "",
+      "city": {
+        "id": "antalya",
+        "name": "Antalya"
+      },
+      "items": [
+        {
+          "placeId": "duden-falls",
+          "name": "Düden Waterfalls",
+          "category": "Nature",
+          "durationHours": 1.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 36.8516,
+            "lng": 30.7834
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Beach day",
+      "description": "",
+      "city": {
+        "id": "antalya",
+        "name": "Antalya"
+      },
+      "items": [
+        {
+          "placeId": "konyaalti",
+          "name": "Konyaaltı beach",
+          "category": "Beach",
+          "durationHours": 4,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 36.8608,
+            "lng": 30.6346
+          }
+        }
+      ]
+    }
+  ],
+  "stays": [
+    {
+      "id": "antalya-resort",
+      "name": "Lara Beach Resort",
+      "kind": "Hotel",
+      "stars": 5,
+      "description": "",
+      "pricePerNight": {
+        "amount": 260,
+        "currency": "AZN",
+        "formatted": "260 AZN"
+      },
+      "pricePerNightAZN": 260,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 36.854,
+        "lng": 30.878
+      },
+      "nights": 4,
+      "city": {
+        "id": "antalya",
+        "name": "Antalya"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 980,
+      "currency": "AZN",
+      "formatted": "980 AZN"
+    },
+    "packagePriceAZN": 980,
+    "childPrice": {
+      "amount": 980,
+      "currency": "AZN",
+      "formatted": "980 AZN"
+    },
+    "childPriceAZN": 980,
+    "perLabel": "per person",
+    "optionalExtras": []
+  },
+  "included": [
+    "4 nights resort",
+    "All-inclusive meals",
+    "Transfers"
+  ],
+  "excluded": [
+    "Flights",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "kaleici",
+        "name": "Kaleiçi old town",
+        "day": 1,
+        "lat": 36.8841,
+        "lng": 30.7056
+      },
+      {
+        "kind": "place",
+        "id": "duden-falls",
+        "name": "Düden Waterfalls",
+        "day": 2,
+        "lat": 36.8516,
+        "lng": 30.7834
+      },
+      {
+        "kind": "place",
+        "id": "konyaalti",
+        "name": "Konyaaltı beach",
+        "day": 3,
+        "lat": 36.8608,
+        "lng": 30.6346
+      },
+      {
+        "kind": "stay",
+        "id": "antalya-resort",
+        "name": "Lara Beach Resort",
+        "day": null,
+        "lat": 36.854,
+        "lng": 30.878
+      }
+    ]
+  }
+}

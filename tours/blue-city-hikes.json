@@ -1,0 +1,209 @@
+{
+  "id": "blue-city-hikes",
+  "title": "Blue City & Rif Hikes",
+  "summary": "Chefchaouen’s blue lanes and waterfall hikes in the Rif.",
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "country": {
+    "id": "morocco",
+    "name": "Morocco"
+  },
+  "city": {
+    "id": "chefchaouen",
+    "name": "Chefchaouen"
+  },
+  "locationLabel": "Morocco · Chefchaouen",
+  "days": 3,
+  "nights": 2,
+  "durationLabel": "3 days / 2 nights",
+  "priceAZN": 520,
+  "price": {
+    "amount": 520,
+    "currency": "AZN",
+    "formatted": "520 AZN"
+  },
+  "priceLabel": "From 520 AZN / person",
+  "travelTypes": [
+    {
+      "id": "nature",
+      "label": "Nature"
+    },
+    {
+      "id": "city_walks",
+      "label": "City walks"
+    }
+  ],
+  "tags": [
+    "Hiking",
+    "Photography"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "africa",
+      "name": "Africa"
+    },
+    {
+      "id": "morocco",
+      "name": "Morocco"
+    },
+    {
+      "id": "chefchaouen",
+      "name": "Chefchaouen"
+    }
+  ],
+  "cities": [
+    {
+      "id": "chefchaouen",
+      "name": "Chefchaouen"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Blue Medina",
+      "description": "",
+      "city": {
+        "id": "chefchaouen",
+        "name": "Chefchaouen"
+      },
+      "items": [
+        {
+          "placeId": "blue-medina",
+          "name": "Blue Medina walk",
+          "category": "Culture",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 35.1714,
+            "lng": -5.2697
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Akchour waterfalls",
+      "description": "",
+      "city": {
+        "id": "chefchaouen",
+        "name": "Chefchaouen"
+      },
+      "items": [
+        {
+          "placeId": "akchour",
+          "name": "Akchour waterfalls hike",
+          "category": "Nature",
+          "durationHours": 5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 35.237,
+            "lng": -5.173
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Departure",
+      "description": "",
+      "city": {
+        "id": "chefchaouen",
+        "name": "Chefchaouen"
+      },
+      "items": []
+    }
+  ],
+  "stays": [
+    {
+      "id": "chefchaouen-riad",
+      "name": "Blue Riad",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 110,
+        "currency": "AZN",
+        "formatted": "110 AZN"
+      },
+      "pricePerNightAZN": 110,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.17,
+        "lng": -5.268
+      },
+      "nights": 2,
+      "city": {
+        "id": "chefchaouen",
+        "name": "Chefchaouen"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 520,
+      "currency": "AZN",
+      "formatted": "520 AZN"
+    },
+    "packagePriceAZN": 520,
+    "childPrice": {
+      "amount": 520,
+      "currency": "AZN",
+      "formatted": "520 AZN"
+    },
+    "childPriceAZN": 520,
+    "perLabel": "per person",
+    "optionalExtras": []
+  },
+  "included": [
+    "2 nights riad",
+    "Breakfast",
+    "Hiking guide"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "blue-medina",
+        "name": "Blue Medina walk",
+        "day": 1,
+        "lat": 35.1714,
+        "lng": -5.2697
+      },
+      {
+        "kind": "place",
+        "id": "akchour",
+        "name": "Akchour waterfalls hike",
+        "day": 2,
+        "lat": 35.237,
+        "lng": -5.173
+      },
+      {
+        "kind": "stay",
+        "id": "chefchaouen-riad",
+        "name": "Blue Riad",
+        "day": null,
+        "lat": 35.17,
+        "lng": -5.268
+      }
+    ]
+  }
+}

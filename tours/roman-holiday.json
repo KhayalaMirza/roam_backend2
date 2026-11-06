@@ -1,0 +1,309 @@
+{
+  "id": "roman-holiday",
+  "title": "Rome & Florence",
+  "summary": "Colosseum, Vatican and the Uffizi with a Tuscan sunset.",
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "country": {
+    "id": "italy",
+    "name": "Italy"
+  },
+  "city": {
+    "id": "rome",
+    "name": "Rome"
+  },
+  "locationLabel": "Italy · Rome",
+  "days": 6,
+  "nights": 5,
+  "durationLabel": "6 days / 5 nights",
+  "priceAZN": 2350,
+  "price": {
+    "amount": 2350,
+    "currency": "AZN",
+    "formatted": "2,350 AZN"
+  },
+  "priceLabel": "From 2,350 AZN / person",
+  "travelTypes": [
+    {
+      "id": "city_walks",
+      "label": "City walks"
+    }
+  ],
+  "tags": [
+    "Art",
+    "Food"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "europe",
+      "name": "Europe"
+    },
+    {
+      "id": "italy",
+      "name": "Italy"
+    },
+    {
+      "id": "rome",
+      "name": "Rome"
+    }
+  ],
+  "cities": [
+    {
+      "id": "rome",
+      "name": "Rome"
+    },
+    {
+      "id": "florence",
+      "name": "Florence"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Ancient Rome",
+      "description": "",
+      "city": {
+        "id": "rome",
+        "name": "Rome"
+      },
+      "items": [
+        {
+          "placeId": "colosseum",
+          "name": "Colosseum & Roman Forum",
+          "category": "Sightseeing",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.8902,
+            "lng": 12.4922
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Vatican & Trastevere",
+      "description": "",
+      "city": {
+        "id": "rome",
+        "name": "Rome"
+      },
+      "items": [
+        {
+          "placeId": "vatican",
+          "name": "Vatican Museums",
+          "category": "Culture",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.9065,
+            "lng": 12.4536
+          }
+        },
+        {
+          "placeId": "trastevere",
+          "name": "Trastevere food walk",
+          "category": "Food",
+          "durationHours": 2.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.8897,
+            "lng": 12.4708
+          }
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Train to Florence & Uffizi",
+      "description": "",
+      "city": {
+        "id": "florence",
+        "name": "Florence"
+      },
+      "items": [
+        {
+          "placeId": "uffizi",
+          "name": "Uffizi Gallery",
+          "category": "Culture",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 43.7678,
+            "lng": 11.2553
+          }
+        },
+        {
+          "placeId": "piazzale-michelangelo",
+          "name": "Piazzale Michelangelo",
+          "category": "Sightseeing",
+          "durationHours": 1,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 43.7629,
+            "lng": 11.265
+          }
+        }
+      ]
+    }
+  ],
+  "stays": [
+    {
+      "id": "rome-centro",
+      "name": "Hotel Centro Storico",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 320,
+        "currency": "AZN",
+        "formatted": "320 AZN"
+      },
+      "pricePerNightAZN": 320,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.899,
+        "lng": 12.476
+      },
+      "nights": 3,
+      "city": {
+        "id": "rome",
+        "name": "Rome"
+      }
+    },
+    {
+      "id": "florence-duomo",
+      "name": "Duomo View Hotel",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 300,
+        "currency": "AZN",
+        "formatted": "300 AZN"
+      },
+      "pricePerNightAZN": 300,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 43.773,
+        "lng": 11.256
+      },
+      "nights": 2,
+      "city": {
+        "id": "florence",
+        "name": "Florence"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 2350,
+      "currency": "AZN",
+      "formatted": "2,350 AZN"
+    },
+    "packagePriceAZN": 2350,
+    "childPrice": {
+      "amount": 2350,
+      "currency": "AZN",
+      "formatted": "2,350 AZN"
+    },
+    "childPriceAZN": 2350,
+    "perLabel": "per person",
+    "optionalExtras": []
+  },
+  "included": [
+    "5 nights hotel",
+    "Breakfast",
+    "Train Rome–Florence",
+    "Museum tickets"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "colosseum",
+        "name": "Colosseum & Roman Forum",
+        "day": 1,
+        "lat": 41.8902,
+        "lng": 12.4922
+      },
+      {
+        "kind": "place",
+        "id": "vatican",
+        "name": "Vatican Museums",
+        "day": 2,
+        "lat": 41.9065,
+        "lng": 12.4536
+      },
+      {
+        "kind": "place",
+        "id": "trastevere",
+        "name": "Trastevere food walk",
+        "day": 2,
+        "lat": 41.8897,
+        "lng": 12.4708
+      },
+      {
+        "kind": "place",
+        "id": "uffizi",
+        "name": "Uffizi Gallery",
+        "day": 4,
+        "lat": 43.7678,
+        "lng": 11.2553
+      },
+      {
+        "kind": "place",
+        "id": "piazzale-michelangelo",
+        "name": "Piazzale Michelangelo",
+        "day": 4,
+        "lat": 43.7629,
+        "lng": 11.265
+      },
+      {
+        "kind": "stay",
+        "id": "rome-centro",
+        "name": "Hotel Centro Storico",
+        "day": null,
+        "lat": 41.899,
+        "lng": 12.476
+      },
+      {
+        "kind": "stay",
+        "id": "florence-duomo",
+        "name": "Duomo View Hotel",
+        "day": null,
+        "lat": 43.773,
+        "lng": 11.256
+      }
+    ]
+  }
+}

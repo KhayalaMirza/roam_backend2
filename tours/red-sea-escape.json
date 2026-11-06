@@ -1,0 +1,205 @@
+{
+  "id": "red-sea-escape",
+  "title": "Red Sea Escape",
+  "summary": "Six relaxed beach days with reef snorkelling at Giftun Island.",
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "country": {
+    "id": "egypt",
+    "name": "Egypt"
+  },
+  "city": {
+    "id": "hurghada",
+    "name": "Hurghada"
+  },
+  "locationLabel": "Egypt · Hurghada",
+  "days": 7,
+  "nights": 6,
+  "durationLabel": "7 days / 6 nights",
+  "priceAZN": 1150,
+  "price": {
+    "amount": 1150,
+    "currency": "AZN",
+    "formatted": "1,150 AZN"
+  },
+  "priceLabel": "From 1,150 AZN / person",
+  "travelTypes": [
+    {
+      "id": "sea",
+      "label": "Sea"
+    }
+  ],
+  "tags": [
+    "Beach",
+    "Snorkelling"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "africa",
+      "name": "Africa"
+    },
+    {
+      "id": "egypt",
+      "name": "Egypt"
+    },
+    {
+      "id": "hurghada",
+      "name": "Hurghada"
+    }
+  ],
+  "cities": [
+    {
+      "id": "hurghada",
+      "name": "Hurghada"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival & marina evening",
+      "description": "",
+      "city": {
+        "id": "hurghada",
+        "name": "Hurghada"
+      },
+      "items": [
+        {
+          "placeId": "hurghada-marina",
+          "name": "Hurghada Marina",
+          "category": "Sightseeing",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 27.2297,
+            "lng": 33.8432
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Giftun Island",
+      "description": "",
+      "city": {
+        "id": "hurghada",
+        "name": "Hurghada"
+      },
+      "items": [
+        {
+          "placeId": "giftun-island",
+          "name": "Giftun Island snorkelling",
+          "category": "Beach",
+          "durationHours": 6,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 27.2,
+            "lng": 33.95
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Free beach day",
+      "description": "",
+      "city": {
+        "id": "hurghada",
+        "name": "Hurghada"
+      },
+      "items": []
+    }
+  ],
+  "stays": [
+    {
+      "id": "hurghada-reef",
+      "name": "Red Sea Reef Resort",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 150,
+        "currency": "AZN",
+        "formatted": "150 AZN"
+      },
+      "pricePerNightAZN": 150,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 27.19,
+        "lng": 33.83
+      },
+      "nights": 6,
+      "city": {
+        "id": "hurghada",
+        "name": "Hurghada"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 1150,
+      "currency": "AZN",
+      "formatted": "1,150 AZN"
+    },
+    "packagePriceAZN": 1150,
+    "childPrice": {
+      "amount": 800,
+      "currency": "AZN",
+      "formatted": "800 AZN"
+    },
+    "childPriceAZN": 800,
+    "perLabel": "per person",
+    "optionalExtras": []
+  },
+  "included": [
+    "6 nights resort",
+    "All-inclusive meals",
+    "Snorkel trip",
+    "Transfers"
+  ],
+  "excluded": [
+    "Flights",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "hurghada-marina",
+        "name": "Hurghada Marina",
+        "day": 1,
+        "lat": 27.2297,
+        "lng": 33.8432
+      },
+      {
+        "kind": "place",
+        "id": "giftun-island",
+        "name": "Giftun Island snorkelling",
+        "day": 2,
+        "lat": 27.2,
+        "lng": 33.95
+      },
+      {
+        "kind": "stay",
+        "id": "hurghada-reef",
+        "name": "Red Sea Reef Resort",
+        "day": null,
+        "lat": 27.19,
+        "lng": 33.83
+      }
+    ]
+  }
+}

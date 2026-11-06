@@ -1,0 +1,231 @@
+{
+  "id": "batumi-weekend",
+  "title": "Batumi Seaside Weekend",
+  "summary": "Black Sea boulevard, botanical garden and beach time.",
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "country": {
+    "id": "georgia",
+    "name": "Georgia"
+  },
+  "city": {
+    "id": "batumi",
+    "name": "Batumi"
+  },
+  "locationLabel": "Georgia · Batumi",
+  "days": 3,
+  "nights": 2,
+  "durationLabel": "3 days / 2 nights",
+  "priceAZN": 420,
+  "price": {
+    "amount": 420,
+    "currency": "AZN",
+    "formatted": "420 AZN"
+  },
+  "priceLabel": "From 420 AZN / person",
+  "travelTypes": [
+    {
+      "id": "sea",
+      "label": "Sea"
+    },
+    {
+      "id": "city_walks",
+      "label": "City walks"
+    }
+  ],
+  "tags": [
+    "Weekend",
+    "Beach"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "europe",
+      "name": "Europe"
+    },
+    {
+      "id": "georgia",
+      "name": "Georgia"
+    },
+    {
+      "id": "batumi",
+      "name": "Batumi"
+    }
+  ],
+  "cities": [
+    {
+      "id": "batumi",
+      "name": "Batumi"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Boulevard evening",
+      "description": "",
+      "city": {
+        "id": "batumi",
+        "name": "Batumi"
+      },
+      "items": [
+        {
+          "placeId": "batumi-boulevard",
+          "name": "Batumi Boulevard",
+          "category": "Sightseeing",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.6534,
+            "lng": 41.6362
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Botanical Garden & beach",
+      "description": "",
+      "city": {
+        "id": "batumi",
+        "name": "Batumi"
+      },
+      "items": [
+        {
+          "placeId": "batumi-botanical",
+          "name": "Batumi Botanical Garden",
+          "category": "Nature",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.6936,
+            "lng": 41.7095
+          }
+        },
+        {
+          "placeId": "batumi-beach",
+          "name": "Beach afternoon",
+          "category": "Beach",
+          "durationHours": 4,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.648,
+            "lng": 41.629
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Departure",
+      "description": "",
+      "city": {
+        "id": "batumi",
+        "name": "Batumi"
+      },
+      "items": []
+    }
+  ],
+  "stays": [
+    {
+      "id": "batumi-seaside",
+      "name": "Seaside Hotel Batumi",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 160,
+        "currency": "AZN",
+        "formatted": "160 AZN"
+      },
+      "pricePerNightAZN": 160,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.651,
+        "lng": 41.634
+      },
+      "nights": 2,
+      "city": {
+        "id": "batumi",
+        "name": "Batumi"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 420,
+      "currency": "AZN",
+      "formatted": "420 AZN"
+    },
+    "packagePriceAZN": 420,
+    "childPrice": {
+      "amount": 420,
+      "currency": "AZN",
+      "formatted": "420 AZN"
+    },
+    "childPriceAZN": 420,
+    "perLabel": "per person",
+    "optionalExtras": []
+  },
+  "included": [
+    "2 nights hotel",
+    "Breakfast",
+    "Transfers"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "batumi-boulevard",
+        "name": "Batumi Boulevard",
+        "day": 1,
+        "lat": 41.6534,
+        "lng": 41.6362
+      },
+      {
+        "kind": "place",
+        "id": "batumi-botanical",
+        "name": "Batumi Botanical Garden",
+        "day": 2,
+        "lat": 41.6936,
+        "lng": 41.7095
+      },
+      {
+        "kind": "place",
+        "id": "batumi-beach",
+        "name": "Beach afternoon",
+        "day": 2,
+        "lat": 41.648,
+        "lng": 41.629
+      },
+      {
+        "kind": "stay",
+        "id": "batumi-seaside",
+        "name": "Seaside Hotel Batumi",
+        "day": null,
+        "lat": 41.651,
+        "lng": 41.634
+      }
+    ]
+  }
+}

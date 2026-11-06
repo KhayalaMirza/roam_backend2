@@ -1,0 +1,380 @@
+{
+  "id": "istanbul-cappadocia",
+  "title": "Istanbul & Cappadocia",
+  "summary": "Bosphorus, bazaars and a sunrise over the fairy chimneys.",
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "country": {
+    "id": "turkey",
+    "name": "Turkey"
+  },
+  "city": {
+    "id": "istanbul",
+    "name": "Istanbul"
+  },
+  "locationLabel": "Turkey · Istanbul",
+  "days": 6,
+  "nights": 5,
+  "durationLabel": "6 days / 5 nights",
+  "priceAZN": 1450,
+  "price": {
+    "amount": 1450,
+    "currency": "AZN",
+    "formatted": "1,450 AZN"
+  },
+  "priceLabel": "From 1,450 AZN / person",
+  "travelTypes": [
+    {
+      "id": "city_walks",
+      "label": "City walks"
+    },
+    {
+      "id": "adventure",
+      "label": "Adventure"
+    }
+  ],
+  "tags": [
+    "History",
+    "Balloons"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "europe",
+      "name": "Europe"
+    },
+    {
+      "id": "turkey",
+      "name": "Turkey"
+    },
+    {
+      "id": "istanbul",
+      "name": "Istanbul"
+    }
+  ],
+  "cities": [
+    {
+      "id": "istanbul",
+      "name": "Istanbul"
+    },
+    {
+      "id": "cappadocia",
+      "name": "Cappadocia"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Sultanahmet",
+      "description": "",
+      "city": {
+        "id": "istanbul",
+        "name": "Istanbul"
+      },
+      "items": [
+        {
+          "placeId": "hagia-sophia",
+          "name": "Hagia Sophia",
+          "category": "Sightseeing",
+          "durationHours": 1.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.0086,
+            "lng": 28.9802
+          }
+        },
+        {
+          "placeId": "topkapi",
+          "name": "Topkapı Palace",
+          "category": "Culture",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.0115,
+            "lng": 28.9834
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Bazaar & Bosphorus",
+      "description": "",
+      "city": {
+        "id": "istanbul",
+        "name": "Istanbul"
+      },
+      "items": [
+        {
+          "placeId": "grand-bazaar",
+          "name": "Grand Bazaar",
+          "category": "Market",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.0107,
+            "lng": 28.9681
+          }
+        },
+        {
+          "placeId": "bosphorus-cruise",
+          "name": "Bosphorus cruise",
+          "category": "Sightseeing",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 41.0255,
+            "lng": 28.9744
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Fly to Cappadocia",
+      "description": "",
+      "city": {
+        "id": "cappadocia",
+        "name": "Cappadocia"
+      },
+      "items": [
+        {
+          "placeId": "goreme-open-air",
+          "name": "Göreme Open-Air Museum",
+          "category": "Culture",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 38.64,
+            "lng": 34.845
+          }
+        },
+        {
+          "placeId": "red-valley",
+          "name": "Red Valley sunset",
+          "category": "Nature",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 38.658,
+            "lng": 34.86
+          }
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Balloon morning",
+      "description": "",
+      "city": {
+        "id": "cappadocia",
+        "name": "Cappadocia"
+      },
+      "items": [
+        {
+          "placeId": "balloon-ride",
+          "name": "Sunrise hot-air balloon",
+          "category": "Adventure",
+          "durationHours": 3,
+          "included": false,
+          "optional": true,
+          "extraPriceAZN": 350,
+          "priceLabel": "+350 AZN",
+          "coordinate": {
+            "lat": 38.656,
+            "lng": 34.853
+          }
+        }
+      ]
+    }
+  ],
+  "stays": [
+    {
+      "id": "sultanahmet-inn",
+      "name": "Sultanahmet Inn",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 190,
+        "currency": "AZN",
+        "formatted": "190 AZN"
+      },
+      "pricePerNightAZN": 190,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.006,
+        "lng": 28.977
+      },
+      "nights": 3,
+      "city": {
+        "id": "istanbul",
+        "name": "Istanbul"
+      }
+    },
+    {
+      "id": "goreme-cave",
+      "name": "Göreme Cave Suites",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 230,
+        "currency": "AZN",
+        "formatted": "230 AZN"
+      },
+      "pricePerNightAZN": 230,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 38.643,
+        "lng": 34.829
+      },
+      "nights": 2,
+      "city": {
+        "id": "cappadocia",
+        "name": "Cappadocia"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 1450,
+      "currency": "AZN",
+      "formatted": "1,450 AZN"
+    },
+    "packagePriceAZN": 1450,
+    "childPrice": {
+      "amount": 1450,
+      "currency": "AZN",
+      "formatted": "1,450 AZN"
+    },
+    "childPriceAZN": 1450,
+    "perLabel": "per person",
+    "optionalExtras": [
+      {
+        "name": "Sunrise hot-air balloon",
+        "day": 4,
+        "price": {
+          "amount": 350,
+          "currency": "AZN",
+          "formatted": "350 AZN"
+        },
+        "priceAZN": 350
+      }
+    ]
+  },
+  "included": [
+    "5 nights hotel",
+    "Breakfast",
+    "Domestic flight",
+    "Guide",
+    "Transfers"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "hagia-sophia",
+        "name": "Hagia Sophia",
+        "day": 1,
+        "lat": 41.0086,
+        "lng": 28.9802
+      },
+      {
+        "kind": "place",
+        "id": "topkapi",
+        "name": "Topkapı Palace",
+        "day": 1,
+        "lat": 41.0115,
+        "lng": 28.9834
+      },
+      {
+        "kind": "place",
+        "id": "grand-bazaar",
+        "name": "Grand Bazaar",
+        "day": 2,
+        "lat": 41.0107,
+        "lng": 28.9681
+      },
+      {
+        "kind": "place",
+        "id": "bosphorus-cruise",
+        "name": "Bosphorus cruise",
+        "day": 2,
+        "lat": 41.0255,
+        "lng": 28.9744
+      },
+      {
+        "kind": "place",
+        "id": "goreme-open-air",
+        "name": "Göreme Open-Air Museum",
+        "day": 3,
+        "lat": 38.64,
+        "lng": 34.845
+      },
+      {
+        "kind": "place",
+        "id": "red-valley",
+        "name": "Red Valley sunset",
+        "day": 3,
+        "lat": 38.658,
+        "lng": 34.86
+      },
+      {
+        "kind": "place",
+        "id": "balloon-ride",
+        "name": "Sunrise hot-air balloon",
+        "day": 4,
+        "lat": 38.656,
+        "lng": 34.853
+      },
+      {
+        "kind": "stay",
+        "id": "sultanahmet-inn",
+        "name": "Sultanahmet Inn",
+        "day": null,
+        "lat": 41.006,
+        "lng": 28.977
+      },
+      {
+        "kind": "stay",
+        "id": "goreme-cave",
+        "name": "Göreme Cave Suites",
+        "day": null,
+        "lat": 38.643,
+        "lng": 34.829
+      }
+    ]
+  }
+}

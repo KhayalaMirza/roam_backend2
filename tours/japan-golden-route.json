@@ -1,0 +1,405 @@
+{
+  "id": "japan-golden-route",
+  "title": "Japan Golden Route",
+  "summary": "Tokyo, Kyoto and Osaka by bullet train.",
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "country": {
+    "id": "japan",
+    "name": "Japan"
+  },
+  "city": {
+    "id": "tokyo",
+    "name": "Tokyo"
+  },
+  "locationLabel": "Japan · Tokyo",
+  "days": 9,
+  "nights": 8,
+  "durationLabel": "9 days / 8 nights",
+  "priceAZN": 4800,
+  "price": {
+    "amount": 4800,
+    "currency": "AZN",
+    "formatted": "4,800 AZN"
+  },
+  "priceLabel": "From 4,800 AZN / person",
+  "travelTypes": [
+    {
+      "id": "city_walks",
+      "label": "City walks"
+    },
+    {
+      "id": "nature",
+      "label": "Nature"
+    }
+  ],
+  "tags": [
+    "Culture",
+    "Food"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "asia",
+      "name": "Asia"
+    },
+    {
+      "id": "japan",
+      "name": "Japan"
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo"
+    }
+  ],
+  "cities": [
+    {
+      "id": "tokyo",
+      "name": "Tokyo"
+    },
+    {
+      "id": "kyoto",
+      "name": "Kyoto"
+    },
+    {
+      "id": "osaka",
+      "name": "Osaka"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Asakusa & Sensō-ji",
+      "description": "",
+      "city": {
+        "id": "tokyo",
+        "name": "Tokyo"
+      },
+      "items": [
+        {
+          "placeId": "senso-ji",
+          "name": "Sensō-ji Temple",
+          "category": "Culture",
+          "durationHours": 1.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 35.7148,
+            "lng": 139.7967
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Shibuya & teamLab",
+      "description": "",
+      "city": {
+        "id": "tokyo",
+        "name": "Tokyo"
+      },
+      "items": [
+        {
+          "placeId": "shibuya",
+          "name": "Shibuya Sky",
+          "category": "Sightseeing",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 35.6595,
+            "lng": 139.7005
+          }
+        },
+        {
+          "placeId": "teamlab",
+          "name": "teamLab Planets",
+          "category": "Culture",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 35.6491,
+            "lng": 139.7898
+          }
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Shinkansen to Kyoto",
+      "description": "",
+      "city": {
+        "id": "kyoto",
+        "name": "Kyoto"
+      },
+      "items": [
+        {
+          "placeId": "fushimi-inari",
+          "name": "Fushimi Inari Shrine",
+          "category": "Culture",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 34.9671,
+            "lng": 135.7727
+          }
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Arashiyama",
+      "description": "",
+      "city": {
+        "id": "kyoto",
+        "name": "Kyoto"
+      },
+      "items": [
+        {
+          "placeId": "arashiyama",
+          "name": "Arashiyama Bamboo Grove",
+          "category": "Nature",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 35.017,
+            "lng": 135.6713
+          }
+        },
+        {
+          "placeId": "kinkaku-ji",
+          "name": "Kinkaku-ji",
+          "category": "Sightseeing",
+          "durationHours": 1,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 35.0394,
+            "lng": 135.7292
+          }
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "title": "Osaka food night",
+      "description": "",
+      "city": {
+        "id": "osaka",
+        "name": "Osaka"
+      },
+      "items": [
+        {
+          "placeId": "dotonbori",
+          "name": "Dōtonbori street food",
+          "category": "Food",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 34.6687,
+            "lng": 135.5013
+          }
+        },
+        {
+          "placeId": "osaka-castle",
+          "name": "Osaka Castle",
+          "category": "Sightseeing",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 34.6873,
+            "lng": 135.5262
+          }
+        }
+      ]
+    }
+  ],
+  "stays": [
+    {
+      "id": "tokyo-shinjuku",
+      "name": "Shinjuku City Hotel",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 280,
+        "currency": "AZN",
+        "formatted": "280 AZN"
+      },
+      "pricePerNightAZN": 280,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.69,
+        "lng": 139.7
+      },
+      "nights": 4,
+      "city": {
+        "id": "tokyo",
+        "name": "Tokyo"
+      }
+    },
+    {
+      "id": "kyoto-ryokan",
+      "name": "Gion Ryokan",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 350,
+        "currency": "AZN",
+        "formatted": "350 AZN"
+      },
+      "pricePerNightAZN": 350,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.0037,
+        "lng": 135.7788
+      },
+      "nights": 4,
+      "city": {
+        "id": "kyoto",
+        "name": "Kyoto"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 4800,
+      "currency": "AZN",
+      "formatted": "4,800 AZN"
+    },
+    "packagePriceAZN": 4800,
+    "childPrice": {
+      "amount": 4800,
+      "currency": "AZN",
+      "formatted": "4,800 AZN"
+    },
+    "childPriceAZN": 4800,
+    "perLabel": "per person",
+    "optionalExtras": []
+  },
+  "included": [
+    "8 nights hotel",
+    "Breakfast",
+    "7-day JR Pass",
+    "English-speaking guide (3 days)"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "senso-ji",
+        "name": "Sensō-ji Temple",
+        "day": 1,
+        "lat": 35.7148,
+        "lng": 139.7967
+      },
+      {
+        "kind": "place",
+        "id": "shibuya",
+        "name": "Shibuya Sky",
+        "day": 2,
+        "lat": 35.6595,
+        "lng": 139.7005
+      },
+      {
+        "kind": "place",
+        "id": "teamlab",
+        "name": "teamLab Planets",
+        "day": 2,
+        "lat": 35.6491,
+        "lng": 139.7898
+      },
+      {
+        "kind": "place",
+        "id": "fushimi-inari",
+        "name": "Fushimi Inari Shrine",
+        "day": 4,
+        "lat": 34.9671,
+        "lng": 135.7727
+      },
+      {
+        "kind": "place",
+        "id": "arashiyama",
+        "name": "Arashiyama Bamboo Grove",
+        "day": 5,
+        "lat": 35.017,
+        "lng": 135.6713
+      },
+      {
+        "kind": "place",
+        "id": "kinkaku-ji",
+        "name": "Kinkaku-ji",
+        "day": 5,
+        "lat": 35.0394,
+        "lng": 135.7292
+      },
+      {
+        "kind": "place",
+        "id": "dotonbori",
+        "name": "Dōtonbori street food",
+        "day": 7,
+        "lat": 34.6687,
+        "lng": 135.5013
+      },
+      {
+        "kind": "place",
+        "id": "osaka-castle",
+        "name": "Osaka Castle",
+        "day": 7,
+        "lat": 34.6873,
+        "lng": 135.5262
+      },
+      {
+        "kind": "stay",
+        "id": "tokyo-shinjuku",
+        "name": "Shinjuku City Hotel",
+        "day": null,
+        "lat": 35.69,
+        "lng": 139.7
+      },
+      {
+        "kind": "stay",
+        "id": "kyoto-ryokan",
+        "name": "Gion Ryokan",
+        "day": null,
+        "lat": 35.0037,
+        "lng": 135.7788
+      }
+    ]
+  }
+}

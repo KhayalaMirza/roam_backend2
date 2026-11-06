@@ -1,0 +1,22 @@
+[
+  {
+    "id": "all",
+    "name": "All"
+  },
+  {
+    "id": "europe",
+    "name": "Europe"
+  },
+  {
+    "id": "asia",
+    "name": "Asia"
+  },
+  {
+    "id": "middle-east",
+    "name": "Middle East"
+  },
+  {
+    "id": "africa",
+    "name": "Africa"
+  }
+]

@@ -1,0 +1,292 @@
+{
+  "id": "dubai-desert",
+  "title": "Dubai City & Desert",
+  "summary": "Burj Khalifa views, souks and an evening in the dunes.",
+  "region": {
+    "id": "middle-east",
+    "name": "Middle East"
+  },
+  "country": {
+    "id": "uae",
+    "name": "United Arab Emirates"
+  },
+  "city": {
+    "id": "dubai",
+    "name": "Dubai"
+  },
+  "locationLabel": "United Arab Emirates · Dubai",
+  "days": 5,
+  "nights": 4,
+  "durationLabel": "5 days / 4 nights",
+  "priceAZN": 1690,
+  "price": {
+    "amount": 1690,
+    "currency": "AZN",
+    "formatted": "1,690 AZN"
+  },
+  "priceLabel": "From 1,690 AZN / person",
+  "travelTypes": [
+    {
+      "id": "city_walks",
+      "label": "City walks"
+    },
+    {
+      "id": "adventure",
+      "label": "Adventure"
+    }
+  ],
+  "tags": [
+    "Skyline",
+    "Desert"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "middle-east",
+      "name": "Middle East"
+    },
+    {
+      "id": "uae",
+      "name": "United Arab Emirates"
+    },
+    {
+      "id": "dubai",
+      "name": "Dubai"
+    }
+  ],
+  "cities": [
+    {
+      "id": "dubai",
+      "name": "Dubai"
+    },
+    {
+      "id": "abu-dhabi",
+      "name": "Abu Dhabi"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Downtown & Burj Khalifa",
+      "description": "",
+      "city": {
+        "id": "dubai",
+        "name": "Dubai"
+      },
+      "items": [
+        {
+          "placeId": "burj-khalifa",
+          "name": "Burj Khalifa – At the Top",
+          "category": "Sightseeing",
+          "durationHours": 1.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 25.1972,
+            "lng": 55.2744
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Souks & desert safari",
+      "description": "",
+      "city": {
+        "id": "dubai",
+        "name": "Dubai"
+      },
+      "items": [
+        {
+          "placeId": "gold-souk",
+          "name": "Gold & Spice Souks",
+          "category": "Market",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 25.2697,
+            "lng": 55.2963
+          }
+        },
+        {
+          "placeId": "desert-safari",
+          "name": "Evening desert safari",
+          "category": "Adventure",
+          "durationHours": 6,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 24.94,
+            "lng": 55.6
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Abu Dhabi day trip",
+      "description": "",
+      "city": {
+        "id": "abu-dhabi",
+        "name": "Abu Dhabi"
+      },
+      "items": [
+        {
+          "placeId": "grand-mosque",
+          "name": "Sheikh Zayed Grand Mosque",
+          "category": "Culture",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 24.4128,
+            "lng": 54.475
+          }
+        },
+        {
+          "placeId": "louvre-ad",
+          "name": "Louvre Abu Dhabi",
+          "category": "Culture",
+          "durationHours": 3,
+          "included": false,
+          "optional": true,
+          "extraPriceAZN": 30,
+          "priceLabel": "+30 AZN",
+          "coordinate": {
+            "lat": 24.5337,
+            "lng": 54.3983
+          }
+        }
+      ]
+    }
+  ],
+  "stays": [
+    {
+      "id": "dubai-marina",
+      "name": "Marina View Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 330,
+        "currency": "AZN",
+        "formatted": "330 AZN"
+      },
+      "pricePerNightAZN": 330,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 25.08,
+        "lng": 55.14
+      },
+      "nights": 4,
+      "city": {
+        "id": "dubai",
+        "name": "Dubai"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 1690,
+      "currency": "AZN",
+      "formatted": "1,690 AZN"
+    },
+    "packagePriceAZN": 1690,
+    "childPrice": {
+      "amount": 1690,
+      "currency": "AZN",
+      "formatted": "1,690 AZN"
+    },
+    "childPriceAZN": 1690,
+    "perLabel": "per person",
+    "optionalExtras": [
+      {
+        "name": "Louvre Abu Dhabi",
+        "day": 3,
+        "price": {
+          "amount": 30,
+          "currency": "AZN",
+          "formatted": "30 AZN"
+        },
+        "priceAZN": 30
+      }
+    ]
+  },
+  "included": [
+    "4 nights hotel",
+    "Breakfast",
+    "Desert safari with dinner",
+    "Abu Dhabi transfer"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "burj-khalifa",
+        "name": "Burj Khalifa – At the Top",
+        "day": 1,
+        "lat": 25.1972,
+        "lng": 55.2744
+      },
+      {
+        "kind": "place",
+        "id": "gold-souk",
+        "name": "Gold & Spice Souks",
+        "day": 2,
+        "lat": 25.2697,
+        "lng": 55.2963
+      },
+      {
+        "kind": "place",
+        "id": "desert-safari",
+        "name": "Evening desert safari",
+        "day": 2,
+        "lat": 24.94,
+        "lng": 55.6
+      },
+      {
+        "kind": "place",
+        "id": "grand-mosque",
+        "name": "Sheikh Zayed Grand Mosque",
+        "day": 3,
+        "lat": 24.4128,
+        "lng": 54.475
+      },
+      {
+        "kind": "place",
+        "id": "louvre-ad",
+        "name": "Louvre Abu Dhabi",
+        "day": 3,
+        "lat": 24.5337,
+        "lng": 54.3983
+      },
+      {
+        "kind": "stay",
+        "id": "dubai-marina",
+        "name": "Marina View Hotel",
+        "day": null,
+        "lat": 25.08,
+        "lng": 55.14
+      }
+    ]
+  }
+}

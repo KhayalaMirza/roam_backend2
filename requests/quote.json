@@ -1,0 +1,25 @@
+{
+  "tourId": "pyramids-nile-cruise",
+  "lines": [
+    {
+      "label": "980 AZN × 2 adults",
+      "amount": {
+        "amount": 1960,
+        "currency": "AZN",
+        "formatted": "1,960 AZN"
+      }
+    }
+  ],
+  "total": {
+    "amount": 1960,
+    "currency": "AZN",
+    "formatted": "1,960 AZN"
+  },
+  "totalAZN": 1960,
+  "totalInAZN": {
+    "amount": 1960,
+    "currency": "AZN",
+    "formatted": "1,960 AZN"
+  },
+  "note": "No payment in the app."
+}

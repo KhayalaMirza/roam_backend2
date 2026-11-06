@@ -1,0 +1,302 @@
+{
+  "id": "kenya-big-five",
+  "title": "Kenya Big Five Safari",
+  "summary": "Nairobi’s giraffes and three days of game drives in the Maasai Mara.",
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "country": {
+    "id": "kenya",
+    "name": "Kenya"
+  },
+  "city": {
+    "id": "nairobi",
+    "name": "Nairobi"
+  },
+  "locationLabel": "Kenya · Nairobi",
+  "days": 6,
+  "nights": 5,
+  "durationLabel": "6 days / 5 nights",
+  "priceAZN": 3400,
+  "price": {
+    "amount": 3400,
+    "currency": "AZN",
+    "formatted": "3,400 AZN"
+  },
+  "priceLabel": "From 3,400 AZN / person",
+  "travelTypes": [
+    {
+      "id": "nature",
+      "label": "Nature"
+    },
+    {
+      "id": "adventure",
+      "label": "Adventure"
+    }
+  ],
+  "tags": [
+    "Safari",
+    "Wildlife"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "africa",
+      "name": "Africa"
+    },
+    {
+      "id": "kenya",
+      "name": "Kenya"
+    },
+    {
+      "id": "nairobi",
+      "name": "Nairobi"
+    }
+  ],
+  "cities": [
+    {
+      "id": "nairobi",
+      "name": "Nairobi"
+    },
+    {
+      "id": "maasai-mara",
+      "name": "Maasai Mara"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival & Giraffe Centre",
+      "description": "",
+      "city": {
+        "id": "nairobi",
+        "name": "Nairobi"
+      },
+      "items": [
+        {
+          "placeId": "giraffe-centre",
+          "name": "Giraffe Centre",
+          "category": "Nature",
+          "durationHours": 1.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": -1.3757,
+            "lng": 36.7448
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Drive to the Mara",
+      "description": "",
+      "city": {
+        "id": "maasai-mara",
+        "name": "Maasai Mara"
+      },
+      "items": [
+        {
+          "placeId": "mara-game-drive",
+          "name": "Afternoon game drive",
+          "category": "Adventure",
+          "durationHours": 8,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": -1.49,
+            "lng": 35.14
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Full-day game drive",
+      "description": "",
+      "city": {
+        "id": "maasai-mara",
+        "name": "Maasai Mara"
+      },
+      "items": [
+        {
+          "placeId": "mara-game-drive",
+          "name": "Full-day game drive",
+          "category": "Adventure",
+          "durationHours": 8,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": -1.49,
+            "lng": 35.14
+          }
+        },
+        {
+          "placeId": "maasai-village",
+          "name": "Maasai village visit",
+          "category": "Culture",
+          "durationHours": 2,
+          "included": false,
+          "optional": true,
+          "extraPriceAZN": 40,
+          "priceLabel": "+40 AZN",
+          "coordinate": {
+            "lat": -1.45,
+            "lng": 35.1
+          }
+        }
+      ]
+    }
+  ],
+  "stays": [
+    {
+      "id": "nairobi-garden",
+      "name": "Garden City Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 200,
+        "currency": "AZN",
+        "formatted": "200 AZN"
+      },
+      "pricePerNightAZN": 200,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -1.286,
+        "lng": 36.817
+      },
+      "nights": 1,
+      "city": {
+        "id": "nairobi",
+        "name": "Nairobi"
+      }
+    },
+    {
+      "id": "mara-camp",
+      "name": "Mara Tented Camp",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 550,
+        "currency": "AZN",
+        "formatted": "550 AZN"
+      },
+      "pricePerNightAZN": 550,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -1.48,
+        "lng": 35.12
+      },
+      "nights": 4,
+      "city": {
+        "id": "maasai-mara",
+        "name": "Maasai Mara"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 3400,
+      "currency": "AZN",
+      "formatted": "3,400 AZN"
+    },
+    "packagePriceAZN": 3400,
+    "childPrice": {
+      "amount": 3400,
+      "currency": "AZN",
+      "formatted": "3,400 AZN"
+    },
+    "childPriceAZN": 3400,
+    "perLabel": "per person",
+    "optionalExtras": [
+      {
+        "name": "Maasai village visit",
+        "day": 3,
+        "price": {
+          "amount": 40,
+          "currency": "AZN",
+          "formatted": "40 AZN"
+        },
+        "priceAZN": 40
+      }
+    ]
+  },
+  "included": [
+    "5 nights",
+    "Full board in the Mara",
+    "Park fees",
+    "Safari jeep & guide"
+  ],
+  "excluded": [
+    "Flights",
+    "Visa",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "giraffe-centre",
+        "name": "Giraffe Centre",
+        "day": 1,
+        "lat": -1.3757,
+        "lng": 36.7448
+      },
+      {
+        "kind": "place",
+        "id": "mara-game-drive",
+        "name": "Afternoon game drive",
+        "day": 2,
+        "lat": -1.49,
+        "lng": 35.14
+      },
+      {
+        "kind": "place",
+        "id": "mara-game-drive",
+        "name": "Full-day game drive",
+        "day": 3,
+        "lat": -1.49,
+        "lng": 35.14
+      },
+      {
+        "kind": "place",
+        "id": "maasai-village",
+        "name": "Maasai village visit",
+        "day": 3,
+        "lat": -1.45,
+        "lng": 35.1
+      },
+      {
+        "kind": "stay",
+        "id": "nairobi-garden",
+        "name": "Garden City Hotel",
+        "day": null,
+        "lat": -1.286,
+        "lng": 36.817
+      },
+      {
+        "kind": "stay",
+        "id": "mara-camp",
+        "name": "Mara Tented Camp",
+        "day": null,
+        "lat": -1.48,
+        "lng": 35.12
+      }
+    ]
+  }
+}

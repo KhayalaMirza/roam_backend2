@@ -1,0 +1,52 @@
+{
+  "counts": {
+    "all": 3,
+    "pending": 1,
+    "confirmed": 1,
+    "past": 1
+  },
+  "items": [
+    {
+      "id": "a6ca88ef-06fa-4014-a893-dae671e11964",
+      "code": "TR-2548",
+      "status": "pending",
+      "statusLabel": "Waiting for operator",
+      "isPast": false,
+      "tour": {
+        "id": "pyramids-nile-cruise",
+        "title": "Pyramids & Nile Cruise",
+        "country": {
+          "id": "egypt",
+          "name": "Egypt"
+        },
+        "city": {
+          "id": "cairo",
+          "name": "Cairo"
+        },
+        "durationLabel": "5 days / 4 nights",
+        "coverImageUrl": null
+      },
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-19",
+      "flexible": false,
+      "datesLabel": "2026-12-15 – 2026-12-19",
+      "adults": 2,
+      "children": 0,
+      "travelersLabel": "2 travelers",
+      "contactPhone": "+994 50 123 45 67",
+      "contactEmail": "yusif1793897967750@example.com",
+      "note": null,
+      "total": {
+        "amount": 1960,
+        "currency": "AZN",
+        "formatted": "1,960 AZN"
+      },
+      "totalAZN": 1960,
+      "operatorNote": null,
+      "createdAt": "2026-11-05T16:59:28.779Z",
+      "updatedAt": "2026-11-05T16:59:28.779Z",
+      "disclaimer": "Requests are not bookings. A request is confirmed only when the tour operator contacts you."
+    }
+  ],
+  "disclaimer": "Requests are not bookings. A request is confirmed only when the tour operator contacts you."
+}

@@ -1,0 +1,275 @@
+{
+  "items": [
+    {
+      "id": "pyramids-nile-cruise",
+      "title": "Pyramids & Nile Cruise",
+      "summary": "Giza, the Egyptian Museum and a train south to Luxor’s temples.",
+      "region": {
+        "id": "africa",
+        "name": "Africa"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "city": {
+        "id": "cairo",
+        "name": "Cairo"
+      },
+      "locationLabel": "Egypt · Cairo",
+      "days": 5,
+      "nights": 4,
+      "durationLabel": "5 days / 4 nights",
+      "priceAZN": 980,
+      "price": {
+        "amount": 980,
+        "currency": "AZN",
+        "formatted": "980 AZN"
+      },
+      "priceLabel": "From 980 AZN / person",
+      "travelTypes": [
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        },
+        {
+          "id": "nature",
+          "label": "Nature"
+        }
+      ],
+      "tags": [
+        "History",
+        "City walks"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "red-sea-escape",
+      "title": "Red Sea Escape",
+      "summary": "Six relaxed beach days with reef snorkelling at Giftun Island.",
+      "region": {
+        "id": "africa",
+        "name": "Africa"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "city": {
+        "id": "hurghada",
+        "name": "Hurghada"
+      },
+      "locationLabel": "Egypt · Hurghada",
+      "days": 7,
+      "nights": 6,
+      "durationLabel": "7 days / 6 nights",
+      "priceAZN": 1150,
+      "price": {
+        "amount": 1150,
+        "currency": "AZN",
+        "formatted": "1,150 AZN"
+      },
+      "priceLabel": "From 1,150 AZN / person",
+      "travelTypes": [
+        {
+          "id": "sea",
+          "label": "Sea"
+        }
+      ],
+      "tags": [
+        "Beach",
+        "Snorkelling"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "marrakech-sahara",
+      "title": "Marrakech & Atlas Mountains",
+      "summary": "Souks, gardens and a day in Berber villages of the High Atlas.",
+      "region": {
+        "id": "africa",
+        "name": "Africa"
+      },
+      "country": {
+        "id": "morocco",
+        "name": "Morocco"
+      },
+      "city": {
+        "id": "marrakech",
+        "name": "Marrakech"
+      },
+      "locationLabel": "Morocco · Marrakech",
+      "days": 4,
+      "nights": 3,
+      "durationLabel": "4 days / 3 nights",
+      "priceAZN": 890,
+      "price": {
+        "amount": 890,
+        "currency": "AZN",
+        "formatted": "890 AZN"
+      },
+      "priceLabel": "From 890 AZN / person",
+      "travelTypes": [
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        },
+        {
+          "id": "adventure",
+          "label": "Adventure"
+        }
+      ],
+      "tags": [
+        "Culture",
+        "Mountains"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "blue-city-hikes",
+      "title": "Blue City & Rif Hikes",
+      "summary": "Chefchaouen’s blue lanes and waterfall hikes in the Rif.",
+      "region": {
+        "id": "africa",
+        "name": "Africa"
+      },
+      "country": {
+        "id": "morocco",
+        "name": "Morocco"
+      },
+      "city": {
+        "id": "chefchaouen",
+        "name": "Chefchaouen"
+      },
+      "locationLabel": "Morocco · Chefchaouen",
+      "days": 3,
+      "nights": 2,
+      "durationLabel": "3 days / 2 nights",
+      "priceAZN": 520,
+      "price": {
+        "amount": 520,
+        "currency": "AZN",
+        "formatted": "520 AZN"
+      },
+      "priceLabel": "From 520 AZN / person",
+      "travelTypes": [
+        {
+          "id": "nature",
+          "label": "Nature"
+        },
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        }
+      ],
+      "tags": [
+        "Hiking",
+        "Photography"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "kenya-big-five",
+      "title": "Kenya Big Five Safari",
+      "summary": "Nairobi’s giraffes and three days of game drives in the Maasai Mara.",
+      "region": {
+        "id": "africa",
+        "name": "Africa"
+      },
+      "country": {
+        "id": "kenya",
+        "name": "Kenya"
+      },
+      "city": {
+        "id": "nairobi",
+        "name": "Nairobi"
+      },
+      "locationLabel": "Kenya · Nairobi",
+      "days": 6,
+      "nights": 5,
+      "durationLabel": "6 days / 5 nights",
+      "priceAZN": 3400,
+      "price": {
+        "amount": 3400,
+        "currency": "AZN",
+        "formatted": "3,400 AZN"
+      },
+      "priceLabel": "From 3,400 AZN / person",
+      "travelTypes": [
+        {
+          "id": "nature",
+          "label": "Nature"
+        },
+        {
+          "id": "adventure",
+          "label": "Adventure"
+        }
+      ],
+      "tags": [
+        "Safari",
+        "Wildlife"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "zanzibar-serengeti",
+      "title": "Ngorongoro & Zanzibar",
+      "summary": "A crater safari followed by beach time on the spice island.",
+      "region": {
+        "id": "africa",
+        "name": "Africa"
+      },
+      "country": {
+        "id": "tanzania",
+        "name": "Tanzania"
+      },
+      "city": {
+        "id": "arusha",
+        "name": "Arusha"
+      },
+      "locationLabel": "Tanzania · Arusha",
+      "days": 7,
+      "nights": 6,
+      "durationLabel": "7 days / 6 nights",
+      "priceAZN": 3900,
+      "price": {
+        "amount": 3900,
+        "currency": "AZN",
+        "formatted": "3,900 AZN"
+      },
+      "priceLabel": "From 3,900 AZN / person",
+      "travelTypes": [
+        {
+          "id": "sea",
+          "label": "Sea"
+        },
+        {
+          "id": "adventure",
+          "label": "Adventure"
+        },
+        {
+          "id": "nature",
+          "label": "Nature"
+        }
+      ],
+      "tags": [
+        "Safari",
+        "Beach"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    }
+  ],
+  "page": 1,
+  "limit": 20,
+  "total": 6,
+  "hasMore": false,
+  "currency": "AZN",
+  "activeFilterCount": 1,
+  "emptyState": null
+}

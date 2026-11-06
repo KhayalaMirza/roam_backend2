@@ -1,0 +1,711 @@
+{
+  "items": [
+    {
+      "id": "batumi-weekend",
+      "title": "Batumi Seaside Weekend",
+      "summary": "Black Sea boulevard, botanical garden and beach time.",
+      "region": {
+        "id": "europe",
+        "name": "Europe"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "city": {
+        "id": "batumi",
+        "name": "Batumi"
+      },
+      "locationLabel": "Georgia · Batumi",
+      "days": 3,
+      "nights": 2,
+      "durationLabel": "3 days / 2 nights",
+      "priceAZN": 420,
+      "price": {
+        "amount": 420,
+        "currency": "AZN",
+        "formatted": "420 AZN"
+      },
+      "priceLabel": "From 420 AZN / person",
+      "travelTypes": [
+        {
+          "id": "sea",
+          "label": "Sea"
+        },
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        }
+      ],
+      "tags": [
+        "Weekend",
+        "Beach"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "pyramids-nile-cruise",
+      "title": "Pyramids & Nile Cruise",
+      "summary": "Giza, the Egyptian Museum and a train south to Luxor’s temples.",
+      "region": {
+        "id": "africa",
+        "name": "Africa"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "city": {
+        "id": "cairo",
+        "name": "Cairo"
+      },
+      "locationLabel": "Egypt · Cairo",
+      "days": 5,
+      "nights": 4,
+      "durationLabel": "5 days / 4 nights",
+      "priceAZN": 980,
+      "price": {
+        "amount": 980,
+        "currency": "AZN",
+        "formatted": "980 AZN"
+      },
+      "priceLabel": "From 980 AZN / person",
+      "travelTypes": [
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        },
+        {
+          "id": "nature",
+          "label": "Nature"
+        }
+      ],
+      "tags": [
+        "History",
+        "City walks"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "red-sea-escape",
+      "title": "Red Sea Escape",
+      "summary": "Six relaxed beach days with reef snorkelling at Giftun Island.",
+      "region": {
+        "id": "africa",
+        "name": "Africa"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "city": {
+        "id": "hurghada",
+        "name": "Hurghada"
+      },
+      "locationLabel": "Egypt · Hurghada",
+      "days": 7,
+      "nights": 6,
+      "durationLabel": "7 days / 6 nights",
+      "priceAZN": 1150,
+      "price": {
+        "amount": 1150,
+        "currency": "AZN",
+        "formatted": "1,150 AZN"
+      },
+      "priceLabel": "From 1,150 AZN / person",
+      "travelTypes": [
+        {
+          "id": "sea",
+          "label": "Sea"
+        }
+      ],
+      "tags": [
+        "Beach",
+        "Snorkelling"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "marrakech-sahara",
+      "title": "Marrakech & Atlas Mountains",
+      "summary": "Souks, gardens and a day in Berber villages of the High Atlas.",
+      "region": {
+        "id": "africa",
+        "name": "Africa"
+      },
+      "country": {
+        "id": "morocco",
+        "name": "Morocco"
+      },
+      "city": {
+        "id": "marrakech",
+        "name": "Marrakech"
+      },
+      "locationLabel": "Morocco · Marrakech",
+      "days": 4,
+      "nights": 3,
+      "durationLabel": "4 days / 3 nights",
+      "priceAZN": 890,
+      "price": {
+        "amount": 890,
+        "currency": "AZN",
+        "formatted": "890 AZN"
+      },
+      "priceLabel": "From 890 AZN / person",
+      "travelTypes": [
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        },
+        {
+          "id": "adventure",
+          "label": "Adventure"
+        }
+      ],
+      "tags": [
+        "Culture",
+        "Mountains"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "blue-city-hikes",
+      "title": "Blue City & Rif Hikes",
+      "summary": "Chefchaouen’s blue lanes and waterfall hikes in the Rif.",
+      "region": {
+        "id": "africa",
+        "name": "Africa"
+      },
+      "country": {
+        "id": "morocco",
+        "name": "Morocco"
+      },
+      "city": {
+        "id": "chefchaouen",
+        "name": "Chefchaouen"
+      },
+      "locationLabel": "Morocco · Chefchaouen",
+      "days": 3,
+      "nights": 2,
+      "durationLabel": "3 days / 2 nights",
+      "priceAZN": 520,
+      "price": {
+        "amount": 520,
+        "currency": "AZN",
+        "formatted": "520 AZN"
+      },
+      "priceLabel": "From 520 AZN / person",
+      "travelTypes": [
+        {
+          "id": "nature",
+          "label": "Nature"
+        },
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        }
+      ],
+      "tags": [
+        "Hiking",
+        "Photography"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "kenya-big-five",
+      "title": "Kenya Big Five Safari",
+      "summary": "Nairobi’s giraffes and three days of game drives in the Maasai Mara.",
+      "region": {
+        "id": "africa",
+        "name": "Africa"
+      },
+      "country": {
+        "id": "kenya",
+        "name": "Kenya"
+      },
+      "city": {
+        "id": "nairobi",
+        "name": "Nairobi"
+      },
+      "locationLabel": "Kenya · Nairobi",
+      "days": 6,
+      "nights": 5,
+      "durationLabel": "6 days / 5 nights",
+      "priceAZN": 3400,
+      "price": {
+        "amount": 3400,
+        "currency": "AZN",
+        "formatted": "3,400 AZN"
+      },
+      "priceLabel": "From 3,400 AZN / person",
+      "travelTypes": [
+        {
+          "id": "nature",
+          "label": "Nature"
+        },
+        {
+          "id": "adventure",
+          "label": "Adventure"
+        }
+      ],
+      "tags": [
+        "Safari",
+        "Wildlife"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "zanzibar-serengeti",
+      "title": "Ngorongoro & Zanzibar",
+      "summary": "A crater safari followed by beach time on the spice island.",
+      "region": {
+        "id": "africa",
+        "name": "Africa"
+      },
+      "country": {
+        "id": "tanzania",
+        "name": "Tanzania"
+      },
+      "city": {
+        "id": "arusha",
+        "name": "Arusha"
+      },
+      "locationLabel": "Tanzania · Arusha",
+      "days": 7,
+      "nights": 6,
+      "durationLabel": "7 days / 6 nights",
+      "priceAZN": 3900,
+      "price": {
+        "amount": 3900,
+        "currency": "AZN",
+        "formatted": "3,900 AZN"
+      },
+      "priceLabel": "From 3,900 AZN / person",
+      "travelTypes": [
+        {
+          "id": "sea",
+          "label": "Sea"
+        },
+        {
+          "id": "adventure",
+          "label": "Adventure"
+        },
+        {
+          "id": "nature",
+          "label": "Nature"
+        }
+      ],
+      "tags": [
+        "Safari",
+        "Beach"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "tbilisi-kazbegi",
+      "title": "Tbilisi & Kazbegi",
+      "summary": "Old Tbilisi, sulphur baths and the road to Mount Kazbek.",
+      "region": {
+        "id": "europe",
+        "name": "Europe"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "city": {
+        "id": "tbilisi",
+        "name": "Tbilisi"
+      },
+      "locationLabel": "Georgia · Tbilisi",
+      "days": 5,
+      "nights": 4,
+      "durationLabel": "5 days / 4 nights",
+      "priceAZN": 690,
+      "price": {
+        "amount": 690,
+        "currency": "AZN",
+        "formatted": "690 AZN"
+      },
+      "priceLabel": "From 690 AZN / person",
+      "travelTypes": [
+        {
+          "id": "nature",
+          "label": "Nature"
+        },
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        }
+      ],
+      "tags": [
+        "Mountains",
+        "Food"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "istanbul-cappadocia",
+      "title": "Istanbul & Cappadocia",
+      "summary": "Bosphorus, bazaars and a sunrise over the fairy chimneys.",
+      "region": {
+        "id": "europe",
+        "name": "Europe"
+      },
+      "country": {
+        "id": "turkey",
+        "name": "Turkey"
+      },
+      "city": {
+        "id": "istanbul",
+        "name": "Istanbul"
+      },
+      "locationLabel": "Turkey · Istanbul",
+      "days": 6,
+      "nights": 5,
+      "durationLabel": "6 days / 5 nights",
+      "priceAZN": 1450,
+      "price": {
+        "amount": 1450,
+        "currency": "AZN",
+        "formatted": "1,450 AZN"
+      },
+      "priceLabel": "From 1,450 AZN / person",
+      "travelTypes": [
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        },
+        {
+          "id": "adventure",
+          "label": "Adventure"
+        }
+      ],
+      "tags": [
+        "History",
+        "Balloons"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "antalya-coast",
+      "title": "Antalya Turquoise Coast",
+      "summary": "Old harbour, waterfalls and long beach days.",
+      "region": {
+        "id": "europe",
+        "name": "Europe"
+      },
+      "country": {
+        "id": "turkey",
+        "name": "Turkey"
+      },
+      "city": {
+        "id": "antalya",
+        "name": "Antalya"
+      },
+      "locationLabel": "Turkey · Antalya",
+      "days": 5,
+      "nights": 4,
+      "durationLabel": "5 days / 4 nights",
+      "priceAZN": 980,
+      "price": {
+        "amount": 980,
+        "currency": "AZN",
+        "formatted": "980 AZN"
+      },
+      "priceLabel": "From 980 AZN / person",
+      "travelTypes": [
+        {
+          "id": "sea",
+          "label": "Sea"
+        }
+      ],
+      "tags": [
+        "Beach",
+        "Family"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "roman-holiday",
+      "title": "Rome & Florence",
+      "summary": "Colosseum, Vatican and the Uffizi with a Tuscan sunset.",
+      "region": {
+        "id": "europe",
+        "name": "Europe"
+      },
+      "country": {
+        "id": "italy",
+        "name": "Italy"
+      },
+      "city": {
+        "id": "rome",
+        "name": "Rome"
+      },
+      "locationLabel": "Italy · Rome",
+      "days": 6,
+      "nights": 5,
+      "durationLabel": "6 days / 5 nights",
+      "priceAZN": 2350,
+      "price": {
+        "amount": 2350,
+        "currency": "AZN",
+        "formatted": "2,350 AZN"
+      },
+      "priceLabel": "From 2,350 AZN / person",
+      "travelTypes": [
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        }
+      ],
+      "tags": [
+        "Art",
+        "Food"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "japan-golden-route",
+      "title": "Japan Golden Route",
+      "summary": "Tokyo, Kyoto and Osaka by bullet train.",
+      "region": {
+        "id": "asia",
+        "name": "Asia"
+      },
+      "country": {
+        "id": "japan",
+        "name": "Japan"
+      },
+      "city": {
+        "id": "tokyo",
+        "name": "Tokyo"
+      },
+      "locationLabel": "Japan · Tokyo",
+      "days": 9,
+      "nights": 8,
+      "durationLabel": "9 days / 8 nights",
+      "priceAZN": 4800,
+      "price": {
+        "amount": 4800,
+        "currency": "AZN",
+        "formatted": "4,800 AZN"
+      },
+      "priceLabel": "From 4,800 AZN / person",
+      "travelTypes": [
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        },
+        {
+          "id": "nature",
+          "label": "Nature"
+        }
+      ],
+      "tags": [
+        "Culture",
+        "Food"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "bali-island-hopping",
+      "title": "Bali Island Hopping",
+      "summary": "Ubud rice terraces, Uluwatu cliffs and Nusa Penida by fast boat.",
+      "region": {
+        "id": "asia",
+        "name": "Asia"
+      },
+      "country": {
+        "id": "indonesia",
+        "name": "Indonesia"
+      },
+      "city": {
+        "id": "bali",
+        "name": "Bali"
+      },
+      "locationLabel": "Indonesia · Bali",
+      "days": 8,
+      "nights": 7,
+      "durationLabel": "8 days / 7 nights",
+      "priceAZN": 2900,
+      "price": {
+        "amount": 2900,
+        "currency": "AZN",
+        "formatted": "2,900 AZN"
+      },
+      "priceLabel": "From 2,900 AZN / person",
+      "travelTypes": [
+        {
+          "id": "sea",
+          "label": "Sea"
+        },
+        {
+          "id": "nature",
+          "label": "Nature"
+        }
+      ],
+      "tags": [
+        "Islands",
+        "Beach"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "thailand-temples-beaches",
+      "title": "Bangkok & Phuket",
+      "summary": "Temples and night markets, then Andaman island days.",
+      "region": {
+        "id": "asia",
+        "name": "Asia"
+      },
+      "country": {
+        "id": "thailand",
+        "name": "Thailand"
+      },
+      "city": {
+        "id": "bangkok",
+        "name": "Bangkok"
+      },
+      "locationLabel": "Thailand · Bangkok",
+      "days": 8,
+      "nights": 7,
+      "durationLabel": "8 days / 7 nights",
+      "priceAZN": 2200,
+      "price": {
+        "amount": 2200,
+        "currency": "AZN",
+        "formatted": "2,200 AZN"
+      },
+      "priceLabel": "From 2,200 AZN / person",
+      "travelTypes": [
+        {
+          "id": "sea",
+          "label": "Sea"
+        },
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        }
+      ],
+      "tags": [
+        "Beach",
+        "Street food"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "dubai-desert",
+      "title": "Dubai City & Desert",
+      "summary": "Burj Khalifa views, souks and an evening in the dunes.",
+      "region": {
+        "id": "middle-east",
+        "name": "Middle East"
+      },
+      "country": {
+        "id": "uae",
+        "name": "United Arab Emirates"
+      },
+      "city": {
+        "id": "dubai",
+        "name": "Dubai"
+      },
+      "locationLabel": "United Arab Emirates · Dubai",
+      "days": 5,
+      "nights": 4,
+      "durationLabel": "5 days / 4 nights",
+      "priceAZN": 1690,
+      "price": {
+        "amount": 1690,
+        "currency": "AZN",
+        "formatted": "1,690 AZN"
+      },
+      "priceLabel": "From 1,690 AZN / person",
+      "travelTypes": [
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        },
+        {
+          "id": "adventure",
+          "label": "Adventure"
+        }
+      ],
+      "tags": [
+        "Skyline",
+        "Desert"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    },
+    {
+      "id": "petra-wadi-rum",
+      "title": "Amman & Petra",
+      "summary": "Roman Amman and two days in the rose-red city.",
+      "region": {
+        "id": "middle-east",
+        "name": "Middle East"
+      },
+      "country": {
+        "id": "jordan",
+        "name": "Jordan"
+      },
+      "city": {
+        "id": "amman",
+        "name": "Amman"
+      },
+      "locationLabel": "Jordan · Amman",
+      "days": 4,
+      "nights": 3,
+      "durationLabel": "4 days / 3 nights",
+      "priceAZN": 1180,
+      "price": {
+        "amount": 1180,
+        "currency": "AZN",
+        "formatted": "1,180 AZN"
+      },
+      "priceLabel": "From 1,180 AZN / person",
+      "travelTypes": [
+        {
+          "id": "adventure",
+          "label": "Adventure"
+        },
+        {
+          "id": "city_walks",
+          "label": "City walks"
+        },
+        {
+          "id": "nature",
+          "label": "Nature"
+        }
+      ],
+      "tags": [
+        "History",
+        "Desert"
+      ],
+      "coverImageUrl": null,
+      "isFavorite": false
+    }
+  ],
+  "page": 1,
+  "limit": 100,
+  "total": 16,
+  "hasMore": false,
+  "currency": "AZN",
+  "activeFilterCount": 0,
+  "emptyState": null
+}

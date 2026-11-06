@@ -1,0 +1,13 @@
+{
+  "items": [],
+  "page": 1,
+  "limit": 20,
+  "total": 0,
+  "hasMore": false,
+  "currency": "AZN",
+  "activeFilterCount": 1,
+  "emptyState": {
+    "title": "No tours match your filters",
+    "action": "Reset filters"
+  }
+}

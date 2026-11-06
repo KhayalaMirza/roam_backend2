@@ -1,0 +1,243 @@
+{
+  "id": "marrakech-sahara",
+  "title": "Marrakech & Atlas Mountains",
+  "summary": "Souks, gardens and a day in Berber villages of the High Atlas.",
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "country": {
+    "id": "morocco",
+    "name": "Morocco"
+  },
+  "city": {
+    "id": "marrakech",
+    "name": "Marrakech"
+  },
+  "locationLabel": "Morocco · Marrakech",
+  "days": 4,
+  "nights": 3,
+  "durationLabel": "4 days / 3 nights",
+  "priceAZN": 890,
+  "price": {
+    "amount": 890,
+    "currency": "AZN",
+    "formatted": "890 AZN"
+  },
+  "priceLabel": "From 890 AZN / person",
+  "travelTypes": [
+    {
+      "id": "city_walks",
+      "label": "City walks"
+    },
+    {
+      "id": "adventure",
+      "label": "Adventure"
+    }
+  ],
+  "tags": [
+    "Culture",
+    "Mountains"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "africa",
+      "name": "Africa"
+    },
+    {
+      "id": "morocco",
+      "name": "Morocco"
+    },
+    {
+      "id": "marrakech",
+      "name": "Marrakech"
+    }
+  ],
+  "cities": [
+    {
+      "id": "marrakech",
+      "name": "Marrakech"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Medina & Jemaa el-Fnaa",
+      "description": "",
+      "city": {
+        "id": "marrakech",
+        "name": "Marrakech"
+      },
+      "items": [
+        {
+          "placeId": "jemaa-el-fnaa",
+          "name": "Jemaa el-Fnaa",
+          "category": "Market",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 31.6258,
+            "lng": -7.9891
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Jardin Majorelle",
+      "description": "",
+      "city": {
+        "id": "marrakech",
+        "name": "Marrakech"
+      },
+      "items": [
+        {
+          "placeId": "majorelle",
+          "name": "Jardin Majorelle",
+          "category": "Nature",
+          "durationHours": 1.5,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 31.6417,
+            "lng": -8.0033
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Atlas Mountains",
+      "description": "",
+      "city": {
+        "id": "marrakech",
+        "name": "Marrakech"
+      },
+      "items": [
+        {
+          "placeId": "atlas-day",
+          "name": "Atlas Mountains day trip",
+          "category": "Adventure",
+          "durationHours": 8,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 31.2,
+            "lng": -7.86
+          }
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Departure",
+      "description": "",
+      "city": {
+        "id": "marrakech",
+        "name": "Marrakech"
+      },
+      "items": []
+    }
+  ],
+  "stays": [
+    {
+      "id": "marrakech-riad",
+      "name": "Riad Dar Medina",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 180,
+        "currency": "AZN",
+        "formatted": "180 AZN"
+      },
+      "pricePerNightAZN": 180,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 31.628,
+        "lng": -7.987
+      },
+      "nights": 3,
+      "city": {
+        "id": "marrakech",
+        "name": "Marrakech"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 890,
+      "currency": "AZN",
+      "formatted": "890 AZN"
+    },
+    "packagePriceAZN": 890,
+    "childPrice": {
+      "amount": 890,
+      "currency": "AZN",
+      "formatted": "890 AZN"
+    },
+    "childPriceAZN": 890,
+    "perLabel": "per person",
+    "optionalExtras": []
+  },
+  "included": [
+    "3 nights riad",
+    "Breakfast",
+    "Atlas day trip",
+    "Transfers"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "jemaa-el-fnaa",
+        "name": "Jemaa el-Fnaa",
+        "day": 1,
+        "lat": 31.6258,
+        "lng": -7.9891
+      },
+      {
+        "kind": "place",
+        "id": "majorelle",
+        "name": "Jardin Majorelle",
+        "day": 2,
+        "lat": 31.6417,
+        "lng": -8.0033
+      },
+      {
+        "kind": "place",
+        "id": "atlas-day",
+        "name": "Atlas Mountains day trip",
+        "day": 3,
+        "lat": 31.2,
+        "lng": -7.86
+      },
+      {
+        "kind": "stay",
+        "id": "marrakech-riad",
+        "name": "Riad Dar Medina",
+        "day": null,
+        "lat": 31.628,
+        "lng": -7.987
+      }
+    ]
+  }
+}

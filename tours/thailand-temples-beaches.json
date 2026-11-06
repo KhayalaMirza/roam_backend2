@@ -1,0 +1,302 @@
+{
+  "id": "thailand-temples-beaches",
+  "title": "Bangkok & Phuket",
+  "summary": "Temples and night markets, then Andaman island days.",
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "country": {
+    "id": "thailand",
+    "name": "Thailand"
+  },
+  "city": {
+    "id": "bangkok",
+    "name": "Bangkok"
+  },
+  "locationLabel": "Thailand · Bangkok",
+  "days": 8,
+  "nights": 7,
+  "durationLabel": "8 days / 7 nights",
+  "priceAZN": 2200,
+  "price": {
+    "amount": 2200,
+    "currency": "AZN",
+    "formatted": "2,200 AZN"
+  },
+  "priceLabel": "From 2,200 AZN / person",
+  "travelTypes": [
+    {
+      "id": "sea",
+      "label": "Sea"
+    },
+    {
+      "id": "city_walks",
+      "label": "City walks"
+    }
+  ],
+  "tags": [
+    "Beach",
+    "Street food"
+  ],
+  "coverImageUrl": null,
+  "isFavorite": false,
+  "description": "",
+  "breadcrumb": [
+    {
+      "id": "asia",
+      "name": "Asia"
+    },
+    {
+      "id": "thailand",
+      "name": "Thailand"
+    },
+    {
+      "id": "bangkok",
+      "name": "Bangkok"
+    }
+  ],
+  "cities": [
+    {
+      "id": "bangkok",
+      "name": "Bangkok"
+    },
+    {
+      "id": "phuket",
+      "name": "Phuket"
+    }
+  ],
+  "images": [],
+  "operatorName": null,
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Grand Palace",
+      "description": "",
+      "city": {
+        "id": "bangkok",
+        "name": "Bangkok"
+      },
+      "items": [
+        {
+          "placeId": "grand-palace",
+          "name": "Grand Palace & Wat Pho",
+          "category": "Sightseeing",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 13.75,
+            "lng": 100.4913
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Chatuchak market",
+      "description": "",
+      "city": {
+        "id": "bangkok",
+        "name": "Bangkok"
+      },
+      "items": [
+        {
+          "placeId": "chatuchak",
+          "name": "Chatuchak Weekend Market",
+          "category": "Market",
+          "durationHours": 3,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 13.7999,
+            "lng": 100.55
+          }
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Old Phuket Town",
+      "description": "",
+      "city": {
+        "id": "phuket",
+        "name": "Phuket"
+      },
+      "items": [
+        {
+          "placeId": "old-phuket",
+          "name": "Old Phuket Town",
+          "category": "Culture",
+          "durationHours": 2,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 7.8846,
+            "lng": 98.388
+          }
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Phi Phi islands",
+      "description": "",
+      "city": {
+        "id": "phuket",
+        "name": "Phuket"
+      },
+      "items": [
+        {
+          "placeId": "phi-phi",
+          "name": "Phi Phi islands boat trip",
+          "category": "Beach",
+          "durationHours": 8,
+          "included": true,
+          "optional": false,
+          "extraPriceAZN": null,
+          "priceLabel": "Included",
+          "coordinate": {
+            "lat": 7.7407,
+            "lng": 98.7784
+          }
+        }
+      ]
+    }
+  ],
+  "stays": [
+    {
+      "id": "bangkok-riverside",
+      "name": "Riverside Hotel Bangkok",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 140,
+        "currency": "AZN",
+        "formatted": "140 AZN"
+      },
+      "pricePerNightAZN": 140,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 13.724,
+        "lng": 100.513
+      },
+      "nights": 3,
+      "city": {
+        "id": "bangkok",
+        "name": "Bangkok"
+      }
+    },
+    {
+      "id": "phuket-kata",
+      "name": "Kata Beach Resort",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 190,
+        "currency": "AZN",
+        "formatted": "190 AZN"
+      },
+      "pricePerNightAZN": 190,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 7.82,
+        "lng": 98.298
+      },
+      "nights": 4,
+      "city": {
+        "id": "phuket",
+        "name": "Phuket"
+      }
+    }
+  ],
+  "budget": {
+    "packagePrice": {
+      "amount": 2200,
+      "currency": "AZN",
+      "formatted": "2,200 AZN"
+    },
+    "packagePriceAZN": 2200,
+    "childPrice": {
+      "amount": 2200,
+      "currency": "AZN",
+      "formatted": "2,200 AZN"
+    },
+    "childPriceAZN": 2200,
+    "perLabel": "per person",
+    "optionalExtras": []
+  },
+  "included": [
+    "7 nights hotel",
+    "Breakfast",
+    "Domestic flight",
+    "Phi Phi boat trip"
+  ],
+  "excluded": [
+    "Flights",
+    "Lunch and dinner",
+    "Optional activities"
+  ],
+  "map": {
+    "points": [
+      {
+        "kind": "place",
+        "id": "grand-palace",
+        "name": "Grand Palace & Wat Pho",
+        "day": 1,
+        "lat": 13.75,
+        "lng": 100.4913
+      },
+      {
+        "kind": "place",
+        "id": "chatuchak",
+        "name": "Chatuchak Weekend Market",
+        "day": 2,
+        "lat": 13.7999,
+        "lng": 100.55
+      },
+      {
+        "kind": "place",
+        "id": "old-phuket",
+        "name": "Old Phuket Town",
+        "day": 4,
+        "lat": 7.8846,
+        "lng": 98.388
+      },
+      {
+        "kind": "place",
+        "id": "phi-phi",
+        "name": "Phi Phi islands boat trip",
+        "day": 5,
+        "lat": 7.7407,
+        "lng": 98.7784
+      },
+      {
+        "kind": "stay",
+        "id": "bangkok-riverside",
+        "name": "Riverside Hotel Bangkok",
+        "day": null,
+        "lat": 13.724,
+        "lng": 100.513
+      },
+      {
+        "kind": "stay",
+        "id": "phuket-kata",
+        "name": "Kata Beach Resort",
+        "day": null,
+        "lat": 7.82,
+        "lng": 98.298
+      }
+    ]
+  }
+}
