@@ -1,0 +1,1 @@
+{"statusCode":400,"error":"ValidationError","message":"Enter your full name.","fields":{"fullName":"Enter your full name.","email":"Enter a valid email address.","password":"Password must be at least 8 characters.","acceptTerms":"Please accept the Terms and Privacy Policy."}}

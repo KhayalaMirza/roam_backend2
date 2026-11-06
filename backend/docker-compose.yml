@@ -1,0 +1,36 @@
+# One command:  docker compose up --build
+# API → http://localhost:3000  (docs: /docs)   Postgres → localhost:5432 (roam / roam)
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: roam
+      POSTGRES_PASSWORD: roam
+      POSTGRES_DB: roam
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U roam"]
+      interval: 3s
+      retries: 20
+
+  api:
+    build: .
+    # .env is optional — everything below has working local defaults
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: postgres://roam:roam@db:5432/roam
+      NODE_ENV: ${NODE_ENV:-development}
+      JWT_SECRET: ${JWT_SECRET:-local-dev-secret-change-me-before-production-xyz}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@roam.app}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin12345}
+      SEED_ON_START: "true"
+    ports: ["3000:3000"]
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:

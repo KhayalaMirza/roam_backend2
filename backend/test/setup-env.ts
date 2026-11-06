@@ -1,0 +1,10 @@
+process.env.NODE_ENV = 'test';
+process.env.DATABASE_URL = process.env.TEST_DATABASE_URL ?? 'postgres://roam:roam@localhost:5432/roam_test';
+process.env.DISABLE_CRON = 'true';
+process.env.RATES_DISABLE_FETCH = 'true';
+process.env.ANTHROPIC_API_KEY = '';
+process.env.GOOGLE_CLIENT_IDS = 'test-google-client';
+process.env.APPLE_AUDIENCES = 'az.roam.app';
+process.env.AI_GUEST_DAILY_LIMIT = '3';
+process.env.RATE_LIMIT_PER_MINUTE = '10000';
+process.env.AUTH_RATE_LIMIT_PER_MINUTE = '10000';
