@@ -1,0 +1,60 @@
+{
+  "id": "uae",
+  "name": "United Arab Emirates",
+  "region": {
+    "id": "middle-east",
+    "name": "Middle East"
+  },
+  "imageUrl": null,
+  "cityCount": 2,
+  "subtitle": "2 cities",
+  "tourCount": 1,
+  "description": "Skyline views, desert safaris and Gulf beaches.",
+  "info": [
+    {
+      "title": "Currency",
+      "value": "UAE dirham"
+    },
+    {
+      "title": "Language",
+      "value": "Arabic"
+    },
+    {
+      "title": "Best season",
+      "value": "Nov – Mar"
+    }
+  ],
+  "currency": "UAE dirham",
+  "language": "Arabic",
+  "bestSeason": "Nov – Mar",
+  "cities": [
+    {
+      "id": "abu-dhabi",
+      "name": "Abu Dhabi",
+      "shortDescription": "Grand mosque, Louvre and island beaches.",
+      "imageUrl": null,
+      "recommendedDays": 2,
+      "dailyBudget": {
+        "amount": 255,
+        "currency": "AZN",
+        "formatted": "255 AZN"
+      },
+      "dailyBudgetAZN": 255,
+      "tourCount": 1
+    },
+    {
+      "id": "dubai",
+      "name": "Dubai",
+      "shortDescription": "Skyscrapers, souks and desert dunes.",
+      "imageUrl": null,
+      "recommendedDays": 4,
+      "dailyBudget": {
+        "amount": 280,
+        "currency": "AZN",
+        "formatted": "280 AZN"
+      },
+      "dailyBudgetAZN": 280,
+      "tourCount": 1
+    }
+  ]
+}

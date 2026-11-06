@@ -1,0 +1,184 @@
+{
+  "id": "tokyo",
+  "name": "Tokyo",
+  "shortDescription": "Neon districts, quiet shrines and world-class food.",
+  "imageUrl": null,
+  "recommendedDays": 4,
+  "dailyBudget": {
+    "amount": 260,
+    "currency": "AZN",
+    "formatted": "260 AZN"
+  },
+  "dailyBudgetAZN": 260,
+  "tourCount": 1,
+  "description": "Neon districts, quiet shrines and world-class food.",
+  "country": {
+    "id": "japan",
+    "name": "Japan"
+  },
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "recommendedStayLabel": "4 days",
+  "dailyBudgetLabel": "~260 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 150,
+      "currency": "AZN",
+      "formatted": "150 AZN"
+    },
+    "food": {
+      "amount": 60,
+      "currency": "AZN",
+      "formatted": "60 AZN"
+    },
+    "transport": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    },
+    "activities": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    }
+  },
+  "transport": [
+    "Metro",
+    "JR trains",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": 35.6762,
+    "lng": 139.6503
+  },
+  "places": [
+    {
+      "id": "senso-ji",
+      "name": "Sensō-ji Temple",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 1.5,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "tokyo",
+        "name": "Tokyo"
+      },
+      "country": {
+        "id": "japan",
+        "name": "Japan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.7148,
+        "lng": 139.7967
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "shibuya",
+      "name": "Shibuya Crossing & Sky",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 40,
+      "price": {
+        "amount": 40,
+        "currency": "AZN",
+        "formatted": "40 AZN"
+      },
+      "priceLabel": "+40 AZN",
+      "city": {
+        "id": "tokyo",
+        "name": "Tokyo"
+      },
+      "country": {
+        "id": "japan",
+        "name": "Japan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.6595,
+        "lng": 139.7005
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "tsukiji",
+      "name": "Tsukiji Outer Market",
+      "category": "Market",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "tokyo",
+        "name": "Tokyo"
+      },
+      "country": {
+        "id": "japan",
+        "name": "Japan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.6655,
+        "lng": 139.7707
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "teamlab",
+      "name": "teamLab Planets",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 70,
+      "price": {
+        "amount": 70,
+        "currency": "AZN",
+        "formatted": "70 AZN"
+      },
+      "priceLabel": "+70 AZN",
+      "city": {
+        "id": "tokyo",
+        "name": "Tokyo"
+      },
+      "country": {
+        "id": "japan",
+        "name": "Japan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.6491,
+        "lng": 139.7898
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "tokyo-shinjuku",
+      "name": "Shinjuku City Hotel",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 280,
+        "currency": "AZN",
+        "formatted": "280 AZN"
+      },
+      "pricePerNightAZN": 280,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.69,
+        "lng": 139.7
+      }
+    }
+  ]
+}

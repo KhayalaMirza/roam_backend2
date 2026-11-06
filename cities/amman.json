@@ -1,0 +1,131 @@
+{
+  "id": "amman",
+  "name": "Amman",
+  "shortDescription": "Roman citadel, food streets and a gateway to the desert.",
+  "imageUrl": null,
+  "recommendedDays": 2,
+  "dailyBudget": {
+    "amount": 145,
+    "currency": "AZN",
+    "formatted": "145 AZN"
+  },
+  "dailyBudgetAZN": 145,
+  "tourCount": 1,
+  "description": "Roman citadel, food streets and a gateway to the desert.",
+  "country": {
+    "id": "jordan",
+    "name": "Jordan"
+  },
+  "region": {
+    "id": "middle-east",
+    "name": "Middle East"
+  },
+  "recommendedStayLabel": "2 days",
+  "dailyBudgetLabel": "~145 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 80,
+      "currency": "AZN",
+      "formatted": "80 AZN"
+    },
+    "food": {
+      "amount": 35,
+      "currency": "AZN",
+      "formatted": "35 AZN"
+    },
+    "transport": {
+      "amount": 15,
+      "currency": "AZN",
+      "formatted": "15 AZN"
+    },
+    "activities": {
+      "amount": 15,
+      "currency": "AZN",
+      "formatted": "15 AZN"
+    }
+  },
+  "transport": [
+    "Taxi",
+    "Careem"
+  ],
+  "coordinate": {
+    "lat": 31.9454,
+    "lng": 35.9284
+  },
+  "places": [
+    {
+      "id": "amman-citadel",
+      "name": "Amman Citadel",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 1.5,
+      "priceAZN": 6,
+      "price": {
+        "amount": 6,
+        "currency": "AZN",
+        "formatted": "6 AZN"
+      },
+      "priceLabel": "+6 AZN",
+      "city": {
+        "id": "amman",
+        "name": "Amman"
+      },
+      "country": {
+        "id": "jordan",
+        "name": "Jordan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 31.9545,
+        "lng": 35.9349
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "rainbow-street",
+      "name": "Rainbow Street food walk",
+      "category": "Food",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "amman",
+        "name": "Amman"
+      },
+      "country": {
+        "id": "jordan",
+        "name": "Jordan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 31.9513,
+        "lng": 35.9213
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "amman-downtown",
+      "name": "Downtown Amman Hotel",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 140,
+        "currency": "AZN",
+        "formatted": "140 AZN"
+      },
+      "pricePerNightAZN": 140,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 31.951,
+        "lng": 35.93
+      }
+    }
+  ]
+}

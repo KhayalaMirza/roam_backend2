@@ -1,0 +1,74 @@
+{
+  "id": "japan",
+  "name": "Japan",
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "imageUrl": null,
+  "cityCount": 3,
+  "subtitle": "3 cities",
+  "tourCount": 1,
+  "description": "Neon Tokyo, temple-filled Kyoto and street food in Osaka.",
+  "info": [
+    {
+      "title": "Currency",
+      "value": "Japanese yen"
+    },
+    {
+      "title": "Language",
+      "value": "Japanese"
+    },
+    {
+      "title": "Best season",
+      "value": "Mar – May, Oct – Nov"
+    }
+  ],
+  "currency": "Japanese yen",
+  "language": "Japanese",
+  "bestSeason": "Mar – May, Oct – Nov",
+  "cities": [
+    {
+      "id": "kyoto",
+      "name": "Kyoto",
+      "shortDescription": "Temples, bamboo groves and geisha districts.",
+      "imageUrl": null,
+      "recommendedDays": 3,
+      "dailyBudget": {
+        "amount": 230,
+        "currency": "AZN",
+        "formatted": "230 AZN"
+      },
+      "dailyBudgetAZN": 230,
+      "tourCount": 1
+    },
+    {
+      "id": "osaka",
+      "name": "Osaka",
+      "shortDescription": "Street food capital with a castle and nightlife.",
+      "imageUrl": null,
+      "recommendedDays": 2,
+      "dailyBudget": {
+        "amount": 210,
+        "currency": "AZN",
+        "formatted": "210 AZN"
+      },
+      "dailyBudgetAZN": 210,
+      "tourCount": 1
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo",
+      "shortDescription": "Neon districts, quiet shrines and world-class food.",
+      "imageUrl": null,
+      "recommendedDays": 4,
+      "dailyBudget": {
+        "amount": 260,
+        "currency": "AZN",
+        "formatted": "260 AZN"
+      },
+      "dailyBudgetAZN": 260,
+      "tourCount": 1
+    }
+  ]
+}

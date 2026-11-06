@@ -1,0 +1,155 @@
+{
+  "id": "zanzibar",
+  "name": "Zanzibar",
+  "shortDescription": "Stone Town alleys, spice farms and white-sand beaches.",
+  "imageUrl": null,
+  "recommendedDays": 4,
+  "dailyBudget": {
+    "amount": 145,
+    "currency": "AZN",
+    "formatted": "145 AZN"
+  },
+  "dailyBudgetAZN": 145,
+  "tourCount": 1,
+  "description": "Stone Town alleys, spice farms and white-sand beaches.",
+  "country": {
+    "id": "tanzania",
+    "name": "Tanzania"
+  },
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "recommendedStayLabel": "4 days",
+  "dailyBudgetLabel": "~145 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 75,
+      "currency": "AZN",
+      "formatted": "75 AZN"
+    },
+    "food": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    },
+    "transport": {
+      "amount": 15,
+      "currency": "AZN",
+      "formatted": "15 AZN"
+    },
+    "activities": {
+      "amount": 25,
+      "currency": "AZN",
+      "formatted": "25 AZN"
+    }
+  },
+  "transport": [
+    "Taxi",
+    "Dala-dala"
+  ],
+  "coordinate": {
+    "lat": -6.1659,
+    "lng": 39.2026
+  },
+  "places": [
+    {
+      "id": "nungwi",
+      "name": "Nungwi beach",
+      "category": "Beach",
+      "description": "",
+      "durationHours": 4,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "zanzibar",
+        "name": "Zanzibar"
+      },
+      "country": {
+        "id": "tanzania",
+        "name": "Tanzania"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -5.7266,
+        "lng": 39.2966
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "spice-farm",
+      "name": "Spice farm tour",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 30,
+      "price": {
+        "amount": 30,
+        "currency": "AZN",
+        "formatted": "30 AZN"
+      },
+      "priceLabel": "+30 AZN",
+      "city": {
+        "id": "zanzibar",
+        "name": "Zanzibar"
+      },
+      "country": {
+        "id": "tanzania",
+        "name": "Tanzania"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -6.1,
+        "lng": 39.25
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "stone-town",
+      "name": "Stone Town walk",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "zanzibar",
+        "name": "Zanzibar"
+      },
+      "country": {
+        "id": "tanzania",
+        "name": "Tanzania"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -6.163,
+        "lng": 39.188
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "zanzibar-beach",
+      "name": "Nungwi Beach Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 210,
+        "currency": "AZN",
+        "formatted": "210 AZN"
+      },
+      "pricePerNightAZN": 210,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -5.73,
+        "lng": 39.295
+      }
+    }
+  ]
+}

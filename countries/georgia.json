@@ -1,0 +1,74 @@
+{
+  "id": "georgia",
+  "name": "Georgia",
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "imageUrl": null,
+  "cityCount": 3,
+  "subtitle": "3 cities",
+  "tourCount": 2,
+  "description": "Mountain villages, old Tbilisi and the wine valleys of Kakheti.",
+  "info": [
+    {
+      "title": "Currency",
+      "value": "Georgian lari"
+    },
+    {
+      "title": "Language",
+      "value": "Georgian"
+    },
+    {
+      "title": "Best season",
+      "value": "May – Oct"
+    }
+  ],
+  "currency": "Georgian lari",
+  "language": "Georgian",
+  "bestSeason": "May – Oct",
+  "cities": [
+    {
+      "id": "batumi",
+      "name": "Batumi",
+      "shortDescription": "Black Sea boulevard, botanical garden and seafood.",
+      "imageUrl": null,
+      "recommendedDays": 3,
+      "dailyBudget": {
+        "amount": 125,
+        "currency": "AZN",
+        "formatted": "125 AZN"
+      },
+      "dailyBudgetAZN": 125,
+      "tourCount": 1
+    },
+    {
+      "id": "kazbegi",
+      "name": "Kazbegi",
+      "shortDescription": "Gergeti church under Mount Kazbek and alpine hikes.",
+      "imageUrl": null,
+      "recommendedDays": 2,
+      "dailyBudget": {
+        "amount": 115,
+        "currency": "AZN",
+        "formatted": "115 AZN"
+      },
+      "dailyBudgetAZN": 115,
+      "tourCount": 1
+    },
+    {
+      "id": "tbilisi",
+      "name": "Tbilisi",
+      "shortDescription": "Sulphur baths, balconied old town and a lively food scene.",
+      "imageUrl": null,
+      "recommendedDays": 3,
+      "dailyBudget": {
+        "amount": 130,
+        "currency": "AZN",
+        "formatted": "130 AZN"
+      },
+      "dailyBudgetAZN": 130,
+      "tourCount": 1
+    }
+  ]
+}

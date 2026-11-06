@@ -1,0 +1,38 @@
+[
+  {
+    "id": "georgia",
+    "name": "Georgia",
+    "region": {
+      "id": "europe",
+      "name": "Europe"
+    },
+    "imageUrl": null,
+    "cityCount": 3,
+    "subtitle": "3 cities",
+    "tourCount": 2
+  },
+  {
+    "id": "italy",
+    "name": "Italy",
+    "region": {
+      "id": "europe",
+      "name": "Europe"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  },
+  {
+    "id": "turkey",
+    "name": "Turkey",
+    "region": {
+      "id": "europe",
+      "name": "Europe"
+    },
+    "imageUrl": null,
+    "cityCount": 3,
+    "subtitle": "3 cities",
+    "tourCount": 2
+  }
+]

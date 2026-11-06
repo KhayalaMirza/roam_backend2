@@ -1,0 +1,50 @@
+[
+  {
+    "id": "egypt",
+    "name": "Egypt",
+    "region": {
+      "id": "africa",
+      "name": "Africa"
+    },
+    "imageUrl": null,
+    "cityCount": 3,
+    "subtitle": "3 cities",
+    "tourCount": 2
+  },
+  {
+    "id": "kenya",
+    "name": "Kenya",
+    "region": {
+      "id": "africa",
+      "name": "Africa"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  },
+  {
+    "id": "morocco",
+    "name": "Morocco",
+    "region": {
+      "id": "africa",
+      "name": "Africa"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 2
+  },
+  {
+    "id": "tanzania",
+    "name": "Tanzania",
+    "region": {
+      "id": "africa",
+      "name": "Africa"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  }
+]

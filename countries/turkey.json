@@ -1,0 +1,74 @@
+{
+  "id": "turkey",
+  "name": "Turkey",
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "imageUrl": null,
+  "cityCount": 3,
+  "subtitle": "3 cities",
+  "tourCount": 2,
+  "description": "Bazaars of Istanbul, Cappadocia balloons and the turquoise coast.",
+  "info": [
+    {
+      "title": "Currency",
+      "value": "Turkish lira"
+    },
+    {
+      "title": "Language",
+      "value": "Turkish"
+    },
+    {
+      "title": "Best season",
+      "value": "Apr – Jun, Sep – Oct"
+    }
+  ],
+  "currency": "Turkish lira",
+  "language": "Turkish",
+  "bestSeason": "Apr – Jun, Sep – Oct",
+  "cities": [
+    {
+      "id": "antalya",
+      "name": "Antalya",
+      "shortDescription": "Turquoise coast, old harbour and waterfalls.",
+      "imageUrl": null,
+      "recommendedDays": 4,
+      "dailyBudget": {
+        "amount": 145,
+        "currency": "AZN",
+        "formatted": "145 AZN"
+      },
+      "dailyBudgetAZN": 145,
+      "tourCount": 1
+    },
+    {
+      "id": "cappadocia",
+      "name": "Cappadocia",
+      "shortDescription": "Fairy chimneys, cave hotels and sunrise balloons.",
+      "imageUrl": null,
+      "recommendedDays": 2,
+      "dailyBudget": {
+        "amount": 170,
+        "currency": "AZN",
+        "formatted": "170 AZN"
+      },
+      "dailyBudgetAZN": 170,
+      "tourCount": 1
+    },
+    {
+      "id": "istanbul",
+      "name": "Istanbul",
+      "shortDescription": "Where Europe meets Asia — mosques, bazaars and the Bosphorus.",
+      "imageUrl": null,
+      "recommendedDays": 4,
+      "dailyBudget": {
+        "amount": 165,
+        "currency": "AZN",
+        "formatted": "165 AZN"
+      },
+      "dailyBudgetAZN": 165,
+      "tourCount": 1
+    }
+  ]
+}

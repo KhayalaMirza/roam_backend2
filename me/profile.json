@@ -1,0 +1,57 @@
+{
+  "id": "3e5669ca-87fb-45c2-8f71-94c0a1a55521",
+  "fullName": "Yusif Nasibli",
+  "email": "yusif1793897967750@example.com",
+  "initials": "YN",
+  "phone": "+994 50 123 45 67",
+  "currency": "AZN",
+  "notificationsEnabled": true,
+  "language": "English",
+  "role": "user",
+  "authProviders": [
+    "password"
+  ],
+  "hasPassword": true,
+  "preferences": {
+    "regions": [
+      {
+        "id": "africa",
+        "name": "Africa"
+      }
+    ],
+    "budgetMinAZN": 500,
+    "budgetMaxAZN": 2500,
+    "budgetMin": {
+      "amount": 500,
+      "currency": "AZN",
+      "formatted": "500 AZN"
+    },
+    "budgetMax": {
+      "amount": 2500,
+      "currency": "AZN",
+      "formatted": "2,500 AZN"
+    },
+    "travelTypes": [
+      {
+        "id": "nature",
+        "label": "Nature"
+      },
+      {
+        "id": "city_walks",
+        "label": "City walks"
+      }
+    ]
+  },
+  "stats": {
+    "requests": {
+      "total": 3,
+      "pending": 1,
+      "label": "3 tour requests · 1 waiting for operator"
+    },
+    "favorites": {
+      "tours": 3,
+      "places": 6
+    }
+  },
+  "createdAt": "2026-11-05T16:59:28.052Z"
+}

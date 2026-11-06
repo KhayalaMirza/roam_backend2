@@ -1,0 +1,136 @@
+{
+  "id": "nusa-penida",
+  "name": "Nusa Penida",
+  "shortDescription": "Cliffs, manta rays and Kelingking beach.",
+  "imageUrl": null,
+  "recommendedDays": 2,
+  "dailyBudget": {
+    "amount": 150,
+    "currency": "AZN",
+    "formatted": "150 AZN"
+  },
+  "dailyBudgetAZN": 150,
+  "tourCount": 1,
+  "description": "Cliffs, manta rays and Kelingking beach.",
+  "country": {
+    "id": "indonesia",
+    "name": "Indonesia"
+  },
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "recommendedStayLabel": "2 days",
+  "dailyBudgetLabel": "~150 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 60,
+      "currency": "AZN",
+      "formatted": "60 AZN"
+    },
+    "food": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    },
+    "transport": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    },
+    "activities": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    }
+  },
+  "transport": [
+    "Fast boat",
+    "Scooter",
+    "Driver"
+  ],
+  "coordinate": {
+    "lat": -8.7275,
+    "lng": 115.5444
+  },
+  "places": [
+    {
+      "id": "kelingking",
+      "name": "Kelingking Beach viewpoint",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 5,
+      "price": {
+        "amount": 5,
+        "currency": "AZN",
+        "formatted": "5 AZN"
+      },
+      "priceLabel": "+5 AZN",
+      "city": {
+        "id": "nusa-penida",
+        "name": "Nusa Penida"
+      },
+      "country": {
+        "id": "indonesia",
+        "name": "Indonesia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -8.7505,
+        "lng": 115.4746
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "manta-snorkel",
+      "name": "Manta Point snorkelling",
+      "category": "Adventure",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 70,
+      "price": {
+        "amount": 70,
+        "currency": "AZN",
+        "formatted": "70 AZN"
+      },
+      "priceLabel": "+70 AZN",
+      "city": {
+        "id": "nusa-penida",
+        "name": "Nusa Penida"
+      },
+      "country": {
+        "id": "indonesia",
+        "name": "Indonesia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -8.795,
+        "lng": 115.528
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "penida-bungalow",
+      "name": "Penida Cliff Bungalows",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 110,
+        "currency": "AZN",
+        "formatted": "110 AZN"
+      },
+      "pricePerNightAZN": 110,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -8.73,
+        "lng": 115.54
+      }
+    }
+  ]
+}

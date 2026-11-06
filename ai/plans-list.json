@@ -1,0 +1,23 @@
+[
+  {
+    "id": "b124dc5a-980f-49a5-a3c6-06ca6996ac8b",
+    "title": "Cairo & Luxor",
+    "subtitle": "5 days · 2 people",
+    "estimatedTotal": {
+      "amount": 994,
+      "currency": "AZN",
+      "formatted": "994 AZN"
+    },
+    "cities": [
+      {
+        "id": "cairo",
+        "name": "Cairo"
+      },
+      {
+        "id": "luxor",
+        "name": "Luxor"
+      }
+    ],
+    "createdAt": "2026-11-05T16:59:29.020Z"
+  }
+]

@@ -1,0 +1,468 @@
+{
+  "reply": "Here’s a 5-day plan with an estimated budget.",
+  "quickReplies": [
+    "Make it cheaper",
+    "Add one more day"
+  ],
+  "slots": {
+    "destination": "Africa",
+    "travelers": 2,
+    "durationDays": 5,
+    "budgetAZN": 1500,
+    "travelTypes": [
+      "nature",
+      "city_walks"
+    ],
+    "departureCity": "Baku",
+    "dates": {
+      "flexible": true,
+      "start": null,
+      "end": null
+    },
+    "flightsIncluded": false
+  },
+  "slotChips": [
+    {
+      "key": "travelers",
+      "label": "2 people"
+    },
+    {
+      "key": "durationDays",
+      "label": "5 days"
+    },
+    {
+      "key": "budgetAZN",
+      "label": "1,500 AZN"
+    },
+    {
+      "key": "travelTypes",
+      "label": "Nature"
+    },
+    {
+      "key": "travelTypes",
+      "label": "City walks"
+    },
+    {
+      "key": "destination",
+      "label": "Africa"
+    },
+    {
+      "key": "departureCity",
+      "label": "From Baku"
+    },
+    {
+      "key": "dates",
+      "label": "Flexible dates"
+    },
+    {
+      "key": "flightsIncluded",
+      "label": "Flights not included"
+    }
+  ],
+  "missingSlots": [],
+  "readyToPlan": true,
+  "plan": {
+    "id": null,
+    "saved": false,
+    "title": "Cairo & Luxor",
+    "summary": "5 days in Egypt focused on nature and city walks.",
+    "label": "Estimate",
+    "days": 5,
+    "travelers": 2,
+    "flightsIncluded": false,
+    "departureCity": "Baku",
+    "subtitle": "5 days · 2 people · flights not included",
+    "currency": "AZN",
+    "estimatedTotal": {
+      "amount": 994,
+      "currency": "AZN",
+      "formatted": "994 AZN"
+    },
+    "estimatedTotalAZN": 994,
+    "estimatedTotalLabel": "~994 AZN",
+    "userBudget": {
+      "amount": 1500,
+      "currency": "AZN",
+      "formatted": "1,500 AZN"
+    },
+    "withinBudget": true,
+    "breakdown": [
+      {
+        "key": "stay",
+        "label": "Stay",
+        "amountAZN": 392,
+        "amount": {
+          "amount": 392,
+          "currency": "AZN",
+          "formatted": "392 AZN"
+        }
+      },
+      {
+        "key": "food",
+        "label": "Food",
+        "amountAZN": 212,
+        "amount": {
+          "amount": 212,
+          "currency": "AZN",
+          "formatted": "212 AZN"
+        }
+      },
+      {
+        "key": "transport",
+        "label": "Transport",
+        "amountAZN": 80,
+        "amount": {
+          "amount": 80,
+          "currency": "AZN",
+          "formatted": "80 AZN"
+        }
+      },
+      {
+        "key": "activities",
+        "label": "Activities",
+        "amountAZN": 310,
+        "amount": {
+          "amount": 310,
+          "currency": "AZN",
+          "formatted": "310 AZN"
+        }
+      }
+    ],
+    "cities": [
+      {
+        "id": "cairo",
+        "name": "Cairo"
+      },
+      {
+        "id": "luxor",
+        "name": "Luxor"
+      }
+    ],
+    "dayPlans": [
+      {
+        "day": 1,
+        "city": {
+          "id": "cairo",
+          "name": "Cairo"
+        },
+        "title": "Arrival in Cairo & Camel ride at the pyramids",
+        "notes": null,
+        "items": [
+          {
+            "placeId": "camel-ride",
+            "name": "Camel ride at the pyramids",
+            "category": "Adventure",
+            "durationHours": 1,
+            "priceAZN": 35,
+            "price": {
+              "amount": 35,
+              "currency": "AZN",
+              "formatted": "35 AZN"
+            },
+            "priceLabel": "+35 AZN",
+            "isFavorite": false
+          },
+          {
+            "placeId": "old-cairo",
+            "name": "Coptic & Old Cairo",
+            "category": "Culture",
+            "durationHours": 2,
+            "priceAZN": 0,
+            "price": null,
+            "priceLabel": "Free",
+            "isFavorite": false
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "city": {
+          "id": "cairo",
+          "name": "Cairo"
+        },
+        "title": "Egyptian Museum & Giza Pyramids",
+        "notes": null,
+        "items": [
+          {
+            "placeId": "egyptian-museum",
+            "name": "Egyptian Museum",
+            "category": "Culture",
+            "durationHours": 2.5,
+            "priceAZN": 20,
+            "price": {
+              "amount": 20,
+              "currency": "AZN",
+              "formatted": "20 AZN"
+            },
+            "priceLabel": "+20 AZN",
+            "isFavorite": false
+          },
+          {
+            "placeId": "giza",
+            "name": "Giza Pyramids",
+            "category": "Sightseeing",
+            "durationHours": 3,
+            "priceAZN": 25,
+            "price": {
+              "amount": 25,
+              "currency": "AZN",
+              "formatted": "25 AZN"
+            },
+            "priceLabel": "+25 AZN",
+            "isFavorite": true
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "city": {
+          "id": "cairo",
+          "name": "Cairo"
+        },
+        "title": "Khan el-Khalili",
+        "notes": null,
+        "items": [
+          {
+            "placeId": "khan-el-khalili",
+            "name": "Khan el-Khalili",
+            "category": "Market",
+            "durationHours": 2,
+            "priceAZN": 0,
+            "price": null,
+            "priceLabel": "Free",
+            "isFavorite": true
+          }
+        ]
+      },
+      {
+        "day": 4,
+        "city": {
+          "id": "luxor",
+          "name": "Luxor"
+        },
+        "title": "Felucca sunset on the Nile & Karnak Temple",
+        "notes": null,
+        "items": [
+          {
+            "placeId": "felucca",
+            "name": "Felucca sunset on the Nile",
+            "category": "Nature",
+            "durationHours": 1.5,
+            "priceAZN": 15,
+            "price": {
+              "amount": 15,
+              "currency": "AZN",
+              "formatted": "15 AZN"
+            },
+            "priceLabel": "+15 AZN",
+            "isFavorite": false
+          },
+          {
+            "placeId": "karnak",
+            "name": "Karnak Temple",
+            "category": "Sightseeing",
+            "durationHours": 2.5,
+            "priceAZN": 25,
+            "price": {
+              "amount": 25,
+              "currency": "AZN",
+              "formatted": "25 AZN"
+            },
+            "priceLabel": "+25 AZN",
+            "isFavorite": false
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "city": {
+          "id": "luxor",
+          "name": "Luxor"
+        },
+        "title": "Valley of the Kings",
+        "notes": null,
+        "items": [
+          {
+            "placeId": "valley-of-kings",
+            "name": "Valley of the Kings",
+            "category": "Sightseeing",
+            "durationHours": 3,
+            "priceAZN": 35,
+            "price": {
+              "amount": 35,
+              "currency": "AZN",
+              "formatted": "35 AZN"
+            },
+            "priceLabel": "+35 AZN",
+            "isFavorite": false
+          }
+        ]
+      }
+    ],
+    "relatedTours": [
+      {
+        "id": "pyramids-nile-cruise",
+        "title": "Pyramids & Nile Cruise",
+        "summary": "Giza, the Egyptian Museum and a train south to Luxor’s temples.",
+        "region": {
+          "id": "africa",
+          "name": "Africa"
+        },
+        "country": {
+          "id": "egypt",
+          "name": "Egypt"
+        },
+        "city": {
+          "id": "cairo",
+          "name": "Cairo"
+        },
+        "locationLabel": "Egypt · Cairo",
+        "days": 5,
+        "nights": 4,
+        "durationLabel": "5 days / 4 nights",
+        "priceAZN": 980,
+        "price": {
+          "amount": 980,
+          "currency": "AZN",
+          "formatted": "980 AZN"
+        },
+        "priceLabel": "From 980 AZN / person",
+        "travelTypes": [
+          {
+            "id": "city_walks",
+            "label": "City walks"
+          },
+          {
+            "id": "nature",
+            "label": "Nature"
+          }
+        ],
+        "tags": [
+          "History",
+          "City walks"
+        ],
+        "coverImageUrl": null,
+        "isFavorite": true
+      },
+      {
+        "id": "red-sea-escape",
+        "title": "Red Sea Escape",
+        "summary": "Six relaxed beach days with reef snorkelling at Giftun Island.",
+        "region": {
+          "id": "africa",
+          "name": "Africa"
+        },
+        "country": {
+          "id": "egypt",
+          "name": "Egypt"
+        },
+        "city": {
+          "id": "hurghada",
+          "name": "Hurghada"
+        },
+        "locationLabel": "Egypt · Hurghada",
+        "days": 7,
+        "nights": 6,
+        "durationLabel": "7 days / 6 nights",
+        "priceAZN": 1150,
+        "price": {
+          "amount": 1150,
+          "currency": "AZN",
+          "formatted": "1,150 AZN"
+        },
+        "priceLabel": "From 1,150 AZN / person",
+        "travelTypes": [
+          {
+            "id": "sea",
+            "label": "Sea"
+          }
+        ],
+        "tags": [
+          "Beach",
+          "Snorkelling"
+        ],
+        "coverImageUrl": null,
+        "isFavorite": false
+      }
+    ],
+    "note": "Prices are estimates and are not confirmed.",
+    "draft": {
+      "title": "Cairo & Luxor",
+      "summary": "5 days in Egypt focused on nature and city walks.",
+      "days": [
+        {
+          "day": 1,
+          "cityId": "cairo",
+          "title": "Arrival in Cairo & Camel ride at the pyramids",
+          "placeIds": [
+            "camel-ride",
+            "old-cairo"
+          ],
+          "notes": null
+        },
+        {
+          "day": 2,
+          "cityId": "cairo",
+          "title": "Egyptian Museum & Giza Pyramids",
+          "placeIds": [
+            "egyptian-museum",
+            "giza"
+          ],
+          "notes": null
+        },
+        {
+          "day": 3,
+          "cityId": "cairo",
+          "title": "Khan el-Khalili",
+          "placeIds": [
+            "khan-el-khalili"
+          ],
+          "notes": null
+        },
+        {
+          "day": 4,
+          "cityId": "luxor",
+          "title": "Felucca sunset on the Nile & Karnak Temple",
+          "placeIds": [
+            "felucca",
+            "karnak"
+          ],
+          "notes": null
+        },
+        {
+          "day": 5,
+          "cityId": "luxor",
+          "title": "Valley of the Kings",
+          "placeIds": [
+            "valley-of-kings"
+          ],
+          "notes": null
+        }
+      ],
+      "relatedTourIds": [
+        "pyramids-nile-cruise",
+        "red-sea-escape"
+      ]
+    },
+    "slots": {
+      "destination": "Africa",
+      "travelers": 2,
+      "durationDays": 5,
+      "budgetAZN": 1500,
+      "travelTypes": [
+        "nature",
+        "city_walks"
+      ],
+      "departureCity": "Baku",
+      "dates": {
+        "flexible": true,
+        "start": null,
+        "end": null
+      },
+      "flightsIncluded": false
+    },
+    "createdAt": null
+  },
+  "remainingToday": 96,
+  "engine": "rules"
+}

@@ -1,0 +1,179 @@
+{
+  "id": "kazbegi",
+  "name": "Kazbegi",
+  "shortDescription": "Gergeti church under Mount Kazbek and alpine hikes.",
+  "imageUrl": null,
+  "recommendedDays": 2,
+  "dailyBudget": {
+    "amount": 115,
+    "currency": "AZN",
+    "formatted": "115 AZN"
+  },
+  "dailyBudgetAZN": 115,
+  "tourCount": 1,
+  "description": "Gergeti church under Mount Kazbek and alpine hikes.",
+  "country": {
+    "id": "georgia",
+    "name": "Georgia"
+  },
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "recommendedStayLabel": "2 days",
+  "dailyBudgetLabel": "~115 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 50,
+      "currency": "AZN",
+      "formatted": "50 AZN"
+    },
+    "food": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    },
+    "transport": {
+      "amount": 25,
+      "currency": "AZN",
+      "formatted": "25 AZN"
+    },
+    "activities": {
+      "amount": 10,
+      "currency": "AZN",
+      "formatted": "10 AZN"
+    }
+  },
+  "transport": [
+    "Minibus",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": 42.6565,
+    "lng": 44.6433
+  },
+  "places": [
+    {
+      "id": "gergeti-trinity",
+      "name": "Gergeti Trinity Church hike",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 4,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "kazbegi",
+        "name": "Kazbegi"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 42.6623,
+        "lng": 44.6206
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "gveleti-waterfall",
+      "name": "Gveleti Waterfall",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 2.5,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "kazbegi",
+        "name": "Kazbegi"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 42.7034,
+        "lng": 44.6177
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "kazbegi-horse",
+      "name": "Horse ride to Juta valley",
+      "category": "Adventure",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 60,
+      "price": {
+        "amount": 60,
+        "currency": "AZN",
+        "formatted": "60 AZN"
+      },
+      "priceLabel": "+60 AZN",
+      "city": {
+        "id": "kazbegi",
+        "name": "Kazbegi"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 42.5787,
+        "lng": 44.7432
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "jvari-pass",
+      "name": "Jvari Pass & Friendship Monument",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 1.5,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "kazbegi",
+        "name": "Kazbegi"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 42.4994,
+        "lng": 44.4687
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "kazbegi-lodge",
+      "name": "Mountain View Lodge",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 170,
+        "currency": "AZN",
+        "formatted": "170 AZN"
+      },
+      "pricePerNightAZN": 170,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 42.6598,
+        "lng": 44.6417
+      }
+    }
+  ]
+}

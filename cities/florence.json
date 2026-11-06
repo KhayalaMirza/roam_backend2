@@ -1,0 +1,132 @@
+{
+  "id": "florence",
+  "name": "Florence",
+  "shortDescription": "Renaissance art and Tuscan hills.",
+  "imageUrl": null,
+  "recommendedDays": 2,
+  "dailyBudget": {
+    "amount": 230,
+    "currency": "AZN",
+    "formatted": "230 AZN"
+  },
+  "dailyBudgetAZN": 230,
+  "tourCount": 1,
+  "description": "Renaissance art and Tuscan hills.",
+  "country": {
+    "id": "italy",
+    "name": "Italy"
+  },
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "recommendedStayLabel": "2 days",
+  "dailyBudgetLabel": "~230 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 130,
+      "currency": "AZN",
+      "formatted": "130 AZN"
+    },
+    "food": {
+      "amount": 55,
+      "currency": "AZN",
+      "formatted": "55 AZN"
+    },
+    "transport": {
+      "amount": 10,
+      "currency": "AZN",
+      "formatted": "10 AZN"
+    },
+    "activities": {
+      "amount": 35,
+      "currency": "AZN",
+      "formatted": "35 AZN"
+    }
+  },
+  "transport": [
+    "Walking",
+    "Bus",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": 43.7696,
+    "lng": 11.2558
+  },
+  "places": [
+    {
+      "id": "piazzale-michelangelo",
+      "name": "Piazzale Michelangelo",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 1,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "florence",
+        "name": "Florence"
+      },
+      "country": {
+        "id": "italy",
+        "name": "Italy"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 43.7629,
+        "lng": 11.265
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "uffizi",
+      "name": "Uffizi Gallery",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 45,
+      "price": {
+        "amount": 45,
+        "currency": "AZN",
+        "formatted": "45 AZN"
+      },
+      "priceLabel": "+45 AZN",
+      "city": {
+        "id": "florence",
+        "name": "Florence"
+      },
+      "country": {
+        "id": "italy",
+        "name": "Italy"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 43.7678,
+        "lng": 11.2553
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "florence-duomo",
+      "name": "Duomo View Hotel",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 300,
+        "currency": "AZN",
+        "formatted": "300 AZN"
+      },
+      "pricePerNightAZN": 300,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 43.773,
+        "lng": 11.256
+      }
+    }
+  ]
+}

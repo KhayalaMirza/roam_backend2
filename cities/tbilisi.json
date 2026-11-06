@@ -1,0 +1,212 @@
+{
+  "id": "tbilisi",
+  "name": "Tbilisi",
+  "shortDescription": "Sulphur baths, balconied old town and a lively food scene.",
+  "imageUrl": null,
+  "recommendedDays": 3,
+  "dailyBudget": {
+    "amount": 130,
+    "currency": "AZN",
+    "formatted": "130 AZN"
+  },
+  "dailyBudgetAZN": 130,
+  "tourCount": 1,
+  "description": "Sulphur baths, balconied old town and a lively food scene.",
+  "country": {
+    "id": "georgia",
+    "name": "Georgia"
+  },
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "recommendedStayLabel": "3 days",
+  "dailyBudgetLabel": "~130 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 56,
+      "currency": "AZN",
+      "formatted": "56 AZN"
+    },
+    "food": {
+      "amount": 34,
+      "currency": "AZN",
+      "formatted": "34 AZN"
+    },
+    "transport": {
+      "amount": 22,
+      "currency": "AZN",
+      "formatted": "22 AZN"
+    },
+    "activities": {
+      "amount": 18,
+      "currency": "AZN",
+      "formatted": "18 AZN"
+    }
+  },
+  "transport": [
+    "Metro",
+    "Bolt",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": 41.7151,
+    "lng": 44.8271
+  },
+  "places": [
+    {
+      "id": "abanotubani",
+      "name": "Abanotubani Sulphur Baths",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 45,
+      "price": {
+        "amount": 45,
+        "currency": "AZN",
+        "formatted": "45 AZN"
+      },
+      "priceLabel": "+45 AZN",
+      "city": {
+        "id": "tbilisi",
+        "name": "Tbilisi"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.6882,
+        "lng": 44.8113
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "dry-bridge-market",
+      "name": "Dry Bridge Market",
+      "category": "Market",
+      "description": "",
+      "durationHours": 1.5,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "tbilisi",
+        "name": "Tbilisi"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.7005,
+        "lng": 44.8059
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "georgian-national-museum",
+      "name": "Georgian National Museum",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 15,
+      "price": {
+        "amount": 15,
+        "currency": "AZN",
+        "formatted": "15 AZN"
+      },
+      "priceLabel": "+15 AZN",
+      "city": {
+        "id": "tbilisi",
+        "name": "Tbilisi"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.6963,
+        "lng": 44.8001
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "mtatsminda",
+      "name": "Mtatsminda Park & Funicular",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 10,
+      "price": {
+        "amount": 10,
+        "currency": "AZN",
+        "formatted": "10 AZN"
+      },
+      "priceLabel": "+10 AZN",
+      "city": {
+        "id": "tbilisi",
+        "name": "Tbilisi"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.6946,
+        "lng": 44.786
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "narikala",
+      "name": "Narikala Fortress",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "tbilisi",
+        "name": "Tbilisi"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.6879,
+        "lng": 44.8086
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "rooms-tbilisi",
+      "name": "Old Town Boutique Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 150,
+        "currency": "AZN",
+        "formatted": "150 AZN"
+      },
+      "pricePerNightAZN": 150,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.6935,
+        "lng": 44.8045
+      }
+    }
+  ]
+}

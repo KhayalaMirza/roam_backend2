@@ -1,0 +1,28 @@
+{
+  "id": "giza",
+  "name": "Giza Pyramids",
+  "category": "Sightseeing",
+  "description": "",
+  "durationHours": 3,
+  "priceAZN": 25,
+  "price": {
+    "amount": 25,
+    "currency": "AZN",
+    "formatted": "25 AZN"
+  },
+  "priceLabel": "+25 AZN",
+  "city": {
+    "id": "cairo",
+    "name": "Cairo"
+  },
+  "country": {
+    "id": "egypt",
+    "name": "Egypt"
+  },
+  "imageUrl": null,
+  "coordinate": {
+    "lat": 29.9792,
+    "lng": 31.1342
+  },
+  "isFavorite": false
+}

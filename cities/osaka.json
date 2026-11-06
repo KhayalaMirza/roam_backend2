@@ -1,0 +1,111 @@
+{
+  "id": "osaka",
+  "name": "Osaka",
+  "shortDescription": "Street food capital with a castle and nightlife.",
+  "imageUrl": null,
+  "recommendedDays": 2,
+  "dailyBudget": {
+    "amount": 210,
+    "currency": "AZN",
+    "formatted": "210 AZN"
+  },
+  "dailyBudgetAZN": 210,
+  "tourCount": 1,
+  "description": "Street food capital with a castle and nightlife.",
+  "country": {
+    "id": "japan",
+    "name": "Japan"
+  },
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "recommendedStayLabel": "2 days",
+  "dailyBudgetLabel": "~210 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 120,
+      "currency": "AZN",
+      "formatted": "120 AZN"
+    },
+    "food": {
+      "amount": 50,
+      "currency": "AZN",
+      "formatted": "50 AZN"
+    },
+    "transport": {
+      "amount": 15,
+      "currency": "AZN",
+      "formatted": "15 AZN"
+    },
+    "activities": {
+      "amount": 25,
+      "currency": "AZN",
+      "formatted": "25 AZN"
+    }
+  },
+  "transport": [
+    "Metro",
+    "JR trains"
+  ],
+  "coordinate": {
+    "lat": 34.6937,
+    "lng": 135.5023
+  },
+  "places": [
+    {
+      "id": "dotonbori",
+      "name": "Dōtonbori street food",
+      "category": "Food",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "osaka",
+        "name": "Osaka"
+      },
+      "country": {
+        "id": "japan",
+        "name": "Japan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 34.6687,
+        "lng": 135.5013
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "osaka-castle",
+      "name": "Osaka Castle",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 12,
+      "price": {
+        "amount": 12,
+        "currency": "AZN",
+        "formatted": "12 AZN"
+      },
+      "priceLabel": "+12 AZN",
+      "city": {
+        "id": "osaka",
+        "name": "Osaka"
+      },
+      "country": {
+        "id": "japan",
+        "name": "Japan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 34.6873,
+        "lng": 135.5262
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": []
+}

@@ -1,0 +1,60 @@
+{
+  "id": "tanzania",
+  "name": "Tanzania",
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "imageUrl": null,
+  "cityCount": 2,
+  "subtitle": "2 cities",
+  "tourCount": 1,
+  "description": "Serengeti plains, Kilimanjaro and the spice island of Zanzibar.",
+  "info": [
+    {
+      "title": "Currency",
+      "value": "Tanzanian shilling"
+    },
+    {
+      "title": "Language",
+      "value": "Swahili, English"
+    },
+    {
+      "title": "Best season",
+      "value": "Jun – Oct"
+    }
+  ],
+  "currency": "Tanzanian shilling",
+  "language": "Swahili, English",
+  "bestSeason": "Jun – Oct",
+  "cities": [
+    {
+      "id": "arusha",
+      "name": "Arusha",
+      "shortDescription": "Base for Serengeti and Ngorongoro safaris.",
+      "imageUrl": null,
+      "recommendedDays": 2,
+      "dailyBudget": {
+        "amount": 190,
+        "currency": "AZN",
+        "formatted": "190 AZN"
+      },
+      "dailyBudgetAZN": 190,
+      "tourCount": 1
+    },
+    {
+      "id": "zanzibar",
+      "name": "Zanzibar",
+      "shortDescription": "Stone Town alleys, spice farms and white-sand beaches.",
+      "imageUrl": null,
+      "recommendedDays": 4,
+      "dailyBudget": {
+        "amount": 145,
+        "currency": "AZN",
+        "formatted": "145 AZN"
+      },
+      "dailyBudgetAZN": 145,
+      "tourCount": 1
+    }
+  ]
+}

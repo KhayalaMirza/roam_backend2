@@ -1,0 +1,66 @@
+{
+  "reply": "Great, I have everything I need. Tap “Create my plan” when you’re ready.",
+  "quickReplies": [
+    "Create my plan"
+  ],
+  "slots": {
+    "destination": "Africa",
+    "travelers": 2,
+    "durationDays": 5,
+    "budgetAZN": 1500,
+    "travelTypes": [
+      "nature",
+      "city_walks"
+    ],
+    "departureCity": "Baku",
+    "dates": {
+      "flexible": true,
+      "start": null,
+      "end": null
+    },
+    "flightsIncluded": false
+  },
+  "slotChips": [
+    {
+      "key": "travelers",
+      "label": "2 people"
+    },
+    {
+      "key": "durationDays",
+      "label": "5 days"
+    },
+    {
+      "key": "budgetAZN",
+      "label": "1,500 AZN"
+    },
+    {
+      "key": "travelTypes",
+      "label": "Nature"
+    },
+    {
+      "key": "travelTypes",
+      "label": "City walks"
+    },
+    {
+      "key": "destination",
+      "label": "Africa"
+    },
+    {
+      "key": "departureCity",
+      "label": "From Baku"
+    },
+    {
+      "key": "dates",
+      "label": "Flexible dates"
+    },
+    {
+      "key": "flightsIncluded",
+      "label": "Flights not included"
+    }
+  ],
+  "missingSlots": [],
+  "readyToPlan": true,
+  "plan": null,
+  "remainingToday": 97,
+  "engine": "rules"
+}

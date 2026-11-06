@@ -1,0 +1,60 @@
+{
+  "id": "morocco",
+  "name": "Morocco",
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "imageUrl": null,
+  "cityCount": 2,
+  "subtitle": "2 cities",
+  "tourCount": 2,
+  "description": "Medinas, riads, Atlas mountains and Sahara dunes.",
+  "info": [
+    {
+      "title": "Currency",
+      "value": "Moroccan dirham"
+    },
+    {
+      "title": "Language",
+      "value": "Arabic, French"
+    },
+    {
+      "title": "Best season",
+      "value": "Mar – May, Sep – Nov"
+    }
+  ],
+  "currency": "Moroccan dirham",
+  "language": "Arabic, French",
+  "bestSeason": "Mar – May, Sep – Nov",
+  "cities": [
+    {
+      "id": "chefchaouen",
+      "name": "Chefchaouen",
+      "shortDescription": "The blue town in the Rif mountains.",
+      "imageUrl": null,
+      "recommendedDays": 2,
+      "dailyBudget": {
+        "amount": 100,
+        "currency": "AZN",
+        "formatted": "100 AZN"
+      },
+      "dailyBudgetAZN": 100,
+      "tourCount": 1
+    },
+    {
+      "id": "marrakech",
+      "name": "Marrakech",
+      "shortDescription": "Medina souks, riads and the Jemaa el-Fnaa square.",
+      "imageUrl": null,
+      "recommendedDays": 3,
+      "dailyBudget": {
+        "amount": 130,
+        "currency": "AZN",
+        "formatted": "130 AZN"
+      },
+      "dailyBudgetAZN": 130,
+      "tourCount": 1
+    }
+  ]
+}

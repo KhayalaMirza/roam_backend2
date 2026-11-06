@@ -1,0 +1,1070 @@
+{
+  "description": "Roam API mock data — real responses captured from the backend. Base URL: http://localhost:3000. Prices stored in AZN.",
+  "generatedAt": "2026-11-05T16:59:29.054Z",
+  "endpoints": [
+    {
+      "method": "POST",
+      "endpoint": "/v1/auth/register",
+      "status": 201,
+      "auth": false,
+      "requestBody": {
+        "fullName": "Yusif Nasibli",
+        "email": "yusif1793897967750@example.com",
+        "password": "password123",
+        "acceptTerms": true
+      },
+      "file": "auth/register.json"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/v1/auth/login",
+      "status": 200,
+      "auth": false,
+      "requestBody": {
+        "email": "yusif1793897967750@example.com",
+        "password": "password123"
+      },
+      "file": "auth/login.json"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/v1/auth/login",
+      "status": 401,
+      "auth": false,
+      "requestBody": {
+        "email": "yusif1793897967750@example.com",
+        "password": "wrong-pass"
+      },
+      "file": "errors/401-invalid-credentials.json",
+      "note": "Wrong password"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/v1/auth/register",
+      "status": 400,
+      "auth": false,
+      "requestBody": {
+        "fullName": "",
+        "email": "bad",
+        "password": "short",
+        "acceptTerms": false
+      },
+      "file": "errors/400-validation.json",
+      "note": "Field errors shown under inputs"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/v1/favorites",
+      "status": 401,
+      "auth": false,
+      "requestBody": {
+        "type": "tour",
+        "itemId": "pyramids-nile-cruise"
+      },
+      "file": "errors/401-login-required.json",
+      "note": "Guest tries a protected action"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/unknown",
+      "status": 404,
+      "auth": false,
+      "file": "errors/404-not-found.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/rates",
+      "status": 200,
+      "auth": false,
+      "file": "rates.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/regions",
+      "status": 200,
+      "auth": false,
+      "file": "regions.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries",
+      "status": 200,
+      "auth": false,
+      "file": "countries/index.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries?regionId=europe",
+      "status": 200,
+      "auth": false,
+      "file": "countries/by-region/europe.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries?regionId=asia",
+      "status": 200,
+      "auth": false,
+      "file": "countries/by-region/asia.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries?regionId=middle-east",
+      "status": 200,
+      "auth": false,
+      "file": "countries/by-region/middle-east.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries?regionId=africa",
+      "status": 200,
+      "auth": false,
+      "file": "countries/by-region/africa.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries/egypt",
+      "status": 200,
+      "auth": false,
+      "file": "countries/egypt.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/cairo",
+      "status": 200,
+      "auth": true,
+      "file": "cities/cairo.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/hurghada",
+      "status": 200,
+      "auth": true,
+      "file": "cities/hurghada.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/luxor",
+      "status": 200,
+      "auth": true,
+      "file": "cities/luxor.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries/georgia",
+      "status": 200,
+      "auth": false,
+      "file": "countries/georgia.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/batumi",
+      "status": 200,
+      "auth": true,
+      "file": "cities/batumi.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/kazbegi",
+      "status": 200,
+      "auth": true,
+      "file": "cities/kazbegi.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/tbilisi",
+      "status": 200,
+      "auth": true,
+      "file": "cities/tbilisi.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries/indonesia",
+      "status": 200,
+      "auth": false,
+      "file": "countries/indonesia.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/bali",
+      "status": 200,
+      "auth": true,
+      "file": "cities/bali.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/nusa-penida",
+      "status": 200,
+      "auth": true,
+      "file": "cities/nusa-penida.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries/italy",
+      "status": 200,
+      "auth": false,
+      "file": "countries/italy.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/florence",
+      "status": 200,
+      "auth": true,
+      "file": "cities/florence.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/rome",
+      "status": 200,
+      "auth": true,
+      "file": "cities/rome.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries/japan",
+      "status": 200,
+      "auth": false,
+      "file": "countries/japan.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/kyoto",
+      "status": 200,
+      "auth": true,
+      "file": "cities/kyoto.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/osaka",
+      "status": 200,
+      "auth": true,
+      "file": "cities/osaka.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/tokyo",
+      "status": 200,
+      "auth": true,
+      "file": "cities/tokyo.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries/jordan",
+      "status": 200,
+      "auth": false,
+      "file": "countries/jordan.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/amman",
+      "status": 200,
+      "auth": true,
+      "file": "cities/amman.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/petra",
+      "status": 200,
+      "auth": true,
+      "file": "cities/petra.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries/kenya",
+      "status": 200,
+      "auth": false,
+      "file": "countries/kenya.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/maasai-mara",
+      "status": 200,
+      "auth": true,
+      "file": "cities/maasai-mara.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/nairobi",
+      "status": 200,
+      "auth": true,
+      "file": "cities/nairobi.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries/morocco",
+      "status": 200,
+      "auth": false,
+      "file": "countries/morocco.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/chefchaouen",
+      "status": 200,
+      "auth": true,
+      "file": "cities/chefchaouen.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/marrakech",
+      "status": 200,
+      "auth": true,
+      "file": "cities/marrakech.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries/tanzania",
+      "status": 200,
+      "auth": false,
+      "file": "countries/tanzania.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/arusha",
+      "status": 200,
+      "auth": true,
+      "file": "cities/arusha.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/zanzibar",
+      "status": 200,
+      "auth": true,
+      "file": "cities/zanzibar.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries/thailand",
+      "status": 200,
+      "auth": false,
+      "file": "countries/thailand.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/bangkok",
+      "status": 200,
+      "auth": true,
+      "file": "cities/bangkok.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/phuket",
+      "status": 200,
+      "auth": true,
+      "file": "cities/phuket.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries/turkey",
+      "status": 200,
+      "auth": false,
+      "file": "countries/turkey.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/antalya",
+      "status": 200,
+      "auth": true,
+      "file": "cities/antalya.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/cappadocia",
+      "status": 200,
+      "auth": true,
+      "file": "cities/cappadocia.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/istanbul",
+      "status": 200,
+      "auth": true,
+      "file": "cities/istanbul.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/countries/uae",
+      "status": 200,
+      "auth": false,
+      "file": "countries/uae.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/abu-dhabi",
+      "status": 200,
+      "auth": true,
+      "file": "cities/abu-dhabi.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/cities/dubai",
+      "status": 200,
+      "auth": true,
+      "file": "cities/dubai.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/places/giza",
+      "status": 200,
+      "auth": false,
+      "file": "places/giza.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours?limit=100",
+      "status": 200,
+      "auth": false,
+      "file": "tours/index.json",
+      "note": "Home — all tours"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours?region=europe",
+      "status": 200,
+      "auth": false,
+      "file": "tours/by-region/europe.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours?region=asia",
+      "status": 200,
+      "auth": false,
+      "file": "tours/by-region/asia.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours?region=middle-east",
+      "status": 200,
+      "auth": false,
+      "file": "tours/by-region/middle-east.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours?region=africa",
+      "status": 200,
+      "auth": false,
+      "file": "tours/by-region/africa.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours?region=africa&budgetMax=1500&duration=4-7&type=city_walks&sort=price_asc",
+      "status": 200,
+      "auth": false,
+      "file": "tours/filtered-example.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours?budgetMax=10",
+      "status": 200,
+      "auth": false,
+      "file": "tours/empty-result.json",
+      "note": "No tours match your filters"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours?currency=EUR&limit=100",
+      "status": 200,
+      "auth": false,
+      "file": "tours/index-eur.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/filters",
+      "status": 200,
+      "auth": false,
+      "file": "tours/filters.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/filters?regionId=africa",
+      "status": 200,
+      "auth": false,
+      "file": "tours/filters-africa.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/batumi-weekend",
+      "status": 200,
+      "auth": false,
+      "file": "tours/batumi-weekend.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/pyramids-nile-cruise",
+      "status": 200,
+      "auth": false,
+      "file": "tours/pyramids-nile-cruise.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/red-sea-escape",
+      "status": 200,
+      "auth": false,
+      "file": "tours/red-sea-escape.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/marrakech-sahara",
+      "status": 200,
+      "auth": false,
+      "file": "tours/marrakech-sahara.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/blue-city-hikes",
+      "status": 200,
+      "auth": false,
+      "file": "tours/blue-city-hikes.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/kenya-big-five",
+      "status": 200,
+      "auth": false,
+      "file": "tours/kenya-big-five.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/zanzibar-serengeti",
+      "status": 200,
+      "auth": false,
+      "file": "tours/zanzibar-serengeti.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/tbilisi-kazbegi",
+      "status": 200,
+      "auth": false,
+      "file": "tours/tbilisi-kazbegi.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/istanbul-cappadocia",
+      "status": 200,
+      "auth": false,
+      "file": "tours/istanbul-cappadocia.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/antalya-coast",
+      "status": 200,
+      "auth": false,
+      "file": "tours/antalya-coast.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/roman-holiday",
+      "status": 200,
+      "auth": false,
+      "file": "tours/roman-holiday.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/japan-golden-route",
+      "status": 200,
+      "auth": false,
+      "file": "tours/japan-golden-route.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/bali-island-hopping",
+      "status": 200,
+      "auth": false,
+      "file": "tours/bali-island-hopping.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/thailand-temples-beaches",
+      "status": 200,
+      "auth": false,
+      "file": "tours/thailand-temples-beaches.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/dubai-desert",
+      "status": 200,
+      "auth": false,
+      "file": "tours/dubai-desert.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/tours/petra-wadi-rum",
+      "status": 200,
+      "auth": false,
+      "file": "tours/petra-wadi-rum.json"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/v1/me/preferences",
+      "status": 200,
+      "auth": true,
+      "requestBody": {
+        "regions": [
+          "africa"
+        ],
+        "budgetMin": 500,
+        "budgetMax": 2500,
+        "travelTypes": [
+          "nature",
+          "city_walks"
+        ]
+      },
+      "file": "me/preferences-update.json"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/v1/favorites",
+      "status": 201,
+      "auth": true,
+      "requestBody": {
+        "type": "tour",
+        "itemId": "pyramids-nile-cruise"
+      },
+      "file": "favorites/add.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/favorites",
+      "status": 200,
+      "auth": true,
+      "file": "favorites/index.json"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/v1/favorites?type=tour&itemId=marrakech-sahara",
+      "status": 200,
+      "auth": true,
+      "file": "favorites/remove.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/requests/quote?tourId=pyramids-nile-cruise&adults=2&children=0",
+      "status": 200,
+      "auth": true,
+      "file": "requests/quote.json"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/v1/requests",
+      "status": 201,
+      "auth": true,
+      "requestBody": {
+        "tourId": "pyramids-nile-cruise",
+        "flexible": false,
+        "startDate": "2026-12-15",
+        "adults": 2,
+        "children": 0
+      },
+      "file": "requests/create.json",
+      "note": "Request sent screen"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/requests?status=all",
+      "status": 200,
+      "auth": true,
+      "file": "requests/list-all.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/requests?status=pending",
+      "status": 200,
+      "auth": true,
+      "file": "requests/list-pending.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/requests?status=confirmed",
+      "status": 200,
+      "auth": true,
+      "file": "requests/list-confirmed.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/requests?status=past",
+      "status": 200,
+      "auth": true,
+      "file": "requests/list-past.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/requests/a6ca88ef-06fa-4014-a893-dae671e11964",
+      "status": 200,
+      "auth": true,
+      "file": "requests/detail.json"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/v1/ai/chat",
+      "status": 200,
+      "auth": true,
+      "requestBody": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "2 people, 5 days, around 1,500 AZN. Nature and city walks"
+          }
+        ]
+      },
+      "file": "ai/chat-1-free-text.json"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/v1/ai/chat",
+      "status": 200,
+      "auth": true,
+      "requestBody": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "2 people, 5 days, around 1,500 AZN. Nature and city walks"
+          },
+          {
+            "role": "assistant",
+            "content": "Where will you depart from, and when do you want to travel?"
+          },
+          {
+            "role": "user",
+            "content": "From Baku, flexible dates"
+          }
+        ],
+        "slots": {
+          "destination": "Africa",
+          "travelers": 2,
+          "durationDays": 5,
+          "budgetAZN": 1500,
+          "travelTypes": [
+            "nature",
+            "city_walks"
+          ],
+          "departureCity": null,
+          "dates": null,
+          "flightsIncluded": null
+        }
+      },
+      "file": "ai/chat-2-departure.json"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/v1/ai/chat",
+      "status": 200,
+      "auth": true,
+      "requestBody": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "2 people, 5 days, around 1,500 AZN. Nature and city walks"
+          },
+          {
+            "role": "assistant",
+            "content": "Where will you depart from, and when do you want to travel?"
+          },
+          {
+            "role": "user",
+            "content": "From Baku, flexible dates"
+          },
+          {
+            "role": "assistant",
+            "content": "Are flights part of the budget?"
+          },
+          {
+            "role": "user",
+            "content": "Not included"
+          }
+        ],
+        "slots": {
+          "destination": "Africa",
+          "travelers": 2,
+          "durationDays": 5,
+          "budgetAZN": 1500,
+          "travelTypes": [
+            "nature",
+            "city_walks"
+          ],
+          "departureCity": "Baku",
+          "dates": {
+            "flexible": true,
+            "start": null,
+            "end": null
+          },
+          "flightsIncluded": null
+        }
+      },
+      "file": "ai/chat-3-ready.json"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/v1/ai/chat",
+      "status": 200,
+      "auth": true,
+      "requestBody": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "2 people, 5 days, around 1,500 AZN. Nature and city walks"
+          },
+          {
+            "role": "assistant",
+            "content": "Where will you depart from, and when do you want to travel?"
+          },
+          {
+            "role": "user",
+            "content": "From Baku, flexible dates"
+          },
+          {
+            "role": "assistant",
+            "content": "Are flights part of the budget?"
+          },
+          {
+            "role": "user",
+            "content": "Not included"
+          }
+        ],
+        "slots": {
+          "destination": "Africa",
+          "travelers": 2,
+          "durationDays": 5,
+          "budgetAZN": 1500,
+          "travelTypes": [
+            "nature",
+            "city_walks"
+          ],
+          "departureCity": "Baku",
+          "dates": {
+            "flexible": true,
+            "start": null,
+            "end": null
+          },
+          "flightsIncluded": false
+        },
+        "action": "create_plan"
+      },
+      "file": "ai/chat-4-plan.json",
+      "note": "Your plan screen"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/v1/ai/chat",
+      "status": 200,
+      "auth": true,
+      "requestBody": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "2 people, 5 days, around 1,500 AZN. Nature and city walks"
+          },
+          {
+            "role": "assistant",
+            "content": "Where will you depart from, and when do you want to travel?"
+          },
+          {
+            "role": "user",
+            "content": "From Baku, flexible dates"
+          },
+          {
+            "role": "assistant",
+            "content": "Are flights part of the budget?"
+          },
+          {
+            "role": "user",
+            "content": "Not included"
+          },
+          {
+            "role": "assistant",
+            "content": "Here’s a 5-day plan with an estimated budget."
+          },
+          {
+            "role": "user",
+            "content": "Make it cheaper"
+          }
+        ],
+        "slots": {
+          "destination": "Africa",
+          "travelers": 2,
+          "durationDays": 5,
+          "budgetAZN": 1500,
+          "travelTypes": [
+            "nature",
+            "city_walks"
+          ],
+          "departureCity": "Baku",
+          "dates": {
+            "flexible": true,
+            "start": null,
+            "end": null
+          },
+          "flightsIncluded": false
+        },
+        "draft": {
+          "title": "Cairo & Luxor",
+          "summary": "5 days in Egypt focused on nature and city walks.",
+          "days": [
+            {
+              "day": 1,
+              "cityId": "cairo",
+              "title": "Arrival in Cairo & Camel ride at the pyramids",
+              "placeIds": [
+                "camel-ride",
+                "old-cairo"
+              ],
+              "notes": null
+            },
+            {
+              "day": 2,
+              "cityId": "cairo",
+              "title": "Egyptian Museum & Giza Pyramids",
+              "placeIds": [
+                "egyptian-museum",
+                "giza"
+              ],
+              "notes": null
+            },
+            {
+              "day": 3,
+              "cityId": "cairo",
+              "title": "Khan el-Khalili",
+              "placeIds": [
+                "khan-el-khalili"
+              ],
+              "notes": null
+            },
+            {
+              "day": 4,
+              "cityId": "luxor",
+              "title": "Felucca sunset on the Nile & Karnak Temple",
+              "placeIds": [
+                "felucca",
+                "karnak"
+              ],
+              "notes": null
+            },
+            {
+              "day": 5,
+              "cityId": "luxor",
+              "title": "Valley of the Kings",
+              "placeIds": [
+                "valley-of-kings"
+              ],
+              "notes": null
+            }
+          ],
+          "relatedTourIds": [
+            "pyramids-nile-cruise",
+            "red-sea-escape"
+          ]
+        }
+      },
+      "file": "ai/chat-5-cheaper.json"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/v1/ai/plans",
+      "status": 201,
+      "auth": true,
+      "requestBody": {
+        "draft": {
+          "title": "Cairo & Luxor",
+          "summary": "5 days in Egypt focused on nature and city walks.",
+          "days": [
+            {
+              "day": 1,
+              "cityId": "cairo",
+              "title": "Arrival in Cairo & Camel ride at the pyramids",
+              "placeIds": [
+                "camel-ride",
+                "old-cairo"
+              ],
+              "notes": null
+            },
+            {
+              "day": 2,
+              "cityId": "cairo",
+              "title": "Egyptian Museum & Giza Pyramids",
+              "placeIds": [
+                "egyptian-museum",
+                "giza"
+              ],
+              "notes": null
+            },
+            {
+              "day": 3,
+              "cityId": "cairo",
+              "title": "Khan el-Khalili",
+              "placeIds": [
+                "khan-el-khalili"
+              ],
+              "notes": null
+            },
+            {
+              "day": 4,
+              "cityId": "luxor",
+              "title": "Felucca sunset on the Nile & Karnak Temple",
+              "placeIds": [
+                "felucca",
+                "karnak"
+              ],
+              "notes": null
+            },
+            {
+              "day": 5,
+              "cityId": "luxor",
+              "title": "Valley of the Kings",
+              "placeIds": [
+                "valley-of-kings"
+              ],
+              "notes": null
+            }
+          ],
+          "relatedTourIds": [
+            "pyramids-nile-cruise",
+            "red-sea-escape"
+          ]
+        },
+        "slots": {
+          "destination": "Africa",
+          "travelers": 2,
+          "durationDays": 5,
+          "budgetAZN": 1500,
+          "travelTypes": [
+            "nature",
+            "city_walks"
+          ],
+          "departureCity": "Baku",
+          "dates": {
+            "flexible": true,
+            "start": null,
+            "end": null
+          },
+          "flightsIncluded": false
+        }
+      },
+      "file": "ai/plan-save.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/ai/plans",
+      "status": 200,
+      "auth": true,
+      "file": "ai/plans-list.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/ai/plans/b124dc5a-980f-49a5-a3c6-06ca6996ac8b",
+      "status": 200,
+      "auth": true,
+      "file": "ai/plan-detail.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/ai/discover",
+      "status": 200,
+      "auth": true,
+      "file": "ai/discover.json"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/v1/me",
+      "status": 200,
+      "auth": true,
+      "file": "me/profile.json"
+    }
+  ]
+}

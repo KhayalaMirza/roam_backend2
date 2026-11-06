@@ -1,0 +1,159 @@
+{
+  "id": "marrakech",
+  "name": "Marrakech",
+  "shortDescription": "Medina souks, riads and the Jemaa el-Fnaa square.",
+  "imageUrl": null,
+  "recommendedDays": 3,
+  "dailyBudget": {
+    "amount": 130,
+    "currency": "AZN",
+    "formatted": "130 AZN"
+  },
+  "dailyBudgetAZN": 130,
+  "tourCount": 1,
+  "description": "Medina souks, riads and the Jemaa el-Fnaa square.",
+  "country": {
+    "id": "morocco",
+    "name": "Morocco"
+  },
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "recommendedStayLabel": "3 days",
+  "dailyBudgetLabel": "~130 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 70,
+      "currency": "AZN",
+      "formatted": "70 AZN"
+    },
+    "food": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    },
+    "transport": {
+      "amount": 10,
+      "currency": "AZN",
+      "formatted": "10 AZN"
+    },
+    "activities": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    }
+  },
+  "transport": [
+    "Petit taxi",
+    "Walking"
+  ],
+  "coordinate": {
+    "lat": 31.6295,
+    "lng": -7.9811
+  },
+  "places": [
+    {
+      "id": "atlas-day",
+      "name": "Atlas Mountains day trip",
+      "category": "Adventure",
+      "description": "",
+      "durationHours": 8,
+      "priceAZN": 80,
+      "price": {
+        "amount": 80,
+        "currency": "AZN",
+        "formatted": "80 AZN"
+      },
+      "priceLabel": "+80 AZN",
+      "city": {
+        "id": "marrakech",
+        "name": "Marrakech"
+      },
+      "country": {
+        "id": "morocco",
+        "name": "Morocco"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 31.2,
+        "lng": -7.86
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "majorelle",
+      "name": "Jardin Majorelle",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 1.5,
+      "priceAZN": 30,
+      "price": {
+        "amount": 30,
+        "currency": "AZN",
+        "formatted": "30 AZN"
+      },
+      "priceLabel": "+30 AZN",
+      "city": {
+        "id": "marrakech",
+        "name": "Marrakech"
+      },
+      "country": {
+        "id": "morocco",
+        "name": "Morocco"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 31.6417,
+        "lng": -8.0033
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "jemaa-el-fnaa",
+      "name": "Jemaa el-Fnaa",
+      "category": "Market",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "marrakech",
+        "name": "Marrakech"
+      },
+      "country": {
+        "id": "morocco",
+        "name": "Morocco"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 31.6258,
+        "lng": -7.9891
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "marrakech-riad",
+      "name": "Riad Dar Medina",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 180,
+        "currency": "AZN",
+        "formatted": "180 AZN"
+      },
+      "pricePerNightAZN": 180,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 31.628,
+        "lng": -7.987
+      }
+    }
+  ]
+}

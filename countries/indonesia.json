@@ -1,0 +1,60 @@
+{
+  "id": "indonesia",
+  "name": "Indonesia",
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "imageUrl": null,
+  "cityCount": 2,
+  "subtitle": "2 cities",
+  "tourCount": 1,
+  "description": "Rice terraces, volcanoes and island-hopping around Bali.",
+  "info": [
+    {
+      "title": "Currency",
+      "value": "Indonesian rupiah"
+    },
+    {
+      "title": "Language",
+      "value": "Indonesian"
+    },
+    {
+      "title": "Best season",
+      "value": "Apr – Oct"
+    }
+  ],
+  "currency": "Indonesian rupiah",
+  "language": "Indonesian",
+  "bestSeason": "Apr – Oct",
+  "cities": [
+    {
+      "id": "bali",
+      "name": "Bali",
+      "shortDescription": "Beaches, rice terraces and temples by the sea.",
+      "imageUrl": null,
+      "recommendedDays": 5,
+      "dailyBudget": {
+        "amount": 145,
+        "currency": "AZN",
+        "formatted": "145 AZN"
+      },
+      "dailyBudgetAZN": 145,
+      "tourCount": 1
+    },
+    {
+      "id": "nusa-penida",
+      "name": "Nusa Penida",
+      "shortDescription": "Cliffs, manta rays and Kelingking beach.",
+      "imageUrl": null,
+      "recommendedDays": 2,
+      "dailyBudget": {
+        "amount": 150,
+        "currency": "AZN",
+        "formatted": "150 AZN"
+      },
+      "dailyBudgetAZN": 150,
+      "tourCount": 1
+    }
+  ]
+}

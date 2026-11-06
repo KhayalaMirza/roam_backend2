@@ -1,0 +1,55 @@
+{
+  "reply": "Where will you depart from, and when do you want to travel?",
+  "quickReplies": [
+    "Baku",
+    "Ganja",
+    "Flexible dates"
+  ],
+  "slots": {
+    "destination": "Africa",
+    "travelers": 2,
+    "durationDays": 5,
+    "budgetAZN": 1500,
+    "travelTypes": [
+      "nature",
+      "city_walks"
+    ],
+    "departureCity": null,
+    "dates": null,
+    "flightsIncluded": null
+  },
+  "slotChips": [
+    {
+      "key": "travelers",
+      "label": "2 people"
+    },
+    {
+      "key": "durationDays",
+      "label": "5 days"
+    },
+    {
+      "key": "budgetAZN",
+      "label": "1,500 AZN"
+    },
+    {
+      "key": "travelTypes",
+      "label": "Nature"
+    },
+    {
+      "key": "travelTypes",
+      "label": "City walks"
+    },
+    {
+      "key": "destination",
+      "label": "Africa"
+    }
+  ],
+  "missingSlots": [
+    "departureCity",
+    "flightsIncluded"
+  ],
+  "readyToPlan": false,
+  "plan": null,
+  "remainingToday": 99,
+  "engine": "rules"
+}

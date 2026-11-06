@@ -1,0 +1,160 @@
+{
+  "id": "dubai",
+  "name": "Dubai",
+  "shortDescription": "Skyscrapers, souks and desert dunes.",
+  "imageUrl": null,
+  "recommendedDays": 4,
+  "dailyBudget": {
+    "amount": 280,
+    "currency": "AZN",
+    "formatted": "280 AZN"
+  },
+  "dailyBudgetAZN": 280,
+  "tourCount": 1,
+  "description": "Skyscrapers, souks and desert dunes.",
+  "country": {
+    "id": "uae",
+    "name": "United Arab Emirates"
+  },
+  "region": {
+    "id": "middle-east",
+    "name": "Middle East"
+  },
+  "recommendedStayLabel": "4 days",
+  "dailyBudgetLabel": "~280 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 150,
+      "currency": "AZN",
+      "formatted": "150 AZN"
+    },
+    "food": {
+      "amount": 60,
+      "currency": "AZN",
+      "formatted": "60 AZN"
+    },
+    "transport": {
+      "amount": 25,
+      "currency": "AZN",
+      "formatted": "25 AZN"
+    },
+    "activities": {
+      "amount": 45,
+      "currency": "AZN",
+      "formatted": "45 AZN"
+    }
+  },
+  "transport": [
+    "Metro",
+    "Taxi",
+    "Careem"
+  ],
+  "coordinate": {
+    "lat": 25.2048,
+    "lng": 55.2708
+  },
+  "places": [
+    {
+      "id": "burj-khalifa",
+      "name": "Burj Khalifa – At the Top",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 1.5,
+      "priceAZN": 110,
+      "price": {
+        "amount": 110,
+        "currency": "AZN",
+        "formatted": "110 AZN"
+      },
+      "priceLabel": "+110 AZN",
+      "city": {
+        "id": "dubai",
+        "name": "Dubai"
+      },
+      "country": {
+        "id": "uae",
+        "name": "United Arab Emirates"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 25.1972,
+        "lng": 55.2744
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "desert-safari",
+      "name": "Evening desert safari",
+      "category": "Adventure",
+      "description": "",
+      "durationHours": 6,
+      "priceAZN": 120,
+      "price": {
+        "amount": 120,
+        "currency": "AZN",
+        "formatted": "120 AZN"
+      },
+      "priceLabel": "+120 AZN",
+      "city": {
+        "id": "dubai",
+        "name": "Dubai"
+      },
+      "country": {
+        "id": "uae",
+        "name": "United Arab Emirates"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 24.94,
+        "lng": 55.6
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "gold-souk",
+      "name": "Gold & Spice Souks",
+      "category": "Market",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "dubai",
+        "name": "Dubai"
+      },
+      "country": {
+        "id": "uae",
+        "name": "United Arab Emirates"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 25.2697,
+        "lng": 55.2963
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "dubai-marina",
+      "name": "Marina View Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 330,
+        "currency": "AZN",
+        "formatted": "330 AZN"
+      },
+      "pricePerNightAZN": 330,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 25.08,
+        "lng": 55.14
+      }
+    }
+  ]
+}

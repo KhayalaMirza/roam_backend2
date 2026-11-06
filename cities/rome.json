@@ -1,0 +1,160 @@
+{
+  "id": "rome",
+  "name": "Rome",
+  "shortDescription": "Ancient ruins, piazzas and endless trattorias.",
+  "imageUrl": null,
+  "recommendedDays": 3,
+  "dailyBudget": {
+    "amount": 250,
+    "currency": "AZN",
+    "formatted": "250 AZN"
+  },
+  "dailyBudgetAZN": 250,
+  "tourCount": 1,
+  "description": "Ancient ruins, piazzas and endless trattorias.",
+  "country": {
+    "id": "italy",
+    "name": "Italy"
+  },
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "recommendedStayLabel": "3 days",
+  "dailyBudgetLabel": "~250 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 140,
+      "currency": "AZN",
+      "formatted": "140 AZN"
+    },
+    "food": {
+      "amount": 60,
+      "currency": "AZN",
+      "formatted": "60 AZN"
+    },
+    "transport": {
+      "amount": 15,
+      "currency": "AZN",
+      "formatted": "15 AZN"
+    },
+    "activities": {
+      "amount": 35,
+      "currency": "AZN",
+      "formatted": "35 AZN"
+    }
+  },
+  "transport": [
+    "Metro",
+    "Bus",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": 41.9028,
+    "lng": 12.4964
+  },
+  "places": [
+    {
+      "id": "colosseum",
+      "name": "Colosseum & Roman Forum",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 35,
+      "price": {
+        "amount": 35,
+        "currency": "AZN",
+        "formatted": "35 AZN"
+      },
+      "priceLabel": "+35 AZN",
+      "city": {
+        "id": "rome",
+        "name": "Rome"
+      },
+      "country": {
+        "id": "italy",
+        "name": "Italy"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.8902,
+        "lng": 12.4922
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "trastevere",
+      "name": "Trastevere food walk",
+      "category": "Food",
+      "description": "",
+      "durationHours": 2.5,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "rome",
+        "name": "Rome"
+      },
+      "country": {
+        "id": "italy",
+        "name": "Italy"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.8897,
+        "lng": 12.4708
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "vatican",
+      "name": "Vatican Museums",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 40,
+      "price": {
+        "amount": 40,
+        "currency": "AZN",
+        "formatted": "40 AZN"
+      },
+      "priceLabel": "+40 AZN",
+      "city": {
+        "id": "rome",
+        "name": "Rome"
+      },
+      "country": {
+        "id": "italy",
+        "name": "Italy"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.9065,
+        "lng": 12.4536
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "rome-centro",
+      "name": "Hotel Centro Storico",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 320,
+        "currency": "AZN",
+        "formatted": "320 AZN"
+      },
+      "pricePerNightAZN": 320,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.899,
+        "lng": 12.476
+      }
+    }
+  ]
+}

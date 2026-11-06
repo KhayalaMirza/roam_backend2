@@ -1,0 +1,156 @@
+{
+  "id": "antalya",
+  "name": "Antalya",
+  "shortDescription": "Turquoise coast, old harbour and waterfalls.",
+  "imageUrl": null,
+  "recommendedDays": 4,
+  "dailyBudget": {
+    "amount": 145,
+    "currency": "AZN",
+    "formatted": "145 AZN"
+  },
+  "dailyBudgetAZN": 145,
+  "tourCount": 1,
+  "description": "Turquoise coast, old harbour and waterfalls.",
+  "country": {
+    "id": "turkey",
+    "name": "Turkey"
+  },
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "recommendedStayLabel": "4 days",
+  "dailyBudgetLabel": "~145 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 75,
+      "currency": "AZN",
+      "formatted": "75 AZN"
+    },
+    "food": {
+      "amount": 35,
+      "currency": "AZN",
+      "formatted": "35 AZN"
+    },
+    "transport": {
+      "amount": 15,
+      "currency": "AZN",
+      "formatted": "15 AZN"
+    },
+    "activities": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    }
+  },
+  "transport": [
+    "Tram",
+    "Bus",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": 36.8969,
+    "lng": 30.7133
+  },
+  "places": [
+    {
+      "id": "duden-falls",
+      "name": "Düden Waterfalls",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 1.5,
+      "priceAZN": 5,
+      "price": {
+        "amount": 5,
+        "currency": "AZN",
+        "formatted": "5 AZN"
+      },
+      "priceLabel": "+5 AZN",
+      "city": {
+        "id": "antalya",
+        "name": "Antalya"
+      },
+      "country": {
+        "id": "turkey",
+        "name": "Turkey"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 36.8516,
+        "lng": 30.7834
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "kaleici",
+      "name": "Kaleiçi old town",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "antalya",
+        "name": "Antalya"
+      },
+      "country": {
+        "id": "turkey",
+        "name": "Turkey"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 36.8841,
+        "lng": 30.7056
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "konyaalti",
+      "name": "Konyaaltı beach",
+      "category": "Beach",
+      "description": "",
+      "durationHours": 4,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "antalya",
+        "name": "Antalya"
+      },
+      "country": {
+        "id": "turkey",
+        "name": "Turkey"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 36.8608,
+        "lng": 30.6346
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "antalya-resort",
+      "name": "Lara Beach Resort",
+      "kind": "Hotel",
+      "stars": 5,
+      "description": "",
+      "pricePerNight": {
+        "amount": 260,
+        "currency": "AZN",
+        "formatted": "260 AZN"
+      },
+      "pricePerNightAZN": 260,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 36.854,
+        "lng": 30.878
+      }
+    }
+  ]
+}

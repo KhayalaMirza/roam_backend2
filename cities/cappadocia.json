@@ -1,0 +1,159 @@
+{
+  "id": "cappadocia",
+  "name": "Cappadocia",
+  "shortDescription": "Fairy chimneys, cave hotels and sunrise balloons.",
+  "imageUrl": null,
+  "recommendedDays": 2,
+  "dailyBudget": {
+    "amount": 170,
+    "currency": "AZN",
+    "formatted": "170 AZN"
+  },
+  "dailyBudgetAZN": 170,
+  "tourCount": 1,
+  "description": "Fairy chimneys, cave hotels and sunrise balloons.",
+  "country": {
+    "id": "turkey",
+    "name": "Turkey"
+  },
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "recommendedStayLabel": "2 days",
+  "dailyBudgetLabel": "~170 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 90,
+      "currency": "AZN",
+      "formatted": "90 AZN"
+    },
+    "food": {
+      "amount": 35,
+      "currency": "AZN",
+      "formatted": "35 AZN"
+    },
+    "transport": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    },
+    "activities": {
+      "amount": 25,
+      "currency": "AZN",
+      "formatted": "25 AZN"
+    }
+  },
+  "transport": [
+    "Tour shuttle",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": 38.6431,
+    "lng": 34.8289
+  },
+  "places": [
+    {
+      "id": "goreme-open-air",
+      "name": "Göreme Open-Air Museum",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 35,
+      "price": {
+        "amount": 35,
+        "currency": "AZN",
+        "formatted": "35 AZN"
+      },
+      "priceLabel": "+35 AZN",
+      "city": {
+        "id": "cappadocia",
+        "name": "Cappadocia"
+      },
+      "country": {
+        "id": "turkey",
+        "name": "Turkey"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 38.64,
+        "lng": 34.845
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "red-valley",
+      "name": "Red Valley sunset hike",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "cappadocia",
+        "name": "Cappadocia"
+      },
+      "country": {
+        "id": "turkey",
+        "name": "Turkey"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 38.658,
+        "lng": 34.86
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "balloon-ride",
+      "name": "Sunrise hot-air balloon",
+      "category": "Adventure",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 350,
+      "price": {
+        "amount": 350,
+        "currency": "AZN",
+        "formatted": "350 AZN"
+      },
+      "priceLabel": "+350 AZN",
+      "city": {
+        "id": "cappadocia",
+        "name": "Cappadocia"
+      },
+      "country": {
+        "id": "turkey",
+        "name": "Turkey"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 38.656,
+        "lng": 34.853
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "goreme-cave",
+      "name": "Göreme Cave Suites",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 230,
+        "currency": "AZN",
+        "formatted": "230 AZN"
+      },
+      "pricePerNightAZN": 230,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 38.643,
+        "lng": 34.829
+      }
+    }
+  ]
+}

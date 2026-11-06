@@ -1,0 +1,146 @@
+[
+  {
+    "id": "egypt",
+    "name": "Egypt",
+    "region": {
+      "id": "africa",
+      "name": "Africa"
+    },
+    "imageUrl": null,
+    "cityCount": 3,
+    "subtitle": "3 cities",
+    "tourCount": 2
+  },
+  {
+    "id": "georgia",
+    "name": "Georgia",
+    "region": {
+      "id": "europe",
+      "name": "Europe"
+    },
+    "imageUrl": null,
+    "cityCount": 3,
+    "subtitle": "3 cities",
+    "tourCount": 2
+  },
+  {
+    "id": "indonesia",
+    "name": "Indonesia",
+    "region": {
+      "id": "asia",
+      "name": "Asia"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  },
+  {
+    "id": "italy",
+    "name": "Italy",
+    "region": {
+      "id": "europe",
+      "name": "Europe"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "region": {
+      "id": "asia",
+      "name": "Asia"
+    },
+    "imageUrl": null,
+    "cityCount": 3,
+    "subtitle": "3 cities",
+    "tourCount": 1
+  },
+  {
+    "id": "jordan",
+    "name": "Jordan",
+    "region": {
+      "id": "middle-east",
+      "name": "Middle East"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  },
+  {
+    "id": "kenya",
+    "name": "Kenya",
+    "region": {
+      "id": "africa",
+      "name": "Africa"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  },
+  {
+    "id": "morocco",
+    "name": "Morocco",
+    "region": {
+      "id": "africa",
+      "name": "Africa"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 2
+  },
+  {
+    "id": "tanzania",
+    "name": "Tanzania",
+    "region": {
+      "id": "africa",
+      "name": "Africa"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  },
+  {
+    "id": "thailand",
+    "name": "Thailand",
+    "region": {
+      "id": "asia",
+      "name": "Asia"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  },
+  {
+    "id": "turkey",
+    "name": "Turkey",
+    "region": {
+      "id": "europe",
+      "name": "Europe"
+    },
+    "imageUrl": null,
+    "cityCount": 3,
+    "subtitle": "3 cities",
+    "tourCount": 2
+  },
+  {
+    "id": "uae",
+    "name": "United Arab Emirates",
+    "region": {
+      "id": "middle-east",
+      "name": "Middle East"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  }
+]

@@ -1,0 +1,164 @@
+{
+  "id": "luxor",
+  "name": "Luxor",
+  "shortDescription": "Valley of the Kings, Karnak and Nile sunsets.",
+  "imageUrl": null,
+  "recommendedDays": 2,
+  "dailyBudget": {
+    "amount": 86,
+    "currency": "AZN",
+    "formatted": "86 AZN"
+  },
+  "dailyBudgetAZN": 86,
+  "tourCount": 1,
+  "description": "Valley of the Kings, Karnak and Nile sunsets.",
+  "country": {
+    "id": "egypt",
+    "name": "Egypt"
+  },
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "recommendedStayLabel": "2 days",
+  "dailyBudgetLabel": "~86 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 38,
+      "currency": "AZN",
+      "formatted": "38 AZN"
+    },
+    "food": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    },
+    "transport": {
+      "amount": 8,
+      "currency": "AZN",
+      "formatted": "8 AZN"
+    },
+    "activities": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    }
+  },
+  "transport": [
+    "Taxi",
+    "Felucca",
+    "Bicycle"
+  ],
+  "coordinate": {
+    "lat": 25.6872,
+    "lng": 32.6396
+  },
+  "places": [
+    {
+      "id": "felucca",
+      "name": "Felucca sunset on the Nile",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 1.5,
+      "priceAZN": 15,
+      "price": {
+        "amount": 15,
+        "currency": "AZN",
+        "formatted": "15 AZN"
+      },
+      "priceLabel": "+15 AZN",
+      "city": {
+        "id": "luxor",
+        "name": "Luxor"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 25.6989,
+        "lng": 32.6386
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "karnak",
+      "name": "Karnak Temple",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 2.5,
+      "priceAZN": 25,
+      "price": {
+        "amount": 25,
+        "currency": "AZN",
+        "formatted": "25 AZN"
+      },
+      "priceLabel": "+25 AZN",
+      "city": {
+        "id": "luxor",
+        "name": "Luxor"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 25.7188,
+        "lng": 32.6573
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "valley-of-kings",
+      "name": "Valley of the Kings",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 35,
+      "price": {
+        "amount": 35,
+        "currency": "AZN",
+        "formatted": "35 AZN"
+      },
+      "priceLabel": "+35 AZN",
+      "city": {
+        "id": "luxor",
+        "name": "Luxor"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 25.7402,
+        "lng": 32.6014
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "luxor-winter",
+      "name": "Luxor Riverside Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 130,
+        "currency": "AZN",
+        "formatted": "130 AZN"
+      },
+      "pricePerNightAZN": 130,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 25.696,
+        "lng": 32.638
+      }
+    }
+  ]
+}

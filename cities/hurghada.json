@@ -1,0 +1,131 @@
+{
+  "id": "hurghada",
+  "name": "Hurghada",
+  "shortDescription": "Red Sea reefs, diving and long beach days.",
+  "imageUrl": null,
+  "recommendedDays": 4,
+  "dailyBudget": {
+    "amount": 103,
+    "currency": "AZN",
+    "formatted": "103 AZN"
+  },
+  "dailyBudgetAZN": 103,
+  "tourCount": 1,
+  "description": "Red Sea reefs, diving and long beach days.",
+  "country": {
+    "id": "egypt",
+    "name": "Egypt"
+  },
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "recommendedStayLabel": "4 days",
+  "dailyBudgetLabel": "~103 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 50,
+      "currency": "AZN",
+      "formatted": "50 AZN"
+    },
+    "food": {
+      "amount": 25,
+      "currency": "AZN",
+      "formatted": "25 AZN"
+    },
+    "transport": {
+      "amount": 8,
+      "currency": "AZN",
+      "formatted": "8 AZN"
+    },
+    "activities": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    }
+  },
+  "transport": [
+    "Taxi",
+    "Minibus"
+  ],
+  "coordinate": {
+    "lat": 27.2579,
+    "lng": 33.8116
+  },
+  "places": [
+    {
+      "id": "giftun-island",
+      "name": "Giftun Island snorkelling",
+      "category": "Beach",
+      "description": "",
+      "durationHours": 6,
+      "priceAZN": 60,
+      "price": {
+        "amount": 60,
+        "currency": "AZN",
+        "formatted": "60 AZN"
+      },
+      "priceLabel": "+60 AZN",
+      "city": {
+        "id": "hurghada",
+        "name": "Hurghada"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 27.2,
+        "lng": 33.95
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "hurghada-marina",
+      "name": "Hurghada Marina",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "hurghada",
+        "name": "Hurghada"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 27.2297,
+        "lng": 33.8432
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "hurghada-reef",
+      "name": "Red Sea Reef Resort",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 150,
+        "currency": "AZN",
+        "formatted": "150 AZN"
+      },
+      "pricePerNightAZN": 150,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 27.19,
+        "lng": 33.83
+      }
+    }
+  ]
+}

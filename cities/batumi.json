@@ -1,0 +1,156 @@
+{
+  "id": "batumi",
+  "name": "Batumi",
+  "shortDescription": "Black Sea boulevard, botanical garden and seafood.",
+  "imageUrl": null,
+  "recommendedDays": 3,
+  "dailyBudget": {
+    "amount": 125,
+    "currency": "AZN",
+    "formatted": "125 AZN"
+  },
+  "dailyBudgetAZN": 125,
+  "tourCount": 1,
+  "description": "Black Sea boulevard, botanical garden and seafood.",
+  "country": {
+    "id": "georgia",
+    "name": "Georgia"
+  },
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "recommendedStayLabel": "3 days",
+  "dailyBudgetLabel": "~125 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 60,
+      "currency": "AZN",
+      "formatted": "60 AZN"
+    },
+    "food": {
+      "amount": 35,
+      "currency": "AZN",
+      "formatted": "35 AZN"
+    },
+    "transport": {
+      "amount": 15,
+      "currency": "AZN",
+      "formatted": "15 AZN"
+    },
+    "activities": {
+      "amount": 15,
+      "currency": "AZN",
+      "formatted": "15 AZN"
+    }
+  },
+  "transport": [
+    "Bus",
+    "Bolt",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": 41.6168,
+    "lng": 41.6367
+  },
+  "places": [
+    {
+      "id": "batumi-botanical",
+      "name": "Batumi Botanical Garden",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 15,
+      "price": {
+        "amount": 15,
+        "currency": "AZN",
+        "formatted": "15 AZN"
+      },
+      "priceLabel": "+15 AZN",
+      "city": {
+        "id": "batumi",
+        "name": "Batumi"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.6936,
+        "lng": 41.7095
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "batumi-boulevard",
+      "name": "Batumi Boulevard",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "batumi",
+        "name": "Batumi"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.6534,
+        "lng": 41.6362
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "batumi-beach",
+      "name": "Black Sea beach day",
+      "category": "Beach",
+      "description": "",
+      "durationHours": 4,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "batumi",
+        "name": "Batumi"
+      },
+      "country": {
+        "id": "georgia",
+        "name": "Georgia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.648,
+        "lng": 41.629
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "batumi-seaside",
+      "name": "Seaside Hotel Batumi",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 160,
+        "currency": "AZN",
+        "formatted": "160 AZN"
+      },
+      "pricePerNightAZN": 160,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.651,
+        "lng": 41.634
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzZTU2NjljYS04N2ZiLTQ1YzItOGY3MS05NGMwYTFhNTU1MjEiLCJyb2xlIjoidXNlciIsInR5cCI6ImFjY2VzcyIsImlhdCI6MTc5Mzg5Nzk2OCwiZXhwIjoxNzkzODk4ODY4fQ.84iDecbiU2D0zZz8pnhpHELoJPoCeYKEjq55EMPKFTI",
+  "refreshToken": "LG0KXQsGKKelbcFnICWfucVfDTVYhHwY8fjJH4Pflf8LlB7iFoYYvigG3jiud0Hg",
+  "expiresIn": 900,
+  "isNewUser": true,
+  "user": {
+    "id": "3e5669ca-87fb-45c2-8f71-94c0a1a55521",
+    "fullName": "Yusif Nasibli",
+    "email": "yusif1793897967750@example.com",
+    "initials": "YN"
+  }
+}

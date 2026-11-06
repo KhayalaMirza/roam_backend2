@@ -1,0 +1,185 @@
+{
+  "id": "istanbul",
+  "name": "Istanbul",
+  "shortDescription": "Where Europe meets Asia — mosques, bazaars and the Bosphorus.",
+  "imageUrl": null,
+  "recommendedDays": 4,
+  "dailyBudget": {
+    "amount": 165,
+    "currency": "AZN",
+    "formatted": "165 AZN"
+  },
+  "dailyBudgetAZN": 165,
+  "tourCount": 1,
+  "description": "Where Europe meets Asia — mosques, bazaars and the Bosphorus.",
+  "country": {
+    "id": "turkey",
+    "name": "Turkey"
+  },
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "recommendedStayLabel": "4 days",
+  "dailyBudgetLabel": "~165 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 80,
+      "currency": "AZN",
+      "formatted": "80 AZN"
+    },
+    "food": {
+      "amount": 40,
+      "currency": "AZN",
+      "formatted": "40 AZN"
+    },
+    "transport": {
+      "amount": 15,
+      "currency": "AZN",
+      "formatted": "15 AZN"
+    },
+    "activities": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    }
+  },
+  "transport": [
+    "Metro",
+    "Tram",
+    "Ferry",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": 41.0082,
+    "lng": 28.9784
+  },
+  "places": [
+    {
+      "id": "bosphorus-cruise",
+      "name": "Bosphorus cruise",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 25,
+      "price": {
+        "amount": 25,
+        "currency": "AZN",
+        "formatted": "25 AZN"
+      },
+      "priceLabel": "+25 AZN",
+      "city": {
+        "id": "istanbul",
+        "name": "Istanbul"
+      },
+      "country": {
+        "id": "turkey",
+        "name": "Turkey"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.0255,
+        "lng": 28.9744
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "grand-bazaar",
+      "name": "Grand Bazaar",
+      "category": "Market",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "istanbul",
+        "name": "Istanbul"
+      },
+      "country": {
+        "id": "turkey",
+        "name": "Turkey"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.0107,
+        "lng": 28.9681
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "hagia-sophia",
+      "name": "Hagia Sophia",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 1.5,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "istanbul",
+        "name": "Istanbul"
+      },
+      "country": {
+        "id": "turkey",
+        "name": "Turkey"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.0086,
+        "lng": 28.9802
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "topkapi",
+      "name": "Topkapı Palace",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 90,
+      "price": {
+        "amount": 90,
+        "currency": "AZN",
+        "formatted": "90 AZN"
+      },
+      "priceLabel": "+90 AZN",
+      "city": {
+        "id": "istanbul",
+        "name": "Istanbul"
+      },
+      "country": {
+        "id": "turkey",
+        "name": "Turkey"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.0115,
+        "lng": 28.9834
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "sultanahmet-inn",
+      "name": "Sultanahmet Inn",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 190,
+        "currency": "AZN",
+        "formatted": "190 AZN"
+      },
+      "pricePerNightAZN": 190,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 41.006,
+        "lng": 28.977
+      }
+    }
+  ]
+}

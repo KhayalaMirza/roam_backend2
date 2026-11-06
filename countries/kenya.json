@@ -1,0 +1,60 @@
+{
+  "id": "kenya",
+  "name": "Kenya",
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "imageUrl": null,
+  "cityCount": 2,
+  "subtitle": "2 cities",
+  "tourCount": 1,
+  "description": "Big-five safaris in the Maasai Mara and Indian Ocean coast.",
+  "info": [
+    {
+      "title": "Currency",
+      "value": "Kenyan shilling"
+    },
+    {
+      "title": "Language",
+      "value": "Swahili, English"
+    },
+    {
+      "title": "Best season",
+      "value": "Jul – Oct"
+    }
+  ],
+  "currency": "Kenyan shilling",
+  "language": "Swahili, English",
+  "bestSeason": "Jul – Oct",
+  "cities": [
+    {
+      "id": "maasai-mara",
+      "name": "Maasai Mara",
+      "shortDescription": "Great migration and big-five game drives.",
+      "imageUrl": null,
+      "recommendedDays": 3,
+      "dailyBudget": {
+        "amount": 290,
+        "currency": "AZN",
+        "formatted": "290 AZN"
+      },
+      "dailyBudgetAZN": 290,
+      "tourCount": 1
+    },
+    {
+      "id": "nairobi",
+      "name": "Nairobi",
+      "shortDescription": "Safari gateway with a national park inside the city.",
+      "imageUrl": null,
+      "recommendedDays": 2,
+      "dailyBudget": {
+        "amount": 185,
+        "currency": "AZN",
+        "formatted": "185 AZN"
+      },
+      "dailyBudgetAZN": 185,
+      "tourCount": 1
+    }
+  ]
+}

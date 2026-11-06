@@ -1,0 +1,107 @@
+{
+  "id": "arusha",
+  "name": "Arusha",
+  "shortDescription": "Base for Serengeti and Ngorongoro safaris.",
+  "imageUrl": null,
+  "recommendedDays": 2,
+  "dailyBudget": {
+    "amount": 190,
+    "currency": "AZN",
+    "formatted": "190 AZN"
+  },
+  "dailyBudgetAZN": 190,
+  "tourCount": 1,
+  "description": "Base for Serengeti and Ngorongoro safaris.",
+  "country": {
+    "id": "tanzania",
+    "name": "Tanzania"
+  },
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "recommendedStayLabel": "2 days",
+  "dailyBudgetLabel": "~190 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 80,
+      "currency": "AZN",
+      "formatted": "80 AZN"
+    },
+    "food": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    },
+    "transport": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    },
+    "activities": {
+      "amount": 60,
+      "currency": "AZN",
+      "formatted": "60 AZN"
+    }
+  },
+  "transport": [
+    "Safari jeep",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": -3.3869,
+    "lng": 36.683
+  },
+  "places": [
+    {
+      "id": "ngorongoro",
+      "name": "Ngorongoro Crater safari",
+      "category": "Adventure",
+      "description": "",
+      "durationHours": 9,
+      "priceAZN": 450,
+      "price": {
+        "amount": 450,
+        "currency": "AZN",
+        "formatted": "450 AZN"
+      },
+      "priceLabel": "+450 AZN",
+      "city": {
+        "id": "arusha",
+        "name": "Arusha"
+      },
+      "country": {
+        "id": "tanzania",
+        "name": "Tanzania"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -3.161,
+        "lng": 35.5877
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "arusha-lodge",
+      "name": "Arusha Coffee Lodge",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 260,
+        "currency": "AZN",
+        "formatted": "260 AZN"
+      },
+      "pricePerNightAZN": 260,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -3.38,
+        "lng": 36.62
+      }
+    }
+  ]
+}

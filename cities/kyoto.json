@@ -1,0 +1,156 @@
+{
+  "id": "kyoto",
+  "name": "Kyoto",
+  "shortDescription": "Temples, bamboo groves and geisha districts.",
+  "imageUrl": null,
+  "recommendedDays": 3,
+  "dailyBudget": {
+    "amount": 230,
+    "currency": "AZN",
+    "formatted": "230 AZN"
+  },
+  "dailyBudgetAZN": 230,
+  "tourCount": 1,
+  "description": "Temples, bamboo groves and geisha districts.",
+  "country": {
+    "id": "japan",
+    "name": "Japan"
+  },
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "recommendedStayLabel": "3 days",
+  "dailyBudgetLabel": "~230 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 130,
+      "currency": "AZN",
+      "formatted": "130 AZN"
+    },
+    "food": {
+      "amount": 55,
+      "currency": "AZN",
+      "formatted": "55 AZN"
+    },
+    "transport": {
+      "amount": 15,
+      "currency": "AZN",
+      "formatted": "15 AZN"
+    },
+    "activities": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    }
+  },
+  "transport": [
+    "Bus",
+    "Subway",
+    "Bicycle"
+  ],
+  "coordinate": {
+    "lat": 35.0116,
+    "lng": 135.7681
+  },
+  "places": [
+    {
+      "id": "arashiyama",
+      "name": "Arashiyama Bamboo Grove",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "kyoto",
+        "name": "Kyoto"
+      },
+      "country": {
+        "id": "japan",
+        "name": "Japan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.017,
+        "lng": 135.6713
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "fushimi-inari",
+      "name": "Fushimi Inari Shrine",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "kyoto",
+        "name": "Kyoto"
+      },
+      "country": {
+        "id": "japan",
+        "name": "Japan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 34.9671,
+        "lng": 135.7727
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "kinkaku-ji",
+      "name": "Kinkaku-ji (Golden Pavilion)",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 1,
+      "priceAZN": 10,
+      "price": {
+        "amount": 10,
+        "currency": "AZN",
+        "formatted": "10 AZN"
+      },
+      "priceLabel": "+10 AZN",
+      "city": {
+        "id": "kyoto",
+        "name": "Kyoto"
+      },
+      "country": {
+        "id": "japan",
+        "name": "Japan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.0394,
+        "lng": 135.7292
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "kyoto-ryokan",
+      "name": "Gion Ryokan",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 350,
+        "currency": "AZN",
+        "formatted": "350 AZN"
+      },
+      "pricePerNightAZN": 350,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.0037,
+        "lng": 135.7788
+      }
+    }
+  ]
+}

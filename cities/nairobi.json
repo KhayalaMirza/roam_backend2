@@ -1,0 +1,135 @@
+{
+  "id": "nairobi",
+  "name": "Nairobi",
+  "shortDescription": "Safari gateway with a national park inside the city.",
+  "imageUrl": null,
+  "recommendedDays": 2,
+  "dailyBudget": {
+    "amount": 185,
+    "currency": "AZN",
+    "formatted": "185 AZN"
+  },
+  "dailyBudgetAZN": 185,
+  "tourCount": 1,
+  "description": "Safari gateway with a national park inside the city.",
+  "country": {
+    "id": "kenya",
+    "name": "Kenya"
+  },
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "recommendedStayLabel": "2 days",
+  "dailyBudgetLabel": "~185 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 90,
+      "currency": "AZN",
+      "formatted": "90 AZN"
+    },
+    "food": {
+      "amount": 35,
+      "currency": "AZN",
+      "formatted": "35 AZN"
+    },
+    "transport": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    },
+    "activities": {
+      "amount": 40,
+      "currency": "AZN",
+      "formatted": "40 AZN"
+    }
+  },
+  "transport": [
+    "Uber",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": -1.2921,
+    "lng": 36.8219
+  },
+  "places": [
+    {
+      "id": "giraffe-centre",
+      "name": "Giraffe Centre",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 1.5,
+      "priceAZN": 30,
+      "price": {
+        "amount": 30,
+        "currency": "AZN",
+        "formatted": "30 AZN"
+      },
+      "priceLabel": "+30 AZN",
+      "city": {
+        "id": "nairobi",
+        "name": "Nairobi"
+      },
+      "country": {
+        "id": "kenya",
+        "name": "Kenya"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -1.3757,
+        "lng": 36.7448
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "nairobi-np",
+      "name": "Nairobi National Park drive",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 4,
+      "priceAZN": 110,
+      "price": {
+        "amount": 110,
+        "currency": "AZN",
+        "formatted": "110 AZN"
+      },
+      "priceLabel": "+110 AZN",
+      "city": {
+        "id": "nairobi",
+        "name": "Nairobi"
+      },
+      "country": {
+        "id": "kenya",
+        "name": "Kenya"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -1.3733,
+        "lng": 36.858
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "nairobi-garden",
+      "name": "Garden City Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 200,
+        "currency": "AZN",
+        "formatted": "200 AZN"
+      },
+      "pricePerNightAZN": 200,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -1.286,
+        "lng": 36.817
+      }
+    }
+  ]
+}

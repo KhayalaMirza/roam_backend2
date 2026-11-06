@@ -1,0 +1,60 @@
+{
+  "id": "italy",
+  "name": "Italy",
+  "region": {
+    "id": "europe",
+    "name": "Europe"
+  },
+  "imageUrl": null,
+  "cityCount": 2,
+  "subtitle": "2 cities",
+  "tourCount": 1,
+  "description": "Renaissance cities, coastal villages and the best food in Europe.",
+  "info": [
+    {
+      "title": "Currency",
+      "value": "Euro"
+    },
+    {
+      "title": "Language",
+      "value": "Italian"
+    },
+    {
+      "title": "Best season",
+      "value": "Apr – Jun, Sep – Oct"
+    }
+  ],
+  "currency": "Euro",
+  "language": "Italian",
+  "bestSeason": "Apr – Jun, Sep – Oct",
+  "cities": [
+    {
+      "id": "florence",
+      "name": "Florence",
+      "shortDescription": "Renaissance art and Tuscan hills.",
+      "imageUrl": null,
+      "recommendedDays": 2,
+      "dailyBudget": {
+        "amount": 230,
+        "currency": "AZN",
+        "formatted": "230 AZN"
+      },
+      "dailyBudgetAZN": 230,
+      "tourCount": 1
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "shortDescription": "Ancient ruins, piazzas and endless trattorias.",
+      "imageUrl": null,
+      "recommendedDays": 3,
+      "dailyBudget": {
+        "amount": 250,
+        "currency": "AZN",
+        "formatted": "250 AZN"
+      },
+      "dailyBudgetAZN": 250,
+      "tourCount": 1
+    }
+  ]
+}

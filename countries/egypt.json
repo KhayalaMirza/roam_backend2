@@ -1,0 +1,74 @@
+{
+  "id": "egypt",
+  "name": "Egypt",
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "imageUrl": null,
+  "cityCount": 3,
+  "subtitle": "3 cities",
+  "tourCount": 2,
+  "description": "Ancient wonders, Nile cruises and Red Sea beaches.",
+  "info": [
+    {
+      "title": "Currency",
+      "value": "Egyptian pound"
+    },
+    {
+      "title": "Language",
+      "value": "Arabic"
+    },
+    {
+      "title": "Best season",
+      "value": "Oct – Apr"
+    }
+  ],
+  "currency": "Egyptian pound",
+  "language": "Arabic",
+  "bestSeason": "Oct – Apr",
+  "cities": [
+    {
+      "id": "cairo",
+      "name": "Cairo",
+      "shortDescription": "Pyramids of Giza, the Egyptian Museum and bustling souks.",
+      "imageUrl": null,
+      "recommendedDays": 3,
+      "dailyBudget": {
+        "amount": 85,
+        "currency": "AZN",
+        "formatted": "85 AZN"
+      },
+      "dailyBudgetAZN": 85,
+      "tourCount": 1
+    },
+    {
+      "id": "hurghada",
+      "name": "Hurghada",
+      "shortDescription": "Red Sea reefs, diving and long beach days.",
+      "imageUrl": null,
+      "recommendedDays": 4,
+      "dailyBudget": {
+        "amount": 103,
+        "currency": "AZN",
+        "formatted": "103 AZN"
+      },
+      "dailyBudgetAZN": 103,
+      "tourCount": 1
+    },
+    {
+      "id": "luxor",
+      "name": "Luxor",
+      "shortDescription": "Valley of the Kings, Karnak and Nile sunsets.",
+      "imageUrl": null,
+      "recommendedDays": 2,
+      "dailyBudget": {
+        "amount": 86,
+        "currency": "AZN",
+        "formatted": "86 AZN"
+      },
+      "dailyBudgetAZN": 86,
+      "tourCount": 1
+    }
+  ]
+}

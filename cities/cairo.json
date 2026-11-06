@@ -1,0 +1,212 @@
+{
+  "id": "cairo",
+  "name": "Cairo",
+  "shortDescription": "Pyramids of Giza, the Egyptian Museum and bustling souks.",
+  "imageUrl": null,
+  "recommendedDays": 3,
+  "dailyBudget": {
+    "amount": 85,
+    "currency": "AZN",
+    "formatted": "85 AZN"
+  },
+  "dailyBudgetAZN": 85,
+  "tourCount": 1,
+  "description": "Pyramids of Giza, the Egyptian Museum and bustling souks.",
+  "country": {
+    "id": "egypt",
+    "name": "Egypt"
+  },
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "recommendedStayLabel": "3 days",
+  "dailyBudgetLabel": "~85 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 40,
+      "currency": "AZN",
+      "formatted": "40 AZN"
+    },
+    "food": {
+      "amount": 22,
+      "currency": "AZN",
+      "formatted": "22 AZN"
+    },
+    "transport": {
+      "amount": 8,
+      "currency": "AZN",
+      "formatted": "8 AZN"
+    },
+    "activities": {
+      "amount": 15,
+      "currency": "AZN",
+      "formatted": "15 AZN"
+    }
+  },
+  "transport": [
+    "Metro",
+    "Ride-hailing",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": 30.0444,
+    "lng": 31.2357
+  },
+  "places": [
+    {
+      "id": "camel-ride",
+      "name": "Camel ride at the pyramids",
+      "category": "Adventure",
+      "description": "",
+      "durationHours": 1,
+      "priceAZN": 35,
+      "price": {
+        "amount": 35,
+        "currency": "AZN",
+        "formatted": "35 AZN"
+      },
+      "priceLabel": "+35 AZN",
+      "city": {
+        "id": "cairo",
+        "name": "Cairo"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 29.9765,
+        "lng": 31.1313
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "old-cairo",
+      "name": "Coptic & Old Cairo",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "cairo",
+        "name": "Cairo"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 30.0059,
+        "lng": 31.2302
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "egyptian-museum",
+      "name": "Egyptian Museum",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 2.5,
+      "priceAZN": 20,
+      "price": {
+        "amount": 20,
+        "currency": "AZN",
+        "formatted": "20 AZN"
+      },
+      "priceLabel": "+20 AZN",
+      "city": {
+        "id": "cairo",
+        "name": "Cairo"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 30.0478,
+        "lng": 31.2336
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "giza",
+      "name": "Giza Pyramids",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 25,
+      "price": {
+        "amount": 25,
+        "currency": "AZN",
+        "formatted": "25 AZN"
+      },
+      "priceLabel": "+25 AZN",
+      "city": {
+        "id": "cairo",
+        "name": "Cairo"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 29.9792,
+        "lng": 31.1342
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "khan-el-khalili",
+      "name": "Khan el-Khalili",
+      "category": "Market",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "cairo",
+        "name": "Cairo"
+      },
+      "country": {
+        "id": "egypt",
+        "name": "Egypt"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 30.0477,
+        "lng": 31.2623
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "nile-view",
+      "name": "Nile View Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 120,
+        "currency": "AZN",
+        "formatted": "120 AZN"
+      },
+      "pricePerNightAZN": 120,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 30.045,
+        "lng": 31.229
+      }
+    }
+  ]
+}

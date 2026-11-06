@@ -1,0 +1,131 @@
+{
+  "id": "petra",
+  "name": "Petra",
+  "shortDescription": "The rose-red city carved into canyon walls.",
+  "imageUrl": null,
+  "recommendedDays": 2,
+  "dailyBudget": {
+    "amount": 160,
+    "currency": "AZN",
+    "formatted": "160 AZN"
+  },
+  "dailyBudgetAZN": 160,
+  "tourCount": 1,
+  "description": "The rose-red city carved into canyon walls.",
+  "country": {
+    "id": "jordan",
+    "name": "Jordan"
+  },
+  "region": {
+    "id": "middle-east",
+    "name": "Middle East"
+  },
+  "recommendedStayLabel": "2 days",
+  "dailyBudgetLabel": "~160 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 90,
+      "currency": "AZN",
+      "formatted": "90 AZN"
+    },
+    "food": {
+      "amount": 40,
+      "currency": "AZN",
+      "formatted": "40 AZN"
+    },
+    "transport": {
+      "amount": 10,
+      "currency": "AZN",
+      "formatted": "10 AZN"
+    },
+    "activities": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    }
+  },
+  "transport": [
+    "Walking",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": 30.3285,
+    "lng": 35.4444
+  },
+  "places": [
+    {
+      "id": "monastery",
+      "name": "Ad Deir (Monastery) hike",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "petra",
+        "name": "Petra"
+      },
+      "country": {
+        "id": "jordan",
+        "name": "Jordan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 30.3367,
+        "lng": 35.4383
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "petra-treasury",
+      "name": "Siq & Treasury",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 4,
+      "priceAZN": 120,
+      "price": {
+        "amount": 120,
+        "currency": "AZN",
+        "formatted": "120 AZN"
+      },
+      "priceLabel": "+120 AZN",
+      "city": {
+        "id": "petra",
+        "name": "Petra"
+      },
+      "country": {
+        "id": "jordan",
+        "name": "Jordan"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 30.3222,
+        "lng": 35.4513
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "petra-guesthouse",
+      "name": "Petra Gate Hotel",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 160,
+        "currency": "AZN",
+        "formatted": "160 AZN"
+      },
+      "pricePerNightAZN": 160,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 30.324,
+        "lng": 35.479
+      }
+    }
+  ]
+}

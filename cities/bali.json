@@ -1,0 +1,188 @@
+{
+  "id": "bali",
+  "name": "Bali",
+  "shortDescription": "Beaches, rice terraces and temples by the sea.",
+  "imageUrl": null,
+  "recommendedDays": 5,
+  "dailyBudget": {
+    "amount": 145,
+    "currency": "AZN",
+    "formatted": "145 AZN"
+  },
+  "dailyBudgetAZN": 145,
+  "tourCount": 1,
+  "description": "Beaches, rice terraces and temples by the sea.",
+  "country": {
+    "id": "indonesia",
+    "name": "Indonesia"
+  },
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "recommendedStayLabel": "5 days",
+  "dailyBudgetLabel": "~145 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 70,
+      "currency": "AZN",
+      "formatted": "70 AZN"
+    },
+    "food": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    },
+    "transport": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    },
+    "activities": {
+      "amount": 25,
+      "currency": "AZN",
+      "formatted": "25 AZN"
+    }
+  },
+  "transport": [
+    "Scooter",
+    "Grab",
+    "Private driver"
+  ],
+  "coordinate": {
+    "lat": -8.4095,
+    "lng": 115.1889
+  },
+  "places": [
+    {
+      "id": "mount-batur",
+      "name": "Mount Batur sunrise trek",
+      "category": "Adventure",
+      "description": "",
+      "durationHours": 6,
+      "priceAZN": 90,
+      "price": {
+        "amount": 90,
+        "currency": "AZN",
+        "formatted": "90 AZN"
+      },
+      "priceLabel": "+90 AZN",
+      "city": {
+        "id": "bali",
+        "name": "Bali"
+      },
+      "country": {
+        "id": "indonesia",
+        "name": "Indonesia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -8.242,
+        "lng": 115.375
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "seminyak-beach",
+      "name": "Seminyak beach",
+      "category": "Beach",
+      "description": "",
+      "durationHours": 4,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "bali",
+        "name": "Bali"
+      },
+      "country": {
+        "id": "indonesia",
+        "name": "Indonesia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -8.6913,
+        "lng": 115.1571
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "tegallalang",
+      "name": "Tegallalang Rice Terraces",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 5,
+      "price": {
+        "amount": 5,
+        "currency": "AZN",
+        "formatted": "5 AZN"
+      },
+      "priceLabel": "+5 AZN",
+      "city": {
+        "id": "bali",
+        "name": "Bali"
+      },
+      "country": {
+        "id": "indonesia",
+        "name": "Indonesia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -8.4312,
+        "lng": 115.2793
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "uluwatu",
+      "name": "Uluwatu Temple & Kecak dance",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 25,
+      "price": {
+        "amount": 25,
+        "currency": "AZN",
+        "formatted": "25 AZN"
+      },
+      "priceLabel": "+25 AZN",
+      "city": {
+        "id": "bali",
+        "name": "Bali"
+      },
+      "country": {
+        "id": "indonesia",
+        "name": "Indonesia"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -8.8291,
+        "lng": 115.0849
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "ubud-villa",
+      "name": "Ubud Jungle Villa",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 180,
+        "currency": "AZN",
+        "formatted": "180 AZN"
+      },
+      "pricePerNightAZN": 180,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -8.5069,
+        "lng": 115.2625
+      }
+    }
+  ]
+}

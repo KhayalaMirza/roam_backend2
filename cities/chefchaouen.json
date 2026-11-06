@@ -1,0 +1,127 @@
+{
+  "id": "chefchaouen",
+  "name": "Chefchaouen",
+  "shortDescription": "The blue town in the Rif mountains.",
+  "imageUrl": null,
+  "recommendedDays": 2,
+  "dailyBudget": {
+    "amount": 100,
+    "currency": "AZN",
+    "formatted": "100 AZN"
+  },
+  "dailyBudgetAZN": 100,
+  "tourCount": 1,
+  "description": "The blue town in the Rif mountains.",
+  "country": {
+    "id": "morocco",
+    "name": "Morocco"
+  },
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "recommendedStayLabel": "2 days",
+  "dailyBudgetLabel": "~100 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 55,
+      "currency": "AZN",
+      "formatted": "55 AZN"
+    },
+    "food": {
+      "amount": 25,
+      "currency": "AZN",
+      "formatted": "25 AZN"
+    },
+    "transport": {
+      "amount": 10,
+      "currency": "AZN",
+      "formatted": "10 AZN"
+    },
+    "activities": {
+      "amount": 10,
+      "currency": "AZN",
+      "formatted": "10 AZN"
+    }
+  },
+  "transport": [
+    "Walking",
+    "Grand taxi"
+  ],
+  "coordinate": {
+    "lat": 35.1688,
+    "lng": -5.2636
+  },
+  "places": [
+    {
+      "id": "akchour",
+      "name": "Akchour waterfalls hike",
+      "category": "Nature",
+      "description": "",
+      "durationHours": 5,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "chefchaouen",
+        "name": "Chefchaouen"
+      },
+      "country": {
+        "id": "morocco",
+        "name": "Morocco"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.237,
+        "lng": -5.173
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "blue-medina",
+      "name": "Blue Medina walk",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "chefchaouen",
+        "name": "Chefchaouen"
+      },
+      "country": {
+        "id": "morocco",
+        "name": "Morocco"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.1714,
+        "lng": -5.2697
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "chefchaouen-riad",
+      "name": "Blue Riad",
+      "kind": "Hotel",
+      "stars": 3,
+      "description": "",
+      "pricePerNight": {
+        "amount": 110,
+        "currency": "AZN",
+        "formatted": "110 AZN"
+      },
+      "pricePerNightAZN": 110,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 35.17,
+        "lng": -5.268
+      }
+    }
+  ]
+}

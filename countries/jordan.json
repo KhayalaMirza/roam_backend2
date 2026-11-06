@@ -1,0 +1,60 @@
+{
+  "id": "jordan",
+  "name": "Jordan",
+  "region": {
+    "id": "middle-east",
+    "name": "Middle East"
+  },
+  "imageUrl": null,
+  "cityCount": 2,
+  "subtitle": "2 cities",
+  "tourCount": 1,
+  "description": "Petra’s rose-red city, Wadi Rum and the Dead Sea.",
+  "info": [
+    {
+      "title": "Currency",
+      "value": "Jordanian dinar"
+    },
+    {
+      "title": "Language",
+      "value": "Arabic"
+    },
+    {
+      "title": "Best season",
+      "value": "Mar – May, Sep – Nov"
+    }
+  ],
+  "currency": "Jordanian dinar",
+  "language": "Arabic",
+  "bestSeason": "Mar – May, Sep – Nov",
+  "cities": [
+    {
+      "id": "amman",
+      "name": "Amman",
+      "shortDescription": "Roman citadel, food streets and a gateway to the desert.",
+      "imageUrl": null,
+      "recommendedDays": 2,
+      "dailyBudget": {
+        "amount": 145,
+        "currency": "AZN",
+        "formatted": "145 AZN"
+      },
+      "dailyBudgetAZN": 145,
+      "tourCount": 1
+    },
+    {
+      "id": "petra",
+      "name": "Petra",
+      "shortDescription": "The rose-red city carved into canyon walls.",
+      "imageUrl": null,
+      "recommendedDays": 2,
+      "dailyBudget": {
+        "amount": 160,
+        "currency": "AZN",
+        "formatted": "160 AZN"
+      },
+      "dailyBudgetAZN": 160,
+      "tourCount": 1
+    }
+  ]
+}

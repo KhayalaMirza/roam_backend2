@@ -1,0 +1,131 @@
+{
+  "id": "abu-dhabi",
+  "name": "Abu Dhabi",
+  "shortDescription": "Grand mosque, Louvre and island beaches.",
+  "imageUrl": null,
+  "recommendedDays": 2,
+  "dailyBudget": {
+    "amount": 255,
+    "currency": "AZN",
+    "formatted": "255 AZN"
+  },
+  "dailyBudgetAZN": 255,
+  "tourCount": 1,
+  "description": "Grand mosque, Louvre and island beaches.",
+  "country": {
+    "id": "uae",
+    "name": "United Arab Emirates"
+  },
+  "region": {
+    "id": "middle-east",
+    "name": "Middle East"
+  },
+  "recommendedStayLabel": "2 days",
+  "dailyBudgetLabel": "~255 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 140,
+      "currency": "AZN",
+      "formatted": "140 AZN"
+    },
+    "food": {
+      "amount": 55,
+      "currency": "AZN",
+      "formatted": "55 AZN"
+    },
+    "transport": {
+      "amount": 25,
+      "currency": "AZN",
+      "formatted": "25 AZN"
+    },
+    "activities": {
+      "amount": 35,
+      "currency": "AZN",
+      "formatted": "35 AZN"
+    }
+  },
+  "transport": [
+    "Bus",
+    "Taxi"
+  ],
+  "coordinate": {
+    "lat": 24.4539,
+    "lng": 54.3773
+  },
+  "places": [
+    {
+      "id": "louvre-ad",
+      "name": "Louvre Abu Dhabi",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 30,
+      "price": {
+        "amount": 30,
+        "currency": "AZN",
+        "formatted": "30 AZN"
+      },
+      "priceLabel": "+30 AZN",
+      "city": {
+        "id": "abu-dhabi",
+        "name": "Abu Dhabi"
+      },
+      "country": {
+        "id": "uae",
+        "name": "United Arab Emirates"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 24.5337,
+        "lng": 54.3983
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "grand-mosque",
+      "name": "Sheikh Zayed Grand Mosque",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "abu-dhabi",
+        "name": "Abu Dhabi"
+      },
+      "country": {
+        "id": "uae",
+        "name": "United Arab Emirates"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 24.4128,
+        "lng": 54.475
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "abu-dhabi-corniche",
+      "name": "Corniche Hotel",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 300,
+        "currency": "AZN",
+        "formatted": "300 AZN"
+      },
+      "pricePerNightAZN": 300,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 24.47,
+        "lng": 54.34
+      }
+    }
+  ]
+}

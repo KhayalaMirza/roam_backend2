@@ -1,0 +1,5 @@
+{
+  "statusCode": 401,
+  "error": "LoginRequired",
+  "message": "Log in to continue."
+}

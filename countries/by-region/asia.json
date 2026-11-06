@@ -1,0 +1,38 @@
+[
+  {
+    "id": "indonesia",
+    "name": "Indonesia",
+    "region": {
+      "id": "asia",
+      "name": "Asia"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "region": {
+      "id": "asia",
+      "name": "Asia"
+    },
+    "imageUrl": null,
+    "cityCount": 3,
+    "subtitle": "3 cities",
+    "tourCount": 1
+  },
+  {
+    "id": "thailand",
+    "name": "Thailand",
+    "region": {
+      "id": "asia",
+      "name": "Asia"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  }
+]

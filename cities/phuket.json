@@ -1,0 +1,132 @@
+{
+  "id": "phuket",
+  "name": "Phuket",
+  "shortDescription": "Beaches and island boat trips in the Andaman Sea.",
+  "imageUrl": null,
+  "recommendedDays": 4,
+  "dailyBudget": {
+    "amount": 145,
+    "currency": "AZN",
+    "formatted": "145 AZN"
+  },
+  "dailyBudgetAZN": 145,
+  "tourCount": 1,
+  "description": "Beaches and island boat trips in the Andaman Sea.",
+  "country": {
+    "id": "thailand",
+    "name": "Thailand"
+  },
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "recommendedStayLabel": "4 days",
+  "dailyBudgetLabel": "~145 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 70,
+      "currency": "AZN",
+      "formatted": "70 AZN"
+    },
+    "food": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    },
+    "transport": {
+      "amount": 15,
+      "currency": "AZN",
+      "formatted": "15 AZN"
+    },
+    "activities": {
+      "amount": 30,
+      "currency": "AZN",
+      "formatted": "30 AZN"
+    }
+  },
+  "transport": [
+    "Songthaew",
+    "Grab",
+    "Scooter"
+  ],
+  "coordinate": {
+    "lat": 7.8804,
+    "lng": 98.3923
+  },
+  "places": [
+    {
+      "id": "old-phuket",
+      "name": "Old Phuket Town",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "phuket",
+        "name": "Phuket"
+      },
+      "country": {
+        "id": "thailand",
+        "name": "Thailand"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 7.8846,
+        "lng": 98.388
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "phi-phi",
+      "name": "Phi Phi islands boat trip",
+      "category": "Beach",
+      "description": "",
+      "durationHours": 8,
+      "priceAZN": 120,
+      "price": {
+        "amount": 120,
+        "currency": "AZN",
+        "formatted": "120 AZN"
+      },
+      "priceLabel": "+120 AZN",
+      "city": {
+        "id": "phuket",
+        "name": "Phuket"
+      },
+      "country": {
+        "id": "thailand",
+        "name": "Thailand"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 7.7407,
+        "lng": 98.7784
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "phuket-kata",
+      "name": "Kata Beach Resort",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 190,
+        "currency": "AZN",
+        "formatted": "190 AZN"
+      },
+      "pricePerNightAZN": 190,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 7.82,
+        "lng": 98.298
+      }
+    }
+  ]
+}

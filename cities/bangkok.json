@@ -1,0 +1,132 @@
+{
+  "id": "bangkok",
+  "name": "Bangkok",
+  "shortDescription": "Golden temples, river boats and night markets.",
+  "imageUrl": null,
+  "recommendedDays": 3,
+  "dailyBudget": {
+    "amount": 117,
+    "currency": "AZN",
+    "formatted": "117 AZN"
+  },
+  "dailyBudgetAZN": 117,
+  "tourCount": 1,
+  "description": "Golden temples, river boats and night markets.",
+  "country": {
+    "id": "thailand",
+    "name": "Thailand"
+  },
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "recommendedStayLabel": "3 days",
+  "dailyBudgetLabel": "~117 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 60,
+      "currency": "AZN",
+      "formatted": "60 AZN"
+    },
+    "food": {
+      "amount": 25,
+      "currency": "AZN",
+      "formatted": "25 AZN"
+    },
+    "transport": {
+      "amount": 12,
+      "currency": "AZN",
+      "formatted": "12 AZN"
+    },
+    "activities": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    }
+  },
+  "transport": [
+    "BTS Skytrain",
+    "Boat",
+    "Grab"
+  ],
+  "coordinate": {
+    "lat": 13.7563,
+    "lng": 100.5018
+  },
+  "places": [
+    {
+      "id": "chatuchak",
+      "name": "Chatuchak Weekend Market",
+      "category": "Market",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "bangkok",
+        "name": "Bangkok"
+      },
+      "country": {
+        "id": "thailand",
+        "name": "Thailand"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 13.7999,
+        "lng": 100.55
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "grand-palace",
+      "name": "Grand Palace & Wat Pho",
+      "category": "Sightseeing",
+      "description": "",
+      "durationHours": 3,
+      "priceAZN": 40,
+      "price": {
+        "amount": 40,
+        "currency": "AZN",
+        "formatted": "40 AZN"
+      },
+      "priceLabel": "+40 AZN",
+      "city": {
+        "id": "bangkok",
+        "name": "Bangkok"
+      },
+      "country": {
+        "id": "thailand",
+        "name": "Thailand"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 13.75,
+        "lng": 100.4913
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "bangkok-riverside",
+      "name": "Riverside Hotel Bangkok",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 140,
+        "currency": "AZN",
+        "formatted": "140 AZN"
+      },
+      "pricePerNightAZN": 140,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": 13.724,
+        "lng": 100.513
+      }
+    }
+  ]
+}

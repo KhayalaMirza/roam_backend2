@@ -1,0 +1,60 @@
+{
+  "id": "thailand",
+  "name": "Thailand",
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "imageUrl": null,
+  "cityCount": 2,
+  "subtitle": "2 cities",
+  "tourCount": 1,
+  "description": "Bangkok temples, northern jungles and Andaman beaches.",
+  "info": [
+    {
+      "title": "Currency",
+      "value": "Thai baht"
+    },
+    {
+      "title": "Language",
+      "value": "Thai"
+    },
+    {
+      "title": "Best season",
+      "value": "Nov – Mar"
+    }
+  ],
+  "currency": "Thai baht",
+  "language": "Thai",
+  "bestSeason": "Nov – Mar",
+  "cities": [
+    {
+      "id": "bangkok",
+      "name": "Bangkok",
+      "shortDescription": "Golden temples, river boats and night markets.",
+      "imageUrl": null,
+      "recommendedDays": 3,
+      "dailyBudget": {
+        "amount": 117,
+        "currency": "AZN",
+        "formatted": "117 AZN"
+      },
+      "dailyBudgetAZN": 117,
+      "tourCount": 1
+    },
+    {
+      "id": "phuket",
+      "name": "Phuket",
+      "shortDescription": "Beaches and island boat trips in the Andaman Sea.",
+      "imageUrl": null,
+      "recommendedDays": 4,
+      "dailyBudget": {
+        "amount": 145,
+        "currency": "AZN",
+        "formatted": "145 AZN"
+      },
+      "dailyBudgetAZN": 145,
+      "tourCount": 1
+    }
+  ]
+}

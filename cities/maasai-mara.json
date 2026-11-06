@@ -1,0 +1,130 @@
+{
+  "id": "maasai-mara",
+  "name": "Maasai Mara",
+  "shortDescription": "Great migration and big-five game drives.",
+  "imageUrl": null,
+  "recommendedDays": 3,
+  "dailyBudget": {
+    "amount": 290,
+    "currency": "AZN",
+    "formatted": "290 AZN"
+  },
+  "dailyBudgetAZN": 290,
+  "tourCount": 1,
+  "description": "Great migration and big-five game drives.",
+  "country": {
+    "id": "kenya",
+    "name": "Kenya"
+  },
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "recommendedStayLabel": "3 days",
+  "dailyBudgetLabel": "~290 AZN / person",
+  "dailyBudgetNote": "Includes stay, food, local transport and activities. Flights not included.",
+  "dailyBudgetBreakdown": {
+    "stay": {
+      "amount": 180,
+      "currency": "AZN",
+      "formatted": "180 AZN"
+    },
+    "food": {
+      "amount": 0,
+      "currency": "AZN",
+      "formatted": "0 AZN"
+    },
+    "transport": {
+      "amount": 20,
+      "currency": "AZN",
+      "formatted": "20 AZN"
+    },
+    "activities": {
+      "amount": 90,
+      "currency": "AZN",
+      "formatted": "90 AZN"
+    }
+  },
+  "transport": [
+    "Safari jeep"
+  ],
+  "coordinate": {
+    "lat": -1.4061,
+    "lng": 35.0167
+  },
+  "places": [
+    {
+      "id": "mara-game-drive",
+      "name": "Full-day game drive",
+      "category": "Adventure",
+      "description": "",
+      "durationHours": 8,
+      "priceAZN": 0,
+      "price": null,
+      "priceLabel": "Free",
+      "city": {
+        "id": "maasai-mara",
+        "name": "Maasai Mara"
+      },
+      "country": {
+        "id": "kenya",
+        "name": "Kenya"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -1.49,
+        "lng": 35.14
+      },
+      "isFavorite": false
+    },
+    {
+      "id": "maasai-village",
+      "name": "Maasai village visit",
+      "category": "Culture",
+      "description": "",
+      "durationHours": 2,
+      "priceAZN": 40,
+      "price": {
+        "amount": 40,
+        "currency": "AZN",
+        "formatted": "40 AZN"
+      },
+      "priceLabel": "+40 AZN",
+      "city": {
+        "id": "maasai-mara",
+        "name": "Maasai Mara"
+      },
+      "country": {
+        "id": "kenya",
+        "name": "Kenya"
+      },
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -1.45,
+        "lng": 35.1
+      },
+      "isFavorite": false
+    }
+  ],
+  "stays": [
+    {
+      "id": "mara-camp",
+      "name": "Mara Tented Camp",
+      "kind": "Hotel",
+      "stars": 4,
+      "description": "",
+      "pricePerNight": {
+        "amount": 550,
+        "currency": "AZN",
+        "formatted": "550 AZN"
+      },
+      "pricePerNightAZN": 550,
+      "websiteUrl": null,
+      "imageUrl": null,
+      "coordinate": {
+        "lat": -1.48,
+        "lng": 35.12
+      }
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "counts": {
+    "tours": 4,
+    "places": 6
+  },
+  "tours": [
+    {
+      "favoriteId": "1bc7f333-e0bb-458a-adcd-29d194c2bc70",
+      "addedAt": "2026-11-05T16:59:28.715Z",
+      "tour": {
+        "id": "marrakech-sahara",
+        "title": "Marrakech & Atlas Mountains",
+        "summary": "Souks, gardens and a day in Berber villages of the High Atlas.",
+        "region": {
+          "id": "africa",
+          "name": "Africa"
+        },
+        "country": {
+          "id": "morocco",
+          "name": "Morocco"
+        },
+        "city": {
+          "id": "marrakech",
+          "name": "Marrakech"
+        },
+        "locationLabel": "Morocco · Marrakech",
+        "days": 4,
+        "nights": 3,
+        "durationLabel": "4 days / 3 nights",
+        "priceAZN": 890,
+        "price": {
+          "amount": 890,
+          "currency": "AZN",
+          "formatted": "890 AZN"
+        },
+        "priceLabel": "From 890 AZN / person",
+        "travelTypes": [
+          {
+            "id": "city_walks",
+            "label": "City walks"
+          },
+          {
+            "id": "adventure",
+            "label": "Adventure"
+          }
+        ],
+        "tags": [
+          "Culture",
+          "Mountains"
+        ],
+        "coverImageUrl": null,
+        "isFavorite": true
+      }
+    },
+    {
+      "favoriteId": "94fb110b-38a8-4596-a372-b9ce786ea5b7",
+      "addedAt": "2026-11-05T16:59:28.710Z",
+      "tour": {
+        "id": "tbilisi-kazbegi",
+        "title": "Tbilisi & Kazbegi",
+        "summary": "Old Tbilisi, sulphur baths and the road to Mount Kazbek.",
+        "region": {
+          "id": "europe",
+          "name": "Europe"
+        },
+        "country": {
+          "id": "georgia",
+          "name": "Georgia"
+        },
+        "city": {
+          "id": "tbilisi",
+          "name": "Tbilisi"
+        },
+        "locationLabel": "Georgia · Tbilisi",
+        "days": 5,
+        "nights": 4,
+        "durationLabel": "5 days / 4 nights",
+        "priceAZN": 690,
+        "price": {
+          "amount": 690,
+          "currency": "AZN",
+          "formatted": "690 AZN"
+        },
+        "priceLabel": "From 690 AZN / person",
+        "travelTypes": [
+          {
+            "id": "nature",
+            "label": "Nature"
+          },
+          {
+            "id": "city_walks",
+            "label": "City walks"
+          }
+        ],
+        "tags": [
+          "Mountains",
+          "Food"
+        ],
+        "coverImageUrl": null,
+        "isFavorite": true
+      }
+    },
+    {
+      "favoriteId": "b16ed037-7068-411d-a8ae-04cb82ee50f2",
+      "addedAt": "2026-11-05T16:59:28.704Z",
+      "tour": {
+        "id": "bali-island-hopping",
+        "title": "Bali Island Hopping",
+        "summary": "Ubud rice terraces, Uluwatu cliffs and Nusa Penida by fast boat.",
+        "region": {
+          "id": "asia",
+          "name": "Asia"
+        },
+        "country": {
+          "id": "indonesia",
+          "name": "Indonesia"
+        },
+        "city": {
+          "id": "bali",
+          "name": "Bali"
+        },
+        "locationLabel": "Indonesia · Bali",
+        "days": 8,
+        "nights": 7,
+        "durationLabel": "8 days / 7 nights",
+        "priceAZN": 2900,
+        "price": {
+          "amount": 2900,
+          "currency": "AZN",
+          "formatted": "2,900 AZN"
+        },
+        "priceLabel": "From 2,900 AZN / person",
+        "travelTypes": [
+          {
+            "id": "sea",
+            "label": "Sea"
+          },
+          {
+            "id": "nature",
+            "label": "Nature"
+          }
+        ],
+        "tags": [
+          "Islands",
+          "Beach"
+        ],
+        "coverImageUrl": null,
+        "isFavorite": true
+      }
+    },
+    {
+      "favoriteId": "db25b544-5b4b-455c-8291-a369cb1d7086",
+      "addedAt": "2026-11-05T16:59:28.697Z",
+      "tour": {
+        "id": "pyramids-nile-cruise",
+        "title": "Pyramids & Nile Cruise",
+        "summary": "Giza, the Egyptian Museum and a train south to Luxor’s temples.",
+        "region": {
+          "id": "africa",
+          "name": "Africa"
+        },
+        "country": {
+          "id": "egypt",
+          "name": "Egypt"
+        },
+        "city": {
+          "id": "cairo",
+          "name": "Cairo"
+        },
+        "locationLabel": "Egypt · Cairo",
+        "days": 5,
+        "nights": 4,
+        "durationLabel": "5 days / 4 nights",
+        "priceAZN": 980,
+        "price": {
+          "amount": 980,
+          "currency": "AZN",
+          "formatted": "980 AZN"
+        },
+        "priceLabel": "From 980 AZN / person",
+        "travelTypes": [
+          {
+            "id": "city_walks",
+            "label": "City walks"
+          },
+          {
+            "id": "nature",
+            "label": "Nature"
+          }
+        ],
+        "tags": [
+          "History",
+          "City walks"
+        ],
+        "coverImageUrl": null,
+        "isFavorite": true
+      }
+    }
+  ],
+  "places": [
+    {
+      "favoriteId": "d602193d-bded-4c00-b303-a21bf55650bf",
+      "addedAt": "2026-11-05T16:59:28.721Z",
+      "place": {
+        "id": "giza",
+        "name": "Giza Pyramids",
+        "category": "Sightseeing",
+        "description": "",
+        "durationHours": 3,
+        "priceAZN": 25,
+        "price": {
+          "amount": 25,
+          "currency": "AZN",
+          "formatted": "25 AZN"
+        },
+        "priceLabel": "+25 AZN",
+        "city": {
+          "id": "cairo",
+          "name": "Cairo"
+        },
+        "country": {
+          "id": "egypt",
+          "name": "Egypt"
+        },
+        "imageUrl": null,
+        "coordinate": {
+          "lat": 29.9792,
+          "lng": 31.1342
+        },
+        "isFavorite": true
+      }
+    },
+    {
+      "favoriteId": "d986d5a1-2b69-4eea-9467-82c4857b1bf1",
+      "addedAt": "2026-11-05T16:59:28.726Z",
+      "place": {
+        "id": "khan-el-khalili",
+        "name": "Khan el-Khalili",
+        "category": "Market",
+        "description": "",
+        "durationHours": 2,
+        "priceAZN": 0,
+        "price": null,
+        "priceLabel": "Free",
+        "city": {
+          "id": "cairo",
+          "name": "Cairo"
+        },
+        "country": {
+          "id": "egypt",
+          "name": "Egypt"
+        },
+        "imageUrl": null,
+        "coordinate": {
+          "lat": 30.0477,
+          "lng": 31.2623
+        },
+        "isFavorite": true
+      }
+    },
+    {
+      "favoriteId": "34a8f75d-c34b-4059-b877-7b31f4e73fea",
+      "addedAt": "2026-11-05T16:59:28.736Z",
+      "place": {
+        "id": "gergeti-trinity",
+        "name": "Gergeti Trinity Church hike",
+        "category": "Nature",
+        "description": "",
+        "durationHours": 4,
+        "priceAZN": 0,
+        "price": null,
+        "priceLabel": "Free",
+        "city": {
+          "id": "kazbegi",
+          "name": "Kazbegi"
+        },
+        "country": {
+          "id": "georgia",
+          "name": "Georgia"
+        },
+        "imageUrl": null,
+        "coordinate": {
+          "lat": 42.6623,
+          "lng": 44.6206
+        },
+        "isFavorite": true
+      }
+    },
+    {
+      "favoriteId": "f6ab61b1-c428-45dd-9410-2c252f103d83",
+      "addedAt": "2026-11-05T16:59:28.732Z",
+      "place": {
+        "id": "narikala",
+        "name": "Narikala Fortress",
+        "category": "Sightseeing",
+        "description": "",
+        "durationHours": 2,
+        "priceAZN": 0,
+        "price": null,
+        "priceLabel": "Free",
+        "city": {
+          "id": "tbilisi",
+          "name": "Tbilisi"
+        },
+        "country": {
+          "id": "georgia",
+          "name": "Georgia"
+        },
+        "imageUrl": null,
+        "coordinate": {
+          "lat": 41.6879,
+          "lng": 44.8086
+        },
+        "isFavorite": true
+      }
+    },
+    {
+      "favoriteId": "86b7c79e-3edc-4eff-b3b4-2b3857d26a01",
+      "addedAt": "2026-11-05T16:59:28.741Z",
+      "place": {
+        "id": "tegallalang",
+        "name": "Tegallalang Rice Terraces",
+        "category": "Nature",
+        "description": "",
+        "durationHours": 2,
+        "priceAZN": 5,
+        "price": {
+          "amount": 5,
+          "currency": "AZN",
+          "formatted": "5 AZN"
+        },
+        "priceLabel": "+5 AZN",
+        "city": {
+          "id": "bali",
+          "name": "Bali"
+        },
+        "country": {
+          "id": "indonesia",
+          "name": "Indonesia"
+        },
+        "imageUrl": null,
+        "coordinate": {
+          "lat": -8.4312,
+          "lng": 115.2793
+        },
+        "isFavorite": true
+      }
+    },
+    {
+      "favoriteId": "5fedf419-c361-4e6a-82fa-7335cc5b2938",
+      "addedAt": "2026-11-05T16:59:28.746Z",
+      "place": {
+        "id": "jemaa-el-fnaa",
+        "name": "Jemaa el-Fnaa",
+        "category": "Market",
+        "description": "",
+        "durationHours": 2,
+        "priceAZN": 0,
+        "price": null,
+        "priceLabel": "Free",
+        "city": {
+          "id": "marrakech",
+          "name": "Marrakech"
+        },
+        "country": {
+          "id": "morocco",
+          "name": "Morocco"
+        },
+        "imageUrl": null,
+        "coordinate": {
+          "lat": 31.6258,
+          "lng": -7.9891
+        },
+        "isFavorite": true
+      }
+    }
+  ],
+  "currency": "AZN",
+  "emptyState": null
+}

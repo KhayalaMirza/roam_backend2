@@ -1,0 +1,65 @@
+{
+  "reply": "Are flights part of the budget?",
+  "quickReplies": [
+    "Included",
+    "Not included"
+  ],
+  "slots": {
+    "destination": "Africa",
+    "travelers": 2,
+    "durationDays": 5,
+    "budgetAZN": 1500,
+    "travelTypes": [
+      "nature",
+      "city_walks"
+    ],
+    "departureCity": "Baku",
+    "dates": {
+      "flexible": true,
+      "start": null,
+      "end": null
+    },
+    "flightsIncluded": null
+  },
+  "slotChips": [
+    {
+      "key": "travelers",
+      "label": "2 people"
+    },
+    {
+      "key": "durationDays",
+      "label": "5 days"
+    },
+    {
+      "key": "budgetAZN",
+      "label": "1,500 AZN"
+    },
+    {
+      "key": "travelTypes",
+      "label": "Nature"
+    },
+    {
+      "key": "travelTypes",
+      "label": "City walks"
+    },
+    {
+      "key": "destination",
+      "label": "Africa"
+    },
+    {
+      "key": "departureCity",
+      "label": "From Baku"
+    },
+    {
+      "key": "dates",
+      "label": "Flexible dates"
+    }
+  ],
+  "missingSlots": [
+    "flightsIncluded"
+  ],
+  "readyToPlan": false,
+  "plan": null,
+  "remainingToday": 98,
+  "engine": "rules"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "jordan",
+    "name": "Jordan",
+    "region": {
+      "id": "middle-east",
+      "name": "Middle East"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  },
+  {
+    "id": "uae",
+    "name": "United Arab Emirates",
+    "region": {
+      "id": "middle-east",
+      "name": "Middle East"
+    },
+    "imageUrl": null,
+    "cityCount": 2,
+    "subtitle": "2 cities",
+    "tourCount": 1
+  }
+]
